@@ -1,0 +1,11 @@
+{
+  "login": {
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "forgotPassword": "Forgot password?"
+  },
+  "button": {
+    "save": "Save"
+  }
+}

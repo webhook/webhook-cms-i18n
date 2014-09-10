@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/handlebars/handlebars.js"></script>
+  <script src="bower_components/ember/ember.js"></script>
+  <script src="bower_components/ember-i18n/lib/i18n.js"></script>
+  <script src="i18n/i18n.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+
+<script type="text/x-handlebars" data-template-name="application">
+Select Language: {{#each supportedLanguages}}
+  <button type="button" {{action "chooseLanguage" this}}>{{this}}</button>
+{{/each}}
+<hr>
+{{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="index">
+{{t "login.email"}}<br>
+{{t "login.password"}}<br>
+{{t "login.signIn"}}<br>
+{{t "login.forgotPassword"}}<br>
+{{t "button.save"}}<br>
+</script>
+
+</body>
+</html>

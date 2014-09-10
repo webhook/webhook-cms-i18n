@@ -1,0 +1,11 @@
+{
+  "login": {
+    "email": "Email",
+    "password": "Contraseña",
+    "signIn": "Registrarse",
+    "forgotPassword": "¿Has olvidado tu contraseña?"
+  },
+  "button": {
+    "save": "Guardar"
+  }
+}

@@ -1,6 +1,5 @@
 {
   "login": {
-    "email": "Email",
     "password": "Contraseña",
     "signIn": "Registrarse",
     "forgotPassword": "¿Has olvidado tu contraseña?"

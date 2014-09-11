@@ -10,19 +10,26 @@
 <body>
 
 <script type="text/x-handlebars" data-template-name="application">
-Select Language: {{#each supportedLanguages}}
-  <button type="button" {{action "chooseLanguage" this}}>{{this}}</button>
+Select Language:
+{{#each supportedLanguages}}
+  <button type="button" {{ action "chooseLanguage" this }}>{{this}}</button>
 {{/each}}
+<button type="button" {{ action "clearLanguage" }}>Clear</button>
 <hr>
 {{outlet}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="index">
-{{t "login.email"}}<br>
-{{t "login.password"}}<br>
-{{t "login.signIn"}}<br>
-{{t "login.forgotPassword"}}<br>
-{{t "button.save"}}<br>
+{{translation-form}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="components/translation-form">
+{{#each translations}}
+  {{key}}: {{input value=value}}<br>
+{{/each}}
+<hr>
+<pre>{{converted}}</pre>
+<button type="button" {{ action "convert" }}>Convert</button>
 </script>
 
 </body>

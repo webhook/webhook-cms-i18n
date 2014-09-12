@@ -10,7 +10,12 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "app"
+  ],
+  "main": [
+    "i18n.js",
+    "tranlsations.js"
   ],
   "dependencies": {
     "ember-i18n": "~2.2.1"

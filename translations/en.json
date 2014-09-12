@@ -7,5 +7,14 @@
   },
   "button": {
     "save": "Save"
+  },
+  "wh": {
+    "logout": "Logout",
+    "contentTypes": "Add / Edit Content Types",
+    "team": "Team Members",
+    "settings": "Settings",
+    "billing": "Billing",
+    "dns": "Domain",
+    "data": "Backups and Data"
   }
 }

@@ -26,11 +26,11 @@ Select Language:
 
 <script type="text/x-handlebars" data-template-name="components/translation-form">
 {{#each translations}}
-  {{key}}: {{input value=value}}<br>
+  {{key}}: {{input value=value placeholder=placeholder}}<br>
 {{/each}}
 <hr>
+<p>Save the following to <code>translations/[language].json</code>.</p>
 <pre>{{converted}}</pre>
-<button type="button" {{ action "convert" }}>Convert</button>
 </script>
 
 </body>

@@ -6,7 +6,7 @@ During Webhook CMS initialization, the english language file is extended by the 
 
 ### Installing
 
-- `git clone https://github.com/gpbmike/gearcloset.git`
+- `git clone https://github.com/webhook/webhook-cms-i18n.git`
 - `npm install`
 - `bower install`
 

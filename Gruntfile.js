@@ -58,7 +58,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jsonlint');
 
-  grunt.registerTask('serve', ['jshint', 'jsonlint', 'concat', 'connect', 'watch']);
+  grunt.registerTask('compile', ['jsonlint', 'concat']);
+
+  grunt.registerTask('serve', ['jshint', 'compile', 'connect', 'watch']);
 
   grunt.registerTask('default', ['serve']);
 

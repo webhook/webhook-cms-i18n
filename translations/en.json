@@ -24,7 +24,7 @@
     "index": {
       "welcome": {
         "title": "Welcome to your CMS",
-        "description": "Some handy links for building with Webhook",
+        "description": "Some handy links for building with Webhook:",
         "docs": "Documentation",
         "support": "Support",
         "issues": "Issues",
@@ -96,7 +96,7 @@
         "title": "Billing"
       },
       "domain": {
-        "title": "Domain",
+        "title": "Domains",
         "description": "Your site is currently available at <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{ domain }}</strong>{{/if}}",
         "form": {
           "title": "Use a previously purchased domain",
@@ -123,7 +123,7 @@
           "templates": {
             "title": "Template and site files backup",
             "instruction": "This will download your Webhook site directory including all the templates and static files as they exist on the live website. You can use these files to recreate your site locally if need be.",
-            "action": "Download your site files"
+            "action": "Download your website files"
           }
         },
         "wordpress": {
@@ -144,10 +144,7 @@
             "data": "<strong>Delete my data.</strong> (This will delete your forms, but your templates will remain.)",
             "all": "<strong>Delete my templates and my data.</strong> (This will return this site to a completely fresh install. Useful for changing themes.)"
           },
-          "action": {
-            "data": "Delete data",
-            "all": "Delete everything"
-          }
+          "action": "Delete {{deleteOption}}"
         }
       }
     }

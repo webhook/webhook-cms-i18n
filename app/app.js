@@ -89,7 +89,7 @@ TranslationApp.ApplicationController = Ember.Controller.extend({
   },
   actions: {
     chooseLanguage: function (language) {
-      localStorage.setItem('webhook-cms-language', language);
+      window.localStorage.setItem('webhook-cms-language', language);
       TranslationApp.reset();
     },
     clearLanguage: function () {

@@ -11,6 +11,9 @@
 <body>
 
 <script type="text/x-handlebars" data-template-name="application">
+<h1>Webhook CMS i18n</h1>
+<p>This is a tool to help create translation files for <a href="https://github.com/webhook/webhook-cms">Webhook CMS</a>. Translation keys are based on route. Any keys without a value will default to English.</p>
+<hr>
 Select Language:
 {{#each supportedLanguages}}
   <button type="button" {{ action "chooseLanguage" this }}>{{this}}</button>

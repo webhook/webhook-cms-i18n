@@ -95,7 +95,7 @@
       },
       "domain": {
         "title": "Domain",
-        "description": "Your site is currently available at <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{ domain }}</strong>",
+        "description": "Your site is currently available at <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{ domain }}</strong>{{/if}}",
         "form": {
           "title": "Use a previously purchased domain",
           "instruction": "Don't have a domain? Buy one over at <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> or any domain seller, then return here.",

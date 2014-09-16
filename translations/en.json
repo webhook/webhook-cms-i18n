@@ -11,13 +11,15 @@
   "wh": {
     "logout": "Logout",
     "navContent": "Your Content",
-    "navConfiguration": "Configuration",
-    "contentTypes": "Add / Edit Content Types",
-    "team": "Team Members",
-    "settings": "Settings",
-    "billing": "Billing",
-    "dns": "Domain",
-    "data": "Backups and Data",
+    "configuration": {
+      "title": "Configuration",
+      "types": "Add / Edit Content Types",
+      "team": "Team Members",
+      "settings": "Settings",
+      "billing": "Billing",
+      "dns": "Domain",
+      "data": "Backups and Data"
+    },
     "localNotice": "<span class='icon icon-code'> Local development</span> Saves here will only trigger builds locally, not on your live website.",
     "index": {
       "welcome": {

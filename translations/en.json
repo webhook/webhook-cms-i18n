@@ -5,6 +5,12 @@
     "signIn": "Sign In",
     "forgotPassword": "Forgot password?"
   },
+  "passwordReset": {
+    "prompt": "Provide your email to reset your password.",
+    "action": "Reset password",
+    "goBack": "Take me back to login",
+    "emailLabel": "Email"
+  },
   "button": {
     "save": "Save"
   },

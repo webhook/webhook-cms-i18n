@@ -9,7 +9,9 @@
     "prompt": "Provide your email to reset your password.",
     "action": "Reset password",
     "goBack": "Take me back to login",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "provideEmail": "Provide your email to reset your password.",
+    "success": "Password reset email sent successfully"
   },
   "button": {
     "save": "Save"
@@ -57,6 +59,10 @@
           "newPassword2": {
             "label": "New password (repeat)"
           }
+        },
+        "error": {
+          "match": "Passwords must match.",
+          "fix": "Please fix the following errors."
         }
       },
       "team": {
@@ -170,6 +176,22 @@
           },
           "action": "Delete {{deleteOption}}"
         }
+      }
+    },
+    "content": {
+      "addNewItem": "Add new {{contentType.name}}",
+      "display": "Display",
+      "limited": "For better performance, we have limited the number of records shown on this page to the last {{recordLimit}} created.",
+      "noRecords": "You haven't added any {{contentType.name}} yet.",
+      "moreRecords": "Load More Records",
+      "allTypes": {
+        "title": "Your existing content types",
+        "addType": "Add new content type",
+        "contentType": "Content Type",
+        "id": "ID",
+        "formStyle": "Form Style",
+        "single": "Single Item",
+        "multiple": "Multiple Items"
       }
     }
   }

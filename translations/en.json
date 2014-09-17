@@ -35,6 +35,24 @@
       "moreHistory": "Fetch more history"
     },
     "settings": {
+      "password": {
+        "title": "Change Password",
+        "action": "Save",
+        "fields": {
+          "account": {
+            "label": "Account to change"
+          },
+          "oldPassword": {
+            "label": "Old password"
+          },
+          "newPassword": {
+            "label": "New password"
+          },
+          "newPassword2": {
+            "label": "New password (repeat)"
+          }
+        }
+      },
       "team": {
         "invite": {
           "title": "Invite a New Team Member",

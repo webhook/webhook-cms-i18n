@@ -4,6 +4,7 @@
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="bower_components/ember/ember.js"></script>
   <script src="bower_components/ember-i18n/lib/i18n.js"></script>
+  <script src="lib/code.map.js"></script>
   <script src="lib/translations.js"></script>
   <script src="lib/i18n.js"></script>
   <script src="app.js"></script>
@@ -16,7 +17,7 @@
 <hr>
 Select Language:
 {{#each supportedLanguages}}
-  <button type="button" {{ action "chooseLanguage" this }}>{{this}}</button>
+  <button type="button" {{ action "chooseLanguage" code }}>{{language}} ({{code}})</button>
 {{/each}}
 <button type="button" {{ action "clearLanguage" }}>Clear</button>
 <hr>

@@ -85,7 +85,9 @@ window.TranslationApp = Ember.Application.create();
 
 TranslationApp.ApplicationController = Ember.Controller.extend({
   init: function () {
-    this.set('supportedLanguages', Ember.ENV.I18N_SUPPORTED_LANGUAGES);
+    this.set('supportedLanguages', Ember.ENV.I18N_SUPPORTED_LANGUAGES.map(function (code) {
+      return { code: code, language: Ember.ENV.I18N_CODE_MAP[code] };
+    }));
   },
   actions: {
     chooseLanguage: function (language) {

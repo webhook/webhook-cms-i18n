@@ -5,6 +5,7 @@ var TranslationFormComponent = Ember.Component.extend({
     var translations = Ember.A([]);
 
     function extract(obj, nestedKey) {
+      obj = typeof obj === 'object' ? obj : {};
       Ember.$.each(obj, function (key, placeholder) {
 
         if (nestedKey) {

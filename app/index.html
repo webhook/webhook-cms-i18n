@@ -8,18 +8,22 @@
   <script src="lib/translations.js"></script>
   <script src="lib/i18n.js"></script>
   <script src="app.js"></script>
+  <link rel="stylesheet" href="wyrm.css">
+  <style>
+    body {padding: 48px;}
+    input[type=text]{width:200px;}
+    pre {background: #333;font-size:80%;padding:24px;color: #DDD;}
+  </style>
 </head>
 <body>
 
 <script type="text/x-handlebars" data-template-name="application">
 <h1>Webhook CMS i18n</h1>
-<p>This is a tool to help create translation files for <a href="https://github.com/webhook/webhook-cms">Webhook CMS</a>. Translation keys are based on route. Any keys without a value will default to English.</p>
-<hr>
-Select Language:
+<p>This is a tool to help create translation files for <a href="https://github.com/webhook/webhook-cms">Webhook CMS</a>. Translation keys are based on the route. Any keys without a value will default to English.</p>
 {{#each supportedLanguages}}
-  <button type="button" {{ action "chooseLanguage" code }}>{{language}} ({{code}})</button>
+  <button type="button" class="btn btn-neutral btn-small" {{ action "chooseLanguage" code }}>{{language}} ({{code}})</button>
 {{/each}}
-<button type="button" {{ action "clearLanguage" }}>Clear</button>
+<button type="button"  class="btn btn-danger btn-small" {{ action "clearLanguage" }}>Clear</button>
 <hr>
 {{outlet}}
 </script>
@@ -29,12 +33,27 @@ Select Language:
 </script>
 
 <script type="text/x-handlebars" data-template-name="components/translation-form">
+
+<table class="wy-table wy-table-striped wy-table-bordered-all full-width">
+<thead>
+<tr>
+  <th>Key</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
 {{#each translations}}
-  {{key}}: {{input value=value placeholder=placeholder}}<br>
+  <tr>
+    <td style="width:200px">{{input value=value placeholder=placeholder}}</td>
+    <td>{{key}}</td>
+  </tr>
 {{/each}}
-<hr>
+</tbody>
+</table>
 <p>Save the following to <code>translations/[language].json</code>.</p>
 <pre>{{converted}}</pre>
+
+
 </script>
 
 </body>

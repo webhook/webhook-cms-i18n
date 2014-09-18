@@ -194,5 +194,64 @@
         "multiple": "Multiple Items"
       }
     }
+  },
+  "form": {
+    "add": "Add Field",
+    "edit": "Edit Field",
+    "isNewWarning": "<strong>Warning</strong>Changes to these details may require changes in your templates as well.",
+    "typeName": "Content type name",
+    "typeNameInvalid": "Type name is invalid.",
+    "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{ name }}/</code> and the individual pages would be at <code>site.com/{{ name }}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
+    "listUrlLabel": "URL for the list page of all {{ name }}",
+    "individualUrlLabel": "URL prefix for a single {{ name }} page",
+    "info": {
+      "label": "Field label",
+      "labelTitle": "Short phase to describe the content in this field.",
+      "placeholder": "Placeholder value",
+      "placeholderTitle": "This will show within the input until it has a value. It does not save as a default.",
+      "instruction": "Instructions for user",
+      "instructionTitle": "Instructions to the user on what they should enter into this field.",
+      "required": "Required",
+      "requiredTitle": "The form can't be saved unless this field has a value.",
+      "requiredCheckbox": "Make this field required.",
+      "delete": "Delete this field"
+    },
+    "group": {
+      "text": "Text",
+      "basics": "Basics",
+      "files": "Files",
+      "specifics": "Specifics",
+      "advanced": "Advanced"
+    },
+    "widget": {
+      "textfield": "Single line text",
+      "textarea": "Paragraph text",
+      "wysiwyg": "WYSIWYG text",
+      "markdown": "Markdown text",
+      "number": "Number",
+      "checkbox": "Checkbox",
+      "radio": "Multiple choice",
+      "select": "Dropdown",
+      "image": "Image",
+      "gallery": "Gallery",
+      "audio": "Audio file",
+      "file": "Other file",
+      "name": "Person",
+      "address": "Address",
+      "phone": "Phone number",
+      "email": "Email",
+      "datetime": "Date time",
+      "url": "Website",
+      "rating": "Rating",
+      "tabular": "Tabular Data",
+      "embedly": "Embed.ly",
+      "color": "Color",
+      "instruction": "Instructions",
+      "relation": "Relationship",
+      "layout": "Page Layout"
+    },
+    "help": "Help",
+    "goBack": "Cancel / Return to CMS",
+    "action": "Save form"
   }
 }

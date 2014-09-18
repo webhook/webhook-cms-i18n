@@ -13,6 +13,7 @@
     body {padding: 48px;}
     input[type=text]{width:200px;}
     pre {background: #333;font-size:80%;padding:24px;color: #DDD;}
+    .missing {background: #faeced !important}
   </style>
 </head>
 <body>
@@ -34,7 +35,7 @@
 
 <script type="text/x-handlebars" data-template-name="components/translation-form">
 
-<table class="wy-table wy-table-striped wy-table-bordered-all full-width">
+<table class="wy-table wy-table-striped wy-table-bordered-rows full-width">
 <thead>
 <tr>
   <th>Key</th>
@@ -44,7 +45,7 @@
 <tbody>
 {{#each translations}}
   <tr>
-    <td style="width:200px">{{input value=value placeholder=placeholder}}</td>
+    <td style="width:200px" {{bind-attr class="value::missing"}}>{{input value=value placeholder=placeholder}}</td>
     <td>{{key}}</td>
   </tr>
 {{/each}}

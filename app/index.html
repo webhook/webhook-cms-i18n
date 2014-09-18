@@ -20,7 +20,7 @@
 
 <script type="text/x-handlebars" data-template-name="application">
 <h1>Webhook CMS i18n</h1>
-<p>This is a tool to help create translation files for <a href="https://github.com/webhook/webhook-cms">Webhook CMS</a>. Translation keys are based on the route. Any keys without a value will default to English.</p>
+<p>This is a tool to help create translation files for <a href="https://github.com/webhook/webhook-cms">Webhook CMS</a>. Translation keys are based on the route. Any keys without a value will default to English. HTML and Handlebars variables are allowed. See the <a href="https://github.com/jamesarosen/ember-i18n">Ember.I18n docs</a> for more information.</p>
 {{#each supportedLanguages}}
   <button type="button" class="btn btn-neutral btn-small" {{ action "chooseLanguage" code }}>{{language}} ({{code}})</button>
 {{/each}}

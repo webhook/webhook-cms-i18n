@@ -9,6 +9,7 @@ During Webhook CMS initialization, the english language file is extended by the 
 - `git clone git@github.com:webhook/webhook-cms-i18n.git`
 - `npm install`
 - `bower install`
+- run default `grunt` command and load up `http://localhost:8000`. See below for options.
 
 ### Add language file
 

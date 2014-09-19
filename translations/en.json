@@ -194,6 +194,22 @@
         "formStyle": "Form Style",
         "single": "Single Item",
         "multiple": "Multiple Items"
+      },
+      "start": {
+        "title": "OK, let's add a new form to the CMS",
+        "nameLabel": "Name of new object",
+        "namePlaceholder": "ex: comics, articles, about us, homepage, cities, vampires",
+        "duplicate": "There is already an content type with that name",
+        "long": "The content type ID must be 250 characters or shorter. The ID created from the name entered is {{newTypeId.length}} characters long.",
+        "instruction": "This will be the CMS menu name (on <span class='icon icon-circle-arrow-left'></span> left) and also define the URL pattern on your front-facing site, so choose wisely.",
+        "multiple": {
+          "title": "So... how many {{newTypeName}} are there?",
+          "instruction": "For example, there is only one homepage entry, but there are multiple blog entries.",
+          "one": "There is only <strong>one</strong> {{newTypeName}} entry.",
+          "many": "There are <strong>multiple</strong> {{newTypeName}} entries."
+        },
+        "action": "Let's create a {{newTypeName}} form!",
+        "cancel": "Cancel"
       }
     }
   },
@@ -251,6 +267,88 @@
       "instruction": "Instructions",
       "relation": "Relationship",
       "layout": "Page Layout"
+    },
+    "info": {
+      "text": {
+        "min": "Min characters",
+        "max": "Max characters"
+      },
+      "wysiwyg": {
+        "label": "What can users add into the WYSIWYG?",
+        "table": "Tables",
+        "video": "Videos",
+        "image": "Images",
+        "quote": "Block quotes",
+        "link": "Links"
+      },
+      "number": {
+        "min": "Min number",
+        "max": "Max number"
+      },
+      "checkbox": {
+        "label": "Checkbox options",
+        "help": "Use the plus and minus to add new options. Click the checkbox to make it default when on a fresh form."
+      },
+      "radio": {
+        "label": "Multiple choice options",
+        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
+      },
+      "select": {
+        "label": "Dropdown options",
+        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
+      },
+      "rating": {
+        "min": "Min value",
+        "minHelp": "This is the min value a user can enter. Entering .5 would allow a half star.",
+        "max": "Max value",
+        "maxHelp": "The max number of stars allowed. Entering 10 would change the form to have 10 stars.",
+        "step": "Step",
+        "stepHelp": "What increment can people rate between the min and the max? Entering .5 would mean a user can rate in half stars."
+      },
+      "tabular": {
+        "label": "Columns"
+      },
+      "relationship": {
+        "label": "Relationships to allow",
+        "help": "Only this content type will be searchable in the form widget.",
+        "single": "Only allow one searched item and no more.",
+        "hidden": "Hide this widget during form entry."
+      }
+    },
+    "control": {
+      "markdown": {
+        "syntax": "This field allows <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
+      },
+      "image": {
+        "action": "Drag or select image",
+        "replace": "Replace image"
+      },
+      "gallery": {
+        "action": "Drag or select images",
+        "instruction": "Circled images have captions. Click to edit an individual image. Drag to sort.",
+        "delete": "Delete",
+        "close": "Save / Close"
+      },
+      "audio": {
+        "action": "Drag or select audio file"
+      },
+      "file": {
+        "action": "Drag or select file",
+        "url": "or use a URL?",
+        "select": "Select from desktop",
+        "remove": "Remove",
+        "cancel": "Cancel",
+        "upload": "Upload",
+        "paste": "Paste URL"
+      },
+      "tabular": {
+        "add": "Add Row"
+      },
+      "embedly": {
+        "action": "Fetch",
+        "preview": "Preview",
+        "clear": "Clear"
+      }
     },
     "help": "Help",
     "goBack": "Cancel / Return to CMS",

@@ -1,0 +1,257 @@
+{
+  "login": {
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "signIn": "Kirjaudu sisään",
+    "forgotPassword": "Unohtuiko salasana?"
+  },
+  "passwordReset": {
+    "prompt": "Syötä sähköpostiosoitteesi nollataksesi salasanasi.",
+    "action": "Nollaa salasana",
+    "goBack": "Palaa kirjautumiseen",
+    "emailLabel": "Sähköposti",
+    "provideEmail": "Syötä sähköpostiosoitteesi nollataksesi salasanasi.",
+    "success": "Salasanannollaussähköposti lähetetty onnistuneesti"
+  },
+  "button": {
+    "save": "Tallenna"
+  },
+  "wh": {
+    "logout": "Kirjaudu ulos",
+    "navContent": "Sisältösi",
+    "configuration": {
+      "title": "Konfiguraatio",
+      "types": "Lisää / Muokkaa sisältötyyppejä",
+      "team": "Tiimin jäsenet",
+      "settings": "Asetukset",
+      "billing": "Laskutus",
+      "dns": "Domain",
+      "data": "Varmuuskopiot ja data"
+    },
+    "localNotice": "<span class='icon icon-code'> Paikallinen kehitys</span> Tallennukset tänne toteuttavat muutokset vain paikallisesti, eivät verkkosivuillesi.",
+    "index": {
+      "welcome": {
+        "title": "Tervetyloa CMS:si",
+        "description": "Käteviä linkkejä Webhookilla rakentamisen tueksi:",
+        "docs": "Dokumentaatio",
+        "support": "Tuki",
+        "issues": "Onglemat",
+        "forums": "Foorumit"
+      },
+      "updates": "Webhook päivitykset",
+      "history": "Kehityshistoria",
+      "moreHistory": "Hae lisää historiaa"
+    },
+    "settings": {
+      "password": {
+        "title": "Muuta salasana",
+        "action": "Tallenna",
+        "fields": {
+          "account": {
+            "label": "Muutettava tili"
+          },
+          "oldPassword": {
+            "label": "Vanha salasana"
+          },
+          "newPassword": {
+            "label": "Uusi salasana"
+          },
+          "newPassword2": {
+            "label": "Uusi salasana (uudestaan)"
+          }
+        },
+        "error": {
+          "match": "Salasanojen täytyy täsmätä.",
+          "fix": "Ole hyvä ja korjaa seuraavat virheet."
+        }
+      },
+      "team": {
+        "invite": {
+          "title": "Kutsu uusi jäsen tiimiin",
+          "instruction": "Kutsu yhteistyökumppani sähköpostitse",
+          "help": "Kyseinen henkilö ei ole aktiivinen, ennen kuin hän vahvistaa sähköpostinsa.",
+          "action": "Lähetä kutsu"
+        },
+        "current": {
+          "title": "Nykyiset tiimin jäsenet",
+          "description": "Omistajilla on pääsy laskutukseen ja paikallisiin kehitystyökaluihin. Yhteistyökumppanit voivat vain lisätä tai muokata tietoa julkaistuun CMS:ään.",
+          "email": "Sähköposti",
+          "permissions": "Oikeudet"
+        }
+      },
+      "general": {
+        "account": {
+          "title": "Tilin asetukset",
+          "password": {
+            "prompt": "Täytyykö sinun vaihtaa salasanaasi?",
+            "action": "Vaihda salasanasi tästä"
+          }
+        },
+        "global": {
+          "title": "Globaalit muuttujat",
+          "description": "Nämä ovat globaaleja arvoja, joita käytetään  front end pohjissa. Noutaaksesi ne sivustoosi, tutustu <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'>dokumentaatioon täällä</a>.",
+          "action": "Tallenna",
+          "fields": {
+            "name": {
+              "label": "Sivuston nimi"
+            },
+            "description": {
+              "label": "Sivuston kuvaus",
+              "help": "Lyhyt kuvaus sivustostasi."
+            },
+            "keywords": {
+              "label": "Sivuston avainsanat",
+              "help": "Pilkuilla erotettu lista sivustoasi kuvaavista sanoista."
+            },
+            "url": {
+              "label": "Sivuston URL osoite",
+              "help": "Ole hyvä ja syötä täysi URL, kuten http://www.esimerkki.fi."
+            },
+            "analytics": {
+              "label": "Sivuston Analytics ID",
+              "help": "Analytics palvelun ID. Yleensä jotain tyyliin UA-XX-XXXX"
+            },
+            "twitter": {
+              "label": "Sivuston Twitter",
+              "help": "Twitter tunnus, ilman @ merkkiä."
+            },
+            "facebook": {
+              "label": "Sivuston Facebook",
+              "help": "Facebook nimi."
+            }
+          }
+        }
+      },
+      "billing": {
+        "title": "Laskutus"
+      },
+      "domain": {
+        "title": "Domainit",
+        "description": "Sivustosi on tällä hetkellä saatavilla osoitteessa <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{ domain }}</strong>{{/if}}",
+        "form": {
+          "title": "Käytä aiemmin ostettua domainia",
+          "instruction": "Eikö sinulla ole domainia? Osta sellainen <a href='http://www.namecheap.com/?aff=65093'>Namecheapista</a> tai miltä tahansa domaineja myyvältä sivustolta ja palaa sitten tänne.",
+          "label": "Syötä domainnimesi",
+          "action": "Käytä tätä domainia"
+        }
+      },
+      "data": {
+        "importExport": {
+          "title": "Tuo / Vie dataa",
+          "instruction": "Voit ladata varmuuskopioiden lisäksi mitä tahansa dataa, kunhan se sopii odotettuun formaattiin. Lue <a href='http://www.webhook.com/docs/importing-custom-data/''>dokumentaatiosta</a> lisätietoa aiheesta.",
+          "action": {
+            "import": "Tuo JSON dataa",
+            "export": "Vie JSON dataa"
+          }
+        },
+        "backups": {
+          "title": "Varmuuskopiot",
+          "data": {
+            "title": "Datan varmuuskopiot",
+            "instruction": "Webhook automaattisesti vie JSON muotoisen varmuuskopion joka yönä klo 03:00 PST. Säilytämme kyseisiä tiedostoja seitsemän päivää. Uusien sivujen varmuuskopiot toimivat vasta siitä lähtien, kun sivusto on luotu."
+          },
+          "templates": {
+            "title": "Työpohjien ja sivuston tiedostojen varmuuskopiot",
+            "instruction": "Tämä lataa koko Webhook sivustosi kansion sisältäenn kaikki pohjat ja staattiset sivustot, sellaisina kuin ne julkaistulla sivulla ovat. Voit tarpeen tullen käyttää näitä tiedostoja sivun paikalliseen julkaisuun.",
+            "action": "Lataa sivuston tiedostot"
+          }
+        },
+        "wordpress": {
+          "title": "Tuo Wordpress Blogi (Beta)",
+          "instruction": "Wordpress antaa sinun <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>viedo blogisi datan XML muodossa</a>. Ladattuasi tiedoston, voit käyttää alla olevaa nappia tiedoston tuomiseksi Webhookiin. Teemme parhaamme tuodaksemme ja sovittaaksemme tekstisi ja kuvasi sivustollesi.",
+          "action": "Valitse Wordpress XML -tiedosto"
+        },
+        "search": {
+          "title": "Rakenna hakuindeksi uudelleen",
+          "instruction": "Hakuindeksin uudelleenrakennus voi auttaa, mikäli CMS:n haku ei toimi kunnolla.",
+          "action": "Rakenna hakuindeksi uudelleen"
+        },
+        "reset": {
+          "title": "Nollaa sivustosi",
+          "warning": "Voit nollata sivustosi vain kun se pyörii paikallisesti.",
+          "instruction": "Tämä antaa sinun nollata sivustosi ja aloittaa alusta. Otathan kuitenkin varmuuskopion ennen tätä toimenpidettä.",
+          "options": {
+            "data": "<strong>Poista kaikki data.</strong> (Tämä poistaa lomakkeesi, mutta mallipohjat säilyvät.)",
+            "all": "<strong>Poista kaikki pohjat ja data.</strong> (Tämä palauttaa sivuston alkutilaan. Se on hyödyllistä esimerkiksi teemaa vaihtaessa.)"
+          },
+          "action": "Poista {{deleteOption}}"
+        }
+      }
+    },
+    "content": {
+      "addNewItem": "Lisää uusi {{contentType.name}}",
+      "display": "Näytä",
+      "limited": "Suorituskyvyn parantamiseksi näytämme vain {{recordLimit}} viimeisintä luotua tallennetta.",
+      "noRecords": "Et ole lisännyt vielä yhtään {{contentType.name}}:a.",
+      "moreRecords": "Lataa lisää tallenteita",
+      "allTypes": {
+        "title": "Olemassaolevat sisältötyyppisi",
+        "addType": "Lisää uusi sisältötyyppi",
+        "contentType": "Sisältötyyppi",
+        "id": "ID",
+        "formStyle": "Lomakkeen tyyli",
+        "single": "Yksittäinen kohde",
+        "multiple": "Monta kohdetta"
+      }
+    }
+  },
+  "form": {
+    "add": "Lisää kenttä",
+    "edit": "Muokkaa kenttää",
+    "isNewWarning": "<strong>Varoitus!</strong>Muutokset näihin tietoihin voivat vaatia myös muutoksia työpohjiisi.",
+    "typeName": "Sisältötyypin nimi",
+    "typeNameInvalid": "Tyypin nimi on virheellinen.",
+    "slugInstruction": "<strong>URL slug control</strong><strong>URL slug control</strong>Alla Voit räätälöidä URL osoitteiden sijainteja tälle sisältötyypille. Tyhjäksi jätettynä vakiolistasivu olisi <code>site.com/{{ name }}/</code> ja yksittäiset sivut olisivat <code>site.com/{{ name }}/name-of-item/</code>. Nämä kentät sallivat joidenkin muuttujien, kuten päivämäärien, käsittelyä. Tutustu <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentaatioon täällä</a>.",
+    "listUrlLabel": "URL osoite listasivulle kaikille {{ name }}",
+    "individualUrlLabel": "URL alkuliite yksittäiselle {{ name }} sivulle",
+    "info": {
+      "label": "Kentän nimi",
+      "labelTitle": "Lyhyt kuvaus kentän sisällölle.",
+      "placeholder": "Placeholder arvo",
+      "placeholderTitle": "Tämä näkyy kentässä, kunne sille annetaan arvo. Se ei normaalisti tallennu.",
+      "instruction": "Ohjeet käyttäjälle",
+      "instructionTitle": "Ohjeet käyttäjälle siitä, mitä tähän kenttään tulisi syöttää.",
+      "required": "Pakollinen",
+      "requiredTitle": "Lomaketta ei voida tallentaa, ennenkuin tässä kentässä on arvo.",
+      "requiredCheckbox": "Tee tästä kehtästä pakollinen .",
+      "delete": "Poista tämä kenttä"
+    },
+    "group": {
+      "text": "Teksti",
+      "basics": "Perusasiat",
+      "files": "Tiedostot",
+      "specifics": "Yksityiskohdat",
+      "advanced": "Edistyneet valinnat"
+    },
+    "widget": {
+      "textfield": "Yksi rivi tekstiä",
+      "textarea": "Kappale tekstiä",
+      "wysiwyg": "WYSIWYG teksti",
+      "markdown": "Markdown teksti",
+      "number": "Numero",
+      "checkbox": "Valintaruutu",
+      "radio": "Monivalinta",
+      "select": "Pudotusvalikko",
+      "image": "Kuva",
+      "gallery": "Galleria",
+      "audio": "Audiotiedosto",
+      "file": "Muu tiedosto",
+      "name": "Henkilö",
+      "address": "Osoite",
+      "phone": "Puhelinnumero",
+      "email": "Sähköposti",
+      "datetime": "Päivämäärä aika",
+      "url": "Nettisivu",
+      "rating": "Arvio",
+      "tabular": "Taulukko",
+      "embedly": "Embed.ly",
+      "color": "Väri",
+      "instruction": "Ohjeet",
+      "relation": "Suhde",
+      "layout": "Sivun taitto"
+    },
+    "help": "Apua",
+    "goBack": "Peru / Palaa CMS:ään",
+    "action": "Tallenna lomake"
+  }
+}

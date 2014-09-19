@@ -193,6 +193,22 @@
         "formStyle": "Form Style",
         "single": "Single Item",
         "multiple": "Multiple Items"
+      },
+      "start": {
+        "title": "OK, let's add a new form to the CMS",
+        "nameLabel": "Name of new object",
+        "namePlaceholder": "ex: comics, articles, about us, homepage, cities, vampires",
+        "duplicate": "There is already an content type with that name",
+        "long": "The content type ID must be 250 characters or shorter. The ID created from the name entered is {{newTypeId.length}} characters long.",
+        "instruction": "This will be the CMS menu name (on <span class='icon icon-circle-arrow-left'></span> left) and also define the URL pattern on your front-facing site, so choose wisely.",
+        "multiple": {
+          "title": "So... how many {{newTypeName}} are there?",
+          "instruction": "For example, there is only one homepage entry, but there are multiple blog entries.",
+          "one": "There is only <strong>one</strong> {{newTypeName}} entry.",
+          "many": "There are <strong>multiple</strong> {{newTypeName}} entries."
+        },
+        "action": "Let's create a {{newTypeName}} form!",
+        "cancel": "Cancel"
       }
     }
   },

@@ -353,5 +353,36 @@
     "help": "Help",
     "goBack": "Cancel / Return to CMS",
     "action": "Save form"
+  },
+  "start": {
+    "title": "How should we set up your site?",
+    "theme": {
+      "title": "Show me some magic.",
+      "instruction": "<p>Pick one of our pre-built sites that follow common CMS and design patterns. Customize later.</p><p>Example: A blog site, a portfolio site.</p>",
+      "action": "Start from a theme"
+    },
+    "empty": {
+      "title": "I am the magic!",
+      "instruction": "<p>Use the formbuilder to set up a custom CMS with page types that you define.</p><p>You'll need to code your design in HTML / CSS.</p>",
+      "action": "Start from scratch"
+    }
+  },
+  "theme": {
+    "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterworks. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
+    "title": "Start from a theme",
+    "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Can't find what you're looking for? You can still {{#link-to 'wh.content'}}Start from scratch{{/link-to}}. Interested in making your own theme, <a href='http://www.webhook.com/docs/creating-a-theme/'>read the docs here</a>",
+    "error": "Whoops",
+    "upload": {
+      "title": "Load local theme",
+      "label": "Select .zip file from your desktop",
+      "action": "Select local zip file"
+    },
+    "url": {
+      "title": "Load remote theme",
+      "label": "http:// address of a .zip file.",
+      "action": "Load remote zip file"
+    },
+    "demo": "Demo",
+    "install": "Install"
   }
 }

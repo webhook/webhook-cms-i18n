@@ -85,7 +85,8 @@
           "password": {
             "prompt": "Need to change your password?",
             "action": "Change your password here"
-          }
+          },
+          "language": "Select CMS language"
         },
         "global": {
           "title": "Global Variables",

@@ -3,7 +3,8 @@
     "email": "Email",
     "password": "Password",
     "signIn": "Sign In",
-    "forgotPassword": "Forgot password?"
+    "forgotPassword": "Forgot password?",
+    "addLanguage": "Contribute to translations of Webhook"
   },
   "passwordReset": {
     "prompt": "Provide your email to reset your password.",

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="wyrm.css">
   <style>
     body {padding: 48px;}
-    input[type=text]{width:200px;}
+    input[type=text]{width:300px;}
     pre {background: #333;font-size:80%;padding:24px;color: #DDD;}
     .missing {background: #faeced !important}
   </style>
@@ -45,7 +45,7 @@
 <tbody>
 {{#each translations}}
   <tr>
-    <td style="width:200px" {{bind-attr class="value::missing"}}>{{input value=value placeholder=placeholder}}</td>
+    <td style="width:300px" {{bind-attr class="value::missing"}}>{{textarea value=value placeholder=placeholder}}</td>
     <td>{{key}}</td>
   </tr>
 {{/each}}

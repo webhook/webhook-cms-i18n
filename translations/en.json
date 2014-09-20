@@ -181,10 +181,10 @@
       }
     },
     "content": {
-      "addNewItem": "Add new {{contentType.name}}",
+      "addNewItem": "Add new {{name}}",
       "display": "Display",
       "limited": "For better performance, we have limited the number of records shown on this page to the last {{recordLimit}} created.",
-      "noRecords": "You haven't added any {{contentType.name}} yet.",
+      "noRecords": "You haven't added any {{name}} yet.",
       "moreRecords": "Load More Records",
       "allTypes": {
         "title": "Your existing content types",
@@ -200,7 +200,7 @@
         "nameLabel": "Name of new object",
         "namePlaceholder": "ex: comics, articles, about us, homepage, cities, vampires",
         "duplicate": "There is already an content type with that name",
-        "long": "The content type ID must be 250 characters or shorter. The ID created from the name entered is {{newTypeId.length}} characters long.",
+        "long": "The content type ID must be 250 characters or shorter. The ID created from the name entered is {{length}} characters long.",
         "instruction": "This will be the CMS menu name (on <span class='icon icon-circle-arrow-left'></span> left) and also define the URL pattern on your front-facing site, so choose wisely.",
         "multiple": {
           "title": "So... how many {{newTypeName}} are there?",

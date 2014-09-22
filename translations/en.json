@@ -130,7 +130,7 @@
       "domain": {
         "title": "Domains",
         "description": "Your site is currently available at <strong>{{siteName}}.webhook.org</strong>",
-        "descriptionDomain": "and <strong>{{ domain }}</strong>",
+        "descriptionDomain": "and <strong>{{domain}}</strong>",
         "success": {
           "title": "Almost done",
           "instruction": "Great. Point your host records to the following address.",

@@ -129,7 +129,19 @@
       },
       "domain": {
         "title": "Domains",
-        "description": "Your site is currently available at <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{ domain }}</strong>{{/if}}",
+        "description": "Your site is currently available at <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "and <strong>{{ domain }}</strong>",
+        "success": {
+          "title": "Almost done",
+          "instruction": "Great. Point your host records to the following address.",
+          "docs": "You can find more detailed instructions in our docs on <a href='http://www.webhook.com/docs/deployment-domains/'>how to set up your domain</a>."
+        },
+        "trial": {
+          "title": "Upgrade to use custom domains",
+          "instruction": "This site is still on a free trial. Only paid sites allow the use of custom domains.",
+          "upgrade": "Upgrade at webhook.com"
+        },
+        "error": "Please fix the following errors.",
         "form": {
           "title": "Use a previously purchased domain",
           "instruction": "Don't have a domain? Buy one over at <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> or any domain seller, then return here.",
@@ -370,7 +382,8 @@
   "theme": {
     "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterworks. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
     "title": "Start from a theme",
-    "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Can't find what you're looking for? You can still {{#link-to 'wh.content'}}Start from scratch{{/link-to}}. Interested in making your own theme, <a href='http://www.webhook.com/docs/creating-a-theme/'>read the docs here</a>",
+    "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Interested in making your own theme? <a href='http://www.webhook.com/docs/creating-a-theme/'>Read the docs</a>. Can't find what you're looking for?",
+    "scratch": "Start from scratch.",
     "error": "Whoops",
     "upload": {
       "title": "Load local theme",

@@ -14,8 +14,9 @@
     "app"
   ],
   "main": [
-    "i18n.js",
-    "tranlsations.js"
+    "lib/i18n.js",
+    "lib/tranlsations.js",
+    "lib/code.map.js"
   ],
   "dependencies": {
     "ember-i18n": "~2.2.1"

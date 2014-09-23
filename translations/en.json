@@ -86,7 +86,7 @@
           "email": "Email",
           "permissions": "Permissions",
           "owner": "Owner",
-          "contributer": "Contributor",
+          "contributor": "Contributor",
           "toOwner": "Change to owner",
           "toContributor": "Change to contributor",
           "remove": "Remove access entirely",

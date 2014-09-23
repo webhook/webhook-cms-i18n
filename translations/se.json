@@ -1,0 +1,389 @@
+{
+  "login": {
+    "email": "Email",
+    "password": "Lösenord",
+    "signIn": "Logga in",
+    "forgotPassword": "Glömt lösenord?",
+    "addLanguage": "Medverka till översättning av Webhook"
+  },
+  "passwordReset": {
+    "prompt": "Provide your email to reset your password.",
+    "action": "Återställ lösenord",
+    "goBack": "Ta mig tillbaka till inloggningen",
+    "emailLabel": "Email",
+    "provideEmail": "Emailadress för återställning av lösenord",
+    "success": "Vi har nu skickat ett mail med instruktioner för att återställa lösenordet."
+  },
+  "button": {
+    "save": "Spara"
+  },
+  "wh": {
+    "logout": "Logga ut",
+    "navContent": "Ditt innehåll",
+    "configuration": {
+      "title": "Konfiguration",
+      "types": "Lägg till / Redigera Innehållstype",
+      "team": "Medverkande",
+      "settings": "Inställningar",
+      "billing": "Fakturering",
+      "dns": "Domän",
+      "data": "Backuper och Data"
+    },
+    "localNotice": "<span class='icon icon-code'> Lokal utvecklingsmiljö</span> Ändringar utförda här, sparas endast lokalt.",
+    "index": {
+      "welcome": {
+        "title": "Välkommen till ditt CMS",
+        "description": "Tips för att börja utveckla med Webhook:",
+        "docs": "Dokumentation",
+        "support": "Support",
+        "issues": "Ärenden",
+        "forums": "Forum"
+      },
+      "updates": "Webhook Uppdateringar",
+      "history": "Build Historik",
+      "moreHistory": "Hämta mer historik"
+    },
+    "settings": {
+      "password": {
+        "title": "Ändra lösenord",
+        "action": "Spara",
+        "fields": {
+          "account": {
+            "label": "Ändra konto"
+          },
+          "oldPassword": {
+            "label": "Gammalt lösenord"
+          },
+          "newPassword": {
+            "label": "Nytt lösenord"
+          },
+          "newPassword2": {
+            "label": "Nytt lösenord (upprepa)"
+          }
+        },
+        "error": {
+          "match": "Lösenord måste matcha.",
+          "fix": "Var god åtgärda felen."
+        }
+      },
+      "team": {
+        "invite": {
+          "title": "Bjud in en medverkande",
+          "instruction": "Bjud in en medverkare per email",
+          "help": "Personen kommer inte aktiveras tills dess att email-adressen verifierats.",
+          "action": "Skicka inbjudan"
+        },
+        "current": {
+          "title": "Medverkande",
+          "description": "Endast ägare har tillgång till fakturering och lokala utvecklingsverktyg. Medverkande kan lägga till och ändra innehåll.",
+          "email": "Email",
+          "permissions": "Behörigheter"
+        }
+      },
+      "general": {
+        "account": {
+          "title": "Kontoinställningar",
+          "password": {
+            "prompt": "Behöver du ändra lösenord?",
+            "action": "Ändra lösenord här."
+          },
+          "language": "Välj CMS-språk"
+        },
+        "global": {
+          "title": "Globala variabler",
+          "description": "Globala variabler kan användas på sidans front end-mallar. För mer information följer du länken till webhooks <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'> dokumentation (engelska).</a>",
+          "action": "Spara",
+          "fields": {
+            "name": {
+              "label": "Sidans Namn"
+            },
+            "description": {
+              "label": "Sidans Beskrivning",
+              "help": "En kort beskrivning av sidan."
+            },
+            "keywords": {
+              "label": "Sidans Nyckelord",
+              "help": "Komma-separerad lista av beskrivande nyckelord till din sida."
+            },
+            "url": {
+              "label": "Sidans URL",
+              "help": "Var god använd hela adressen, likt: http://www.example.com."
+            },
+            "analytics": {
+              "label": "Sidans Analytics ID",
+              "help": "Analytics Service ID. Ser vanligtvis ut såhär: UA-XX-XXXX"
+            },
+            "twitter": {
+              "label": "Sidans Twitter",
+              "help": "Twitter-användarnamn, utan @-tecknet."
+            },
+            "facebook": {
+              "label": "Sidans Facebook",
+              "help": "Facebook namn."
+            }
+          }
+        }
+      },
+      "billing": {
+        "title": "Fakturering"
+      },
+      "domain": {
+        "title": "Domäner",
+        "description": "Din sida finns nu tillgänglig här <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "och här <strong>{{domain}}</strong>",
+        "success": {
+          "title": "Strax klar",
+          "instruction": "Utmärkt. Peka nu dina \"host records\" till följande adress.",
+          "docs": "Du hittar mer detaljerade instruktioner för att installera din domän på vår <a href='http://www.webhook.com/docs/deployment-domains/'>dokumentationsyta (engelska)</a>.\n\n"
+        },
+        "trial": {
+          "title": "Du måste uppgradera för att kunna använda domäner.",
+          "instruction": "Den här sidan är fortfarande i utvärderingsläge. Endast betalda konton kan använda egna domäner.",
+          "upgrade": "Uppgradera din sida hos webhook.com"
+        },
+        "error": "Var god rätta till felen.",
+        "form": {
+          "title": "Använd en tidigare köpt domän.",
+          "instruction": "Har du ingen egen domän? Köp en hos <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> eller liknande domäntjänster.",
+          "label": "Ange din domän.",
+          "action": "Använd den här domänen."
+        }
+      },
+      "data": {
+        "importExport": {
+          "title": "Importera / Exportera Data",
+          "instruction": "Du kan ladda upp mer än dina webhook-backuper här. Så länge datan du försöker ladda upp följer webhooks förväntade format. För mer information se vår <a href='http://www.webhook.com/docs/importing-custom-data/''>dokumentation (engelska)</a>.",
+          "action": {
+            "import": "Importera JSON-data",
+            "export": "Exportera JSON-data"
+          }
+        },
+        "backups": {
+          "title": "Backuper",
+          "data": {
+            "title": "Data Backuper",
+            "instruction": "Webhook exporterar automatiskt en backup av sidan i JSON-format kl. 3 varje natt. Vi håller kvar dessa filer i 7 dagar. För nya sidor finns endast backuper från det att sidan skapats."
+          },
+          "templates": {
+            "title": "Mallar och fil-backuper.",
+            "instruction": "Här kan du ladda ner din Webhook-sidas filer och mappar. Mallar och statiska filer inkluderade. Du kan använda dessa filer för att återskapa sidan i din lokala utvecklingsmiljö.",
+            "action": "Ladda ner din sidas filer."
+          }
+        },
+        "wordpress": {
+          "title": "Importera Wordpress Blogg (Beta)",
+          "instruction": "Wordpress tillåter dig att <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>exportera data i XML-format.</a> När de väl laddats ner, använd knappen nedan för att importera datan till Webhook. Vi kommer göra vårt bästa för att få med bilder från dina artiklar i rätt storlek.",
+          "action": "Välj Wordpress XML-fil"
+        },
+        "search": {
+          "title": "Bygg om Sökindex.",
+          "instruction": "Om du har problem med sökfunktionen, kan det avhjälpas genom att bygga om ditt sökindex.",
+          "action": "Bygg om Sökindex."
+        },
+        "reset": {
+          "title": "Starta om din sida.",
+          "warning": "Du kan endast starta om din sida om den körs i din lokala utvecklingsmiljö.",
+          "instruction": "Det här tillåter dig att starta om från början med din sida. Var noga med att göra en backup av sidan innan du fortsätter.",
+          "options": {
+            "data": "<strong>Radera min data.</strong> (Det här kommer att radera dina formulär, inte dina sidomallar.)",
+            "all": "<strong>Radera mina mallar och data.</strong> (Det här kommer att återställa sidan till en färsk installation. Använd detta om du vill börja om med ett nytt tema.)"
+          },
+          "action": "Radera {{deleteOption}}"
+        }
+      }
+    },
+    "content": {
+      "addNewItem": "Lägg till ny {{name}}",
+      "display": "Visa",
+      "limited": "Vi har minskat antalet dokument vi visar på denna sida till de {{recordLimit}} senast skapade, för att öka prestandan.",
+      "noRecords": "Du har inte lagt till några {{name}} ännu.",
+      "moreRecords": "Ladda fler dokument.",
+      "allTypes": {
+        "title": "Dina nuvarande innehållstyper",
+        "addType": "Lägg till ny innehållstyp",
+        "contentType": "Innehållstyp Type",
+        "id": "ID",
+        "formStyle": "Formulärstil",
+        "single": "Ensamt Objekt",
+        "multiple": "Flera Objekt"
+      },
+      "start": {
+        "title": "OK, då lägger vi till ett nytt formulär till CMS:et.",
+        "nameLabel": "Objektets namn",
+        "namePlaceholder": "ex: serier, artiklar, om oss, hem, städer, vampyrer",
+        "duplicate": "Det finns redan en innehållstyp med det här namnet.",
+        "long": "ID:t för innehållstypen kan högst innehålla 250 tecken. ID:t är nu {{length}} tecken långt.",
+        "instruction": "Här specificeras meny-namnet (till <span class='icon icon-circle-arrow-left'></span> vänster) och forma dess URL-mönster på framsidan. Välj noggrant.",
+        "multiple": {
+          "title": "Så... hur många {{newTypeName}} kommer det finnas?",
+          "instruction": "Det finns t.ex. en hemsida, men flera artiklar.",
+          "one": "Det finns endast <strong>en</strong>{{newTypeName}} sida.",
+          "many": "Det finns <strong>flera</strong> {{newTypeName}} sidor."
+        },
+        "action": "Låt oss skapa ett {{newTypeName}}-formulär!",
+        "cancel": "Avbryt"
+      }
+    }
+  },
+  "form": {
+    "add": "Lägg till fält",
+    "edit": "Redigera fält",
+    "isNewWarning": "<strong>Varning</strong>Ändringar i dessa inställningar kan kräva ändringar i dina mallar.",
+    "typeName": "Innehållstyp Namn",
+    "typeNameInvalid": "Typnamn är felaktigt.",
+    "slugInstruction": "<strong>URL-adress kontroll</strong>Du kan skräddarsy URL:en för den här innehållstypen. Om det lämnas tomt, kommer listsidan finnas på <code>site.com/{{ name }}/</code> och de individuella sidorna hittas på <code>site.com/{{ name }}/name-of-item/</code>. Dessa fält kan innehålla variabler, inklusive datum-hanteraring. Se <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentationen här (engelska).</a>.",
+    "listUrlLabel": "URL för list-sidor åt {{ name }}",
+    "individualUrlLabel": "URL-prefix for a enstaka {{ name }} sidor",
+    "info": {
+      "text": {
+        "min": "Min tecken",
+        "max": "Max tecken"
+      },
+      "wysiwyg": {
+        "label": "Vad kan användare lägga till i WYSIWYG-editorn?",
+        "table": "Tabeller",
+        "video": "Videos",
+        "image": "Bilder",
+        "quote": "Citat-block",
+        "link": "Länkar"
+      },
+      "number": {
+        "min": "Min nummer",
+        "max": "Max nummer"
+      },
+      "checkbox": {
+        "label": "Checkbox alternativ",
+        "help": "Använd plus- och minus-tecknet för att lägga till fler alternativ. Klicka på checkboxen för att göra det till standardsvar."
+      },
+      "radio": {
+        "label": "Svars alternativ",
+        "help": "Använd plus- och minus-tecknet för att lägga till fler alternativ. Klicka på radioknappen för att göra det till standardsvar."
+      },
+      "select": {
+        "label": "Rullgardinslist alternativ",
+        "help": "Använd plus- och minus-tecknet för att lägga till fler alternativ. Klicka på radioknappen för att göra det till standardsvar."
+      },
+      "rating": {
+        "min": "Min värde",
+        "minHelp": "Det här är det minsta värdet en användare får ange. Vill du ge en halv stjärna skriver du .5",
+        "max": "Max värde",
+        "maxHelp": "Det här är det högsta värdet en användare får ange. Anger du 10, innebär det 10 stjärnor i formuläret.",
+        "step": "Precision",
+        "stepHelp": "Hur stor precision skall klassificeringen ha? Anges .5 kan t.ex. halv-stjärnor användas."
+      },
+      "tabular": {
+        "label": "Kolumner"
+      },
+      "relationship": {
+        "label": "Tillåtna relationer",
+        "help": "Endast denna innehålstyp kommer bli sökbar i dess form-widget.",
+        "single": "Tillåt endast sökning för ett objekt.",
+        "hidden": "Dölj denna widget i formuläret."
+      }
+    },
+    "group": {
+      "text": "Text",
+      "basics": "Kort beskrivning",
+      "files": "Filer",
+      "specifics": "Specifika",
+      "advanced": "Avancerat"
+    },
+    "widget": {
+      "textfield": "Enkel linje-text",
+      "textarea": "Paragraf-text",
+      "wysiwyg": "WYSIWYG-text",
+      "markdown": "Markdown-text",
+      "number": "Nummer",
+      "checkbox": "Checkbox",
+      "radio": "Multipla val",
+      "select": "Rullgardin",
+      "image": "Bild",
+      "gallery": "Galleri",
+      "audio": "Ljudfil",
+      "file": "Annan fil",
+      "name": "Person",
+      "address": "Adress",
+      "phone": "Telefonnummer",
+      "email": "Email",
+      "datetime": "Datum tid",
+      "url": "Sidans URL",
+      "rating": "Klassificering / Värdering",
+      "tabular": "Tabulär data",
+      "embedly": "Embed.ly",
+      "color": "Färg",
+      "instruction": "Instruktioner",
+      "relation": "Relation",
+      "layout": "Sidans layout"
+    },
+    "control": {
+      "markdown": {
+        "syntax": "Detta fält tillåter <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
+      },
+      "image": {
+        "action": "Välj bild",
+        "replace": "Ersätt bild"
+      },
+      "gallery": {
+        "action": "Välj bilder",
+        "instruction": "Runda bilder har bildtext. Klicka för att redigera individuella bilder. Dra för att sortera.",
+        "delete": "Radera",
+        "close": "Spara / Stäng"
+      },
+      "audio": {
+        "action": "Dra och släpp en ljudfil."
+      },
+      "file": {
+        "action": "Dra och släpp en fil.",
+        "url": "eller använda en URL?",
+        "select": "Välj från skrivbordet.",
+        "remove": "Radera",
+        "cancel": "Avbryt",
+        "upload": "Ladda upp",
+        "paste": "Klistra in från URL"
+      },
+      "tabular": {
+        "add": "Lägg till rad"
+      },
+      "embedly": {
+        "action": "Hämta",
+        "preview": "Förhandsgranskning",
+        "clear": "Återställ"
+      }
+    },
+    "help": "Hjälp",
+    "goBack": "Avbryt / Återvänd till CMS",
+    "action": "Spara formulär"
+  },
+  "start": {
+    "title": "Hur ska vi ställa in din sida?",
+    "theme": {
+      "title": "Visa mig magi!",
+      "instruction": "<p>Välj något av våra färdiga teman som följer vedertagna CMS design-mönster. Du kan skräddasy dessa senare.<p>Exempelvis: En blogg eller portfolio.</p></p>",
+      "action": "Starta från ett tema."
+    },
+    "empty": {
+      "title": "Jag är magi!",
+      "instruction": "Använd formbyggaren för att installera ditt egna CMS med sidtyper du definerar själv.<p>Du behöver koda din egna design i HTML / CSS.</p>",
+      "action": "Börja om från början."
+    }
+  },
+  "theme": {
+    "localWarning": "Du kan endast välja tema när du arbetar i din lokala utvecklingsmiljö. Gör dina ändringar där, och deploya sedan dina ändringar till produktionsmiljön. För mer information kring ditt temas inställningar, se <a href='http://www.webhook.com/docs/'>dokumentationen (engelska).</a>",
+    "title": "Börja från ett tema.",
+    "instruction": "Sidmallar installerar formulär, statiska filer och nödvändiga mallar automatiskt. Intresserad av att göra ditt egna tema? <a href='http://www.webhook.com/docs/creating-a-theme/'>Läs dokumentationen (engelska).</a>\nKan du inte hitta vad du letar efter?",
+    "scratch": "Börja om från början.",
+    "error": "Whoops",
+    "upload": {
+      "title": "Ladda lokalt tema",
+      "label": "Välj zip-fil från skrivbordet.",
+      "action": "Ladda zip-fil från lokal källa."
+    },
+    "url": {
+      "title": "Ladda zip-fil från URL.",
+      "label": "http:// adress till .zip-fil.",
+      "action": "Ladda zip-fil från URL."
+    },
+    "demo": "Demo",
+    "install": "Installera"
+  }
+}

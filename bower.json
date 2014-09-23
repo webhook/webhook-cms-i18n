@@ -19,6 +19,7 @@
     "lib/code.map.js"
   ],
   "dependencies": {
-    "ember-i18n": "~2.2.1"
+    "ember-i18n": "~2.2.1",
+    "moment": "~2.8.3"
   }
 }

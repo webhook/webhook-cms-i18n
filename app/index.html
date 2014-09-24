@@ -4,6 +4,8 @@
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="bower_components/ember/ember.js"></script>
   <script src="bower_components/ember-i18n/lib/i18n.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/moment/locale/de.js"></script>
   <script src="lib/code.map.js"></script>
   <script src="lib/translations.js"></script>
   <script src="lib/i18n.js"></script>
@@ -25,6 +27,9 @@
   <button type="button" class="btn btn-neutral btn-small" {{ action "chooseLanguage" code }}>{{language}} ({{code}})</button>
 {{/each}}
 <button type="button"  class="btn btn-danger btn-small" {{ action "clearLanguage" }}>Clear</button>
+<hr>
+<p>Webhook CMS uses Moment.js for date and time logic and formatting. It has i18n support for many languages. If you add a language to Webhook and Moment.js supports it, we'll include that too.</p>
+{{localDatetime}}
 <hr>
 {{outlet}}
 </script>
@@ -53,7 +58,6 @@
 </table>
 <p>Save the following to <code>translations/[language].json</code>.</p>
 <pre>{{converted}}</pre>
-
 
 </script>
 

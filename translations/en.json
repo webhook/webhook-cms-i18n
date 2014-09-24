@@ -18,7 +18,10 @@
     "save": "Save"
   },
   "wh": {
+    "userCount": "online now.",
+    "accountTooltip": "Click to change your password and other account info.",
     "logout": "Logout",
+    "search": "Press S to search",
     "navContent": "Your Content",
     "configuration": {
       "title": "Configuration",
@@ -67,6 +70,10 @@
         }
       },
       "team": {
+        "deploy": {
+          "title": "You need to deploy first",
+          "instruction": "Before you can add new members to your team you need to deploy the site onto the Internet. You can do this by running <code>wh deploy</code> in your local site directory. Then return to this page."
+        },
         "invite": {
           "title": "Invite a New Team Member",
           "instruction": "Invite a new collaborator by email",
@@ -77,7 +84,14 @@
           "title": "Current Team Members",
           "description": "Owners have access to billing and the local dev tools. Contributors only have the ability to add and edit content on the live CMS.",
           "email": "Email",
-          "permissions": "Permissions"
+          "permissions": "Permissions",
+          "owner": "Owner",
+          "contributor": "Contributor",
+          "toOwner": "Change to owner",
+          "toContributor": "Change to contributor",
+          "remove": "Remove access entirely",
+          "waiting": "Waiting on verification",
+          "cancel": "Cancel invite"
         }
       },
       "general": {
@@ -125,7 +139,18 @@
         }
       },
       "billing": {
-        "title": "Billing"
+        "title": "Billing",
+        "trial": {
+          "lastDay": "This is the last day of your trial",
+          "days": "You have {{count}} trial days left",
+          "instruction": "<p>All Webhook sites start as 14-day free trials. To continue service and allow for custom domains you'll need to upgrade to a paid account.</p><p>You'll be asked to login again.</p>",
+          "action": "Upgrade now"
+        },
+        "paid": {
+          "title": "Thanks for your business!",
+          "instruction": "<p>Your site is an active account. If you need to change your billing information or cancel your subscription, click on over to our billing portal.</p><p>You'll be asked to login again.</p>",
+          "action": "Manage billing"
+        }
       },
       "domain": {
         "title": "Domains",
@@ -156,6 +181,24 @@
           "action": {
             "import": "Import JSON data",
             "export": "Export JSON data"
+          },
+          "import": {
+            "found": "We found the following data in your file:",
+            "type": "Content Type",
+            "item": "Item Count",
+            "noContent": "No content to import.",
+            "setting": "Setting",
+            "value": "Value",
+            "noSettings": "No settings to import.",
+            "warningTitle": "Warning!",
+            "warning": "Using a backup will <strong>permenantly delete</strong> current data and replace it with the data you just uploaded. It will also rebuild your site with the imported data. If you have not created a backup in a while, now would be a good time.",
+            "proceed": "Proceed",
+            "cancel": "Cancel",
+            "noDataTitle": "No data",
+            "noData": "We could not find any valid data to import from your file.",
+            "goBack": "Back",
+            "invalidTitle": "We were unable to parse your file.",
+            "invalid": "Please make sure you are uploading a <strong>valid</strong> JSON file and try again."
           }
         },
         "backups": {
@@ -178,7 +221,8 @@
         "search": {
           "title": "Rebuild Search Index",
           "instruction": "If you're having trouble with the CMS search. Rebuilding your index can often help.",
-          "action": "Rebuild search index"
+          "action": "Rebuild search index",
+          "indexing": "Indexing data"
         },
         "reset": {
           "title": "Reset Your Website",
@@ -188,7 +232,8 @@
             "data": "<strong>Delete my data.</strong> (This will delete your forms, but your templates will remain.)",
             "all": "<strong>Delete my templates and my data.</strong> (This will return this site to a completely fresh install. Useful for changing themes.)"
           },
-          "action": "Delete {{deleteOption}}"
+          "action": "Delete {{deleteOption}}",
+          "deleting": "Deleting data"
         }
       }
     },

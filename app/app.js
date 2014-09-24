@@ -90,6 +90,9 @@ TranslationApp.ApplicationController = Ember.Controller.extend({
       return { code: code, language: Ember.ENV.I18N_CODE_MAP[code] };
     }));
   },
+  localDatetime: function () {
+    return moment().format('LLLL');
+  }.property(),
   actions: {
     chooseLanguage: function (language) {
       window.localStorage.setItem('webhook-cms-language', language);

@@ -4,36 +4,39 @@
     "password": "Passwort",
     "signIn": "Anmelden",
     "forgotPassword": "Passwort vergessen?",
-    "addLanguage": "Hilf dabei Webhook zu übersetzen"
+    "addLanguage": "Hilf dabei Webhook zu Ã¼bersetzen"
   },
   "passwordReset": {
-    "prompt": "Gib Deine E-Mail-Adresse zum Zurücksetzen Deines Passwortes an.",
-    "action": "Passwort zurücksetzen",
-    "goBack": "Zurück zur Anmeldung",
+    "prompt": "Gib Deine E-Mail-Adresse zum ZurÃ¼cksetzen Deines Passwortes an.",
+    "action": "Passwort zurÃ¼cksetzen",
+    "goBack": "ZurÃ¼ck zur Anmeldung",
     "emailLabel": "E-Mail",
-    "provideEmail": "Gib Deine E-Mail-Adresse zum Zurücksetzen Deines Passwortes an.",
-    "success": "E-Mail zur Passwort-Rücksetzung verschickt."
+    "provideEmail": "Gib Deine E-Mail-Adresse zum ZurÃ¼cksetzen Deines Passwortes an.",
+    "success": "E-Mail zur Passwort-RÃ¼cksetzung verschickt."
   },
   "button": {
     "save": "Speichern"
   },
   "wh": {
+    "userCount": "jetzt online.",
+    "accountTooltip": "Hier klicken, um Dein Passwort und andere Kontodaten zu Ã¤ndern.",
     "logout": "Abmelden",
+    "search": "DrÃ¼cke S zum Suchen",
     "navContent": "Deine Inhalte",
     "configuration": {
       "title": "Konfiguration",
-      "types": "Inhaltstypen hinzufügen/ändern",
+      "types": "Inhaltstypen hinzufÃ¼gen/Ã¤ndern",
       "team": "Team-Mitglieder",
       "settings": "Einstellungen",
       "billing": "Zahlungsdaten",
       "dns": "Domain",
       "data": "Datensicherung"
     },
-    "localNotice": "<span class='icon icon-code'> Lokale Entwicklungsumgebung</span> Änderungen in diesem Bereich betreffen nur die lokale Umgebung, aber nicht Deine Live-Webseite.",
+    "localNotice": "<span class='icon icon-code'> Lokale Entwicklungsumgebung</span> Ã„nderungen in diesem Bereich betreffen nur die lokale Umgebung, aber nicht Deine Live-Webseite.",
     "index": {
       "welcome": {
         "title": "Willkommen in Deinem CMS",
-        "description": "Einige nützliche Links zum Arbeiten mit Webhook:",
+        "description": "Einige nÃ¼tzliche Links zum Arbeiten mit Webhook:",
         "docs": "Dokumentation",
         "support": "Support",
         "issues": "Bekannte Probleme",
@@ -45,11 +48,11 @@
     },
     "settings": {
       "password": {
-        "title": "Passwort ändern",
+        "title": "Passwort Ã¤ndern",
         "action": "Speichern",
         "fields": {
           "account": {
-            "label": "Konto, das geändert wird"
+            "label": "Konto, das geÃ¤ndert wird"
           },
           "oldPassword": {
             "label": "Altes Passwort"
@@ -62,32 +65,43 @@
           }
         },
         "error": {
-          "match": "Passwörter müssen übereinstimmen.",
+          "match": "PasswÃ¶rter mÃ¼ssen Ã¼bereinstimmen.",
           "fix": "Bitte korrigiere die folgenden Fehler."
         }
       },
       "team": {
+        "deploy": {
+          "title": "Du musst erst die Bereitstellung starten",
+          "instruction": "Bevor Du neue Mitglieder zu Deinem Team hinzufÃ¼gen kannst, musst Du Deine Seite zunÃ¤chst online bereitstellen. Du kannst dies machen indem Du den Befehl <code>wh deploy</code> in Deinem lokalen Verzeichnis ausfÃ¼hrst. Kehre anschlieÃŸend auf diese Seite zurÃ¼ck."
+        },
         "invite": {
-          "title": "Ein neues Team-Mitglied hinzufügen",
+          "title": "Ein neues Team-Mitglied hinzufÃ¼gen",
           "instruction": "Lade einen neuen Mitarbeiter per E-Mail ein",
-          "help": "Diese Person wird erst aktiviert, wenn sie ihre/seine E-Mail-Adresse bestätigt hat.",
+          "help": "Diese Person wird erst aktiviert, wenn sie ihre/seine E-Mail-Adresse bestÃ¤tigt hat.",
           "action": "Einladung senden"
         },
         "current": {
           "title": "Aktuelle Team-Mitglieder",
-          "description": "Besitzer haben Zugriff auf Zahlungsdaten und die lokalen Entwicklungs-Werkzeuge. Mitarbeiter haben nur die Möglichkeite Inhalte im Live-CMS zu editieren oder hinzuzufügen.",
+          "description": "Besitzer haben Zugriff auf Zahlungsdaten und die lokalen Entwicklungs-Werkzeuge. Mitarbeiter haben nur die MÃ¶glichkeite Inhalte im Live-CMS zu editieren oder hinzuzufÃ¼gen.",
           "email": "E-Mail",
-          "permissions": "Berechtigungen"
+          "permissions": "Berechtigungen",
+          "owner": "Besitzer",
+          "contributor": "Mitarbeiter",
+          "toOwner": "Zum Besitzer machen",
+          "toContributor": "Zum Mitarbeiter machen",
+          "remove": "Zugriff komplett verweigern",
+          "waiting": "Warte auf BestÃ¤tigung",
+          "cancel": "Cancel invite"
         }
       },
       "general": {
         "account": {
           "title": "Konto-Einstellungen",
           "password": {
-            "prompt": "Möchtest Du Dein Passwort ändern?",
-            "action": "Ändere hier Dein Passwort"
+            "prompt": "MÃ¶chtest Du Dein Passwort Ã¤ndern?",
+            "action": "Ã„ndere hier Dein Passwort"
           },
-          "language": "CMS-Sprache auswählen"
+          "language": "CMS-Sprache auswÃ¤hlen"
         },
         "global": {
           "title": "Globale Variablen",
@@ -102,12 +116,12 @@
               "help": "Eine kurze Beschreibung Deiner Webseite."
             },
             "keywords": {
-              "label": "Schlüsselwörter",
-              "help": "Schlüsselwörter, die Deine Webseite beschreiben (durch Komma getrennt)."
+              "label": "SchlÃ¼sselwÃ¶rter",
+              "help": "SchlÃ¼sselwÃ¶rter, die Deine Webseite beschreiben (durch Komma getrennt)."
             },
             "url": {
               "label": "URL Deiner Webseite",
-              "help": "Bitte benutze eine vollständige URL wie z.B. http://www.example.com."
+              "help": "Bitte benutze eine vollstÃ¤ndige URL wie z.B. http://www.example.com."
             },
             "analytics": {
               "label": "Site Analytics ID",
@@ -125,26 +139,37 @@
         }
       },
       "billing": {
-        "title": "Zahlungsdaten"
+        "title": "Zahlungsdaten",
+        "trial": {
+          "lastDay": "Dies ist der letzte Tag Deiner Testphase.",
+          "days": "Du hast noch {{count}} Tage in Deiner Testphase.",
+          "instruction": "<p>Alle Webhook-Seiten starten als kostenloser 14-tÃ¤giger Test. Um unseren Dienst weiter zu nutzen und eigene Domains verwenden zu kÃ¶nnen, musst Du auf ein kostenpflichtiges Konto upgraden.</p><p>Du musst Dich dafÃ¼r neu einloggen.</p>",
+          "action": "Upgrade jetzt durchfÃ¼hren"
+        },
+        "paid": {
+          "title": "Danke fÃ¼r Deinen Auftrag!",
+          "instruction": "<p>Deine Seite lÃ¤uft auf einem aktiven Konto. Wenn Du Ã„nderungen an Deinen Zahlungsdaten vornehmen oder Dein Abonnement beenden mÃ¶chtest, verwende bitte unser Billing Portal.</p><p>Du musst Dich dafÃ¼r neu einloggen.</p>",
+          "action": "Zahlungsdaten verwalten"
+        }
       },
       "domain": {
         "title": "Domains",
-        "description": "Deine Seite ist zur Zeit abrufbar über <strong>{{siteName}}.webhook.org</strong>",
+        "description": "Deine Seite ist zur Zeit abrufbar Ã¼ber <strong>{{siteName}}.webhook.org</strong>",
         "descriptionDomain": "und <strong>{{domain}}</strong>",
         "success": {
           "title": "Fast geschafft",
-          "instruction": "Spitze! Ändere Deinen DNS-Eintrag für die folgende Adresse.",
-          "docs": "Ausführliche Informationen zu diesem Thema findest Du in der Dokumentation zum <a href='http://www.webhook.com/docs/deployment-domains/'>Verwenden Deiner eigenen Domain</a>."
+          "instruction": "Spitze! Ã„ndere Deinen DNS-Eintrag fÃ¼r die folgende Adresse.",
+          "docs": "AusfÃ¼hrliche Informationen zu diesem Thema findest Du in der Dokumentation zum <a href='http://www.webhook.com/docs/deployment-domains/'>Verwenden Deiner eigenen Domain</a>."
         },
         "trial": {
           "title": "Erweitere Dein Konto zum Verwenden eigener Domains",
-          "instruction": "Diese Webseite befindet sich noch in der kostenlose Probephase. Nur kostenpflichtige Seiten können eigene Domains verwenden.",
+          "instruction": "Diese Webseite befindet sich noch in der kostenlose Probephase. Nur kostenpflichtige Seiten kÃ¶nnen eigene Domains verwenden.",
           "upgrade": "Erweitere Dein Konto auf webhook.com"
         },
         "error": "Bitte korrigiere die folgenden Fehler.",
         "form": {
           "title": "Verwenden einer bereits gekauften Domain",
-          "instruction": "Du hast noch keine eigene Domain? Kauf eine bei <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> oder einem anderen Domain-Anbieter und komm anschließend hierher zurück.",
+          "instruction": "Du hast noch keine eigene Domain? Kauf eine bei <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> oder einem anderen Domain-Anbieter und komm anschlieÃŸend hierher zurÃ¼ck.",
           "label": "Gib Deine eigene Domain hier ein",
           "action": "Diese Domain verwenden"
         }
@@ -152,17 +177,35 @@
       "data": {
         "importExport": {
           "title": "Daten importieren / exportieren",
-          "instruction": "Du bist nicht auf das Hochladen von Datensicherungen beschränkt, sondern kannst beliebige Daten importieren, solange Du Dich an ein vorgebenes Format hältst. Schau Dir unsere <a href='http://www.webhook.com/docs/importing-custom-data/''>Dokumentation</a> an, um weitere Informationen zu erhalten.",
+          "instruction": "Du bist nicht auf das Hochladen von Datensicherungen beschrÃ¤nkt, sondern kannst beliebige Daten importieren, solange Du Dich an ein vorgebenes Format hÃ¤ltst. Schau Dir unsere <a href='http://www.webhook.com/docs/importing-custom-data/''>Dokumentation</a> an, um weitere Informationen zu erhalten.",
           "action": {
             "import": "JSON-Daten importieren",
             "export": "JSON-Daten exportieren"
+          },
+          "import": {
+            "found": "Wir haben die folgenden Daten in Deiner Datei gefunden:",
+            "type": "Inhaltstyp",
+            "item": "Anzahl EintrÃ¤ge",
+            "noContent": "Keine Inhalte zum importieren.",
+            "setting": "Einstellung",
+            "value": "Wert",
+            "noSettings": "Keine Einstellungen zum Importieren.",
+            "warningTitle": "Achtung!",
+            "warning": "Das Wiedereinspielen eines Backups <strong>lÃ¶scht unwiederbringlich</strong> alle aktuellen Daten und ersetzt diese durch die Daten, die Du gerade hochgeladen hast. Deine Seite wird auÃŸerdem mit diesen Daten vollstÃ¤ndig neu generiert. Wenn Du seit lÃ¤ngerem kein Backup mehr durchgefÃ¼hrt hast, wÃ¤re jetzt ein guter Zeitpunkt.",
+            "proceed": "Weiter",
+            "cancel": "Abbrechen",
+            "noDataTitle": "Keine Daten",
+            "noData": "Wir konnten keine gÃ¼ltigen Daten finden, die wir aus Deiner Datei importieren kÃ¶nnen.",
+            "goBack": "ZurÃ¼ck",
+            "invalidTitle": "Wir konnten Deine Datei nicht verarbeiten.",
+            "invalid": "Bitte stelle sicher, dass Du eine <strong>gÃ¼ltige</strong> JSON-Datei hochlÃ¤dst und versuche es erneut."
           }
         },
         "backups": {
           "title": "Datensicherungen",
           "data": {
             "title": "Datensicherung",
-            "instruction": "Webhook exportiert jede Nacht um 03:00 Uhr (PST) alle JSON-Daten und bewahrt diese Daten für sieben Tage auf. Für neue Webseiten wird das Backup nur nach dem Erstellen Deiner Seite durchgeführt."
+            "instruction": "Webhook exportiert jede Nacht um 03:00 Uhr (PST) alle JSON-Daten und bewahrt diese Daten fÃ¼r sieben Tage auf. FÃ¼r neue Webseiten wird das Backup nur nach dem Erstellen Deiner Seite durchgefÃ¼hrt."
           },
           "templates": {
             "title": "Vorlagen und Dateien sichern",
@@ -172,114 +215,81 @@
         },
         "wordpress": {
           "title": "Wordpress Blog importieren (Beta)",
-          "instruction": "Wordpress erlaubt Dir den <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>Export Deines Blogs als XML-Datei</a>. Nach dem Download der Datei kannst Du diese Funktion benutzen, um diese Daten in Webhook zu importieren. Wir versuchen unser Bestes, um die enthaltenen Bilder zu importieren und in die richtige Größe zu bringen.",
-          "action": "Wähle eine Wordpress XML-Datei aus"
+          "instruction": "Wordpress erlaubt Dir den <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>Export Deines Blogs als XML-Datei</a>. Nach dem Download der Datei kannst Du diese Funktion benutzen, um diese Daten in Webhook zu importieren. Wir versuchen unser Bestes, um die enthaltenen Bilder zu importieren und in die richtige GrÃ¶ÃŸe zu bringen.",
+          "action": "WÃ¤hle eine Wordpress XML-Datei aus"
         },
         "search": {
           "title": "Such-Index neu erstellen",
           "instruction": "Wenn Du Probleme mit der CMS-Suche hast, hilft es oftmals, den Such-Index neu zu erstellen.",
-          "action": "Such-Index neu erstellen"
+          "action": "Such-Index neu erstellen",
+          "indexing": "Indiziere Daten"
         },
         "reset": {
-          "title": "Webseite zurücksetzen",
-          "warning": "Du kannst Deine Webseite nur zurücksetzen, wenn Du sie selbst lokal betreibst.",
-          "instruction": "Dies ermöglicht es Dir, Deine Webseite zurückzusetzen, so dass Du neu anfangen kannst. Bitte erstelle zuvor unbedingt eine Datensicherung!",
+          "title": "Webseite zurÃ¼cksetzen",
+          "warning": "Du kannst Deine Webseite nur zurÃ¼cksetzen, wenn Du sie selbst lokal betreibst.",
+          "instruction": "Dies ermÃ¶glicht es Dir, Deine Webseite zurÃ¼ckzusetzen, so dass Du neu anfangen kannst. Bitte erstelle zuvor unbedingt eine Datensicherung!",
           "options": {
-            "data": "<strong>Lösche meine Daten.</strong> (Dies wird Deine Formulare löschen, aber Deine Vorlagen bleiben erhalten.)",
-            "all": "<strong>Lösche meine Vorlagen und meine Daten.</strong> (Die Seite wird auf den Stand einer Neuinstallation zurückgesetzt. Kann sinnvoll beim Wechseln von Themes sein.)"
+            "data": "<strong>LÃ¶sche meine Daten.</strong> (Dies wird Deine Formulare lÃ¶schen, aber Deine Vorlagen bleiben erhalten.)",
+            "all": "<strong>LÃ¶sche meine Vorlagen und meine Daten.</strong> (Die Seite wird auf den Stand einer Neuinstallation zurÃ¼ckgesetzt. Kann sinnvoll beim Wechseln von Themes sein.)"
           },
-          "action": "Lösche {{deleteOption}}"
+          "action": "LÃ¶sche {{deleteOption}}",
+          "deleting": "LÃ¶sche Daten"
         }
       }
     },
     "content": {
-      "addNewItem": "{{name}} hinzufügen",
+      "addNewItem": "{{name}} hinzufÃ¼gen",
       "display": "Anzeige",
-      "limited": "Um das Laden dieser Ansicht zu beschleunigen, zeigen wir nur die letzten {{recordLimit}} Einträge an.",
-      "noRecords": "Es gibt bislang noch keine Einträge vom Typ {{name}}.",
-      "moreRecords": "Mehr Einträge laden",
+      "limited": "Um das Laden dieser Ansicht zu beschleunigen, zeigen wir nur die letzten {{recordLimit}} EintrÃ¤ge an.",
+      "noRecords": "Es gibt bislang noch keine EintrÃ¤ge vom Typ {{name}}.",
+      "moreRecords": "Mehr EintrÃ¤ge laden",
       "allTypes": {
         "title": "Deine bisherigen Inhaltstypen",
-        "addType": "Neuen Inhaltstyp hinzufügen",
+        "addType": "Neuen Inhaltstyp hinzufÃ¼gen",
         "contentType": "Inhaltstyp",
         "id": "ID",
         "formStyle": "Formular-Stil",
         "single": "Einzelner Eintrag",
-        "multiple": "Mehrere Einträge"
+        "multiple": "Mehrere EintrÃ¤ge"
       },
       "start": {
-        "title": "OK, fügen wir ein neues Formular zum CMS hinzu.",
+        "title": "OK, fÃ¼gen wir ein neues Formular zum CMS hinzu.",
         "nameLabel": "Name des neuen Objektes",
-        "namePlaceholder": "z.B. Comics, Artikel, Über uns, Startseite, Städte, Vampire",
+        "namePlaceholder": "z.B. Comics, Artikel, Ãœber uns, Startseite, StÃ¤dte, Vampire",
         "duplicate": "Es gibt bereits einen Inhaltstyp mit diesem Namen",
-        "long": "Die ID für einen Inhaltstyp darf nicht länger als 250 Zeichen sein. Die eingegebene ID ist {{length}} Zeichen lang.",
-        "instruction": "Dies ist der Name, der im CMS-Menü (<span class='icon icon-circle-arrow-left'></span> links) auftaucht und auch in der Frontend-URL verwendet wird. Wähle den Namen daher mit Bedacht!",
+        "long": "Die ID fÃ¼r einen Inhaltstyp darf nicht lÃ¤nger als 250 Zeichen sein. Die eingegebene ID ist {{length}} Zeichen lang.",
+        "instruction": "Dies ist der Name, der im CMS-MenÃ¼ (<span class='icon icon-circle-arrow-left'></span> links) auftaucht und auch in der Frontend-URL verwendet wird. WÃ¤hle den Namen daher mit Bedacht!",
         "multiple": {
-          "title": "Okay... Wie viele Einträge vom Typ {{newTypeName}} gibt es?",
-          "instruction": "Es gibt z.B. nur eine Startseite, aber es kann mehrere Blogeinträge geben.",
+          "title": "Okay... Wie viele EintrÃ¤ge vom Typ {{newTypeName}} gibt es?",
+          "instruction": "Es gibt z.B. nur eine Startseite, aber es kann mehrere BlogeintrÃ¤ge geben.",
           "one": "Es gibt nur <strong>einen</strong> Eintrag vom Typ {{newTypeName}}.",
-          "many": "Es gibt <strong>mehrere</strong> Einträge vom Typ {{newTypeName}}."
+          "many": "Es gibt <strong>mehrere</strong> EintrÃ¤ge vom Typ {{newTypeName}}."
         },
-        "action": "Formular für {{newTypeName}} erstellen!",
+        "action": "Formular fÃ¼r {{newTypeName}} erstellen!",
         "cancel": "Abbrechen"
       }
     }
   },
   "form": {
-    "add": "Feld hinzufügen",
+    "add": "Feld hinzufÃ¼gen",
     "edit": "Feld editieren",
-    "isNewWarning": "<strong>ACHTUNG!</strong> Änderungen an diesen Punkten können eine Anpassung Deiner Vorlagen erforderlich machen!",
+    "isNewWarning": "<strong>ACHTUNG!</strong> Ã„nderungen an diesen Punkten kÃ¶nnen eine Anpassung Deiner Vorlagen erforderlich machen!",
     "typeName": "Name des Inhaltstyps",
-    "typeNameInvalid": "Inhaltstyp ist ungültig",
+    "typeNameInvalid": "Inhaltstyp ist ungÃ¼ltig",
     "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{ name }}/</code> and the individual pages would be at <code>site.com/{{ name }}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
-    "listUrlLabel": "URL für alle Einträge vom Typ {{ name }}",
-    "individualUrlLabel": "URL-Präfix für eine einzelne Seite vom Typ {{ name }}",
+    "listUrlLabel": "URL fÃ¼r alle EintrÃ¤ge vom Typ {{ name }}",
+    "individualUrlLabel": "URL-PrÃ¤fix fÃ¼r eine einzelne Seite vom Typ {{ name }}",
     "info": {
-      "text": {
-        "min": "Mindestlänge (in Zeichen)",
-        "max": "Maximallänge (in Zeichen)"
-      },
-      "wysiwyg": {
-        "label": "Was können Benutzer im WYSIWYG-Editor eingeben?",
-        "table": "Tabellen",
-        "video": "Videos",
-        "image": "Bilder",
-        "quote": "Zitate",
-        "link": "Links"
-      },
-      "number": {
-        "min": "Mindestanzahl",
-        "max": "Höchstanzahl"
-      },
-      "checkbox": {
-        "label": "Checkbox-Einträge",
-        "help": "Verwende Plus und Minus, um neue Einträge hinzuzufügen. Klick eine Checkbox an, um diesen Wert bei einem neuen Formulareintrag als Standard festzulegen."
-      },
-      "radio": {
-        "label": "Mehrfach-Auswahl",
-        "help": "Verwende Plus und Minus, um neue Einträge hinzuzufügen. Klick einen Radiobutton an, um diesen Wert bei einem neuen Formulareintrag als Standard festzulegen."
-      },
-      "select": {
-        "label": "Dropdown-Auswahl",
-        "help": "Verwende Plus und Minus, um neue Einträge hinzuzufügen. Klick einen Radiobutton an, um diesen Wert bei einem neuen Formulareintrag als Standard festzulegen."
-      },
-      "rating": {
-        "min": "Mindestwert",
-        "minHelp": "Dies ist der Mindestwert, den ein Benutzer eingeben kann. Einträge mit .5 erlauben halbe Sterne.",
-        "max": "Höchstwert",
-        "maxHelp": "Maximale Anzahl an Sternen.",
-        "step": "Stufen",
-        "stepHelp": "Welche Schritte können Benutzer zwischen dem Minimum und dem Maximum auswählen? Einträge mit .5 erlauben halbe Sterne."
-      },
-      "tabular": {
-        "label": "Spalten"
-      },
-      "relationship": {
-        "label": "Erlaubte Beziehungen",
-        "help": "Nur dieser Inhaltstyp kann im Formular gesucht werden.",
-        "single": "Nur einen Sucheintrag erlauben.",
-        "hidden": "Widget in diesem Formular verbergen."
-      }
+      "label": "Feldname",
+      "labelTitle": "Kurzer Satz, um den Inhalt dieses Feldes zu beschreiben.",
+      "placeholder": "Platzhalter-Eintrag",
+      "placeholderTitle": "Dies wird angezeigt, bis das Feld einen Inhalt hat, jedoch nicht als Standardwert gespeichert.",
+      "instruction": "Anweisungen fÃ¼r den Benutzer",
+      "instructionTitle": "Anweisungen fÃ¼r den Benutzer, was in dieses Feld eingetragen werden soll.",
+      "required": "Erforderlich",
+      "requiredTitle": "Das Formular kann nicht gespeichert werden, bis dieses Feld ausgefÃ¼llt ist.",
+      "requiredCheckbox": "Dieses Feld als erforderlich markieren.",
+      "delete": "Dieses Feld lÃ¶schen."
     },
     "group": {
       "text": "Text",
@@ -315,34 +325,81 @@
       "relation": "Beziehung",
       "layout": "Seitenlayout"
     },
+    "info": {
+      "text": {
+        "min": "MindestlÃ¤nge (in Zeichen)",
+        "max": "MaximallÃ¤nge (in Zeichen)"
+      },
+      "wysiwyg": {
+        "label": "Was kÃ¶nnen Benutzer im WYSIWYG-Editor eingeben?",
+        "table": "Tabellen",
+        "video": "Videos",
+        "image": "Bilder",
+        "quote": "Zitate",
+        "link": "Links"
+      },
+      "number": {
+        "min": "Mindestanzahl",
+        "max": "HÃ¶chstanzahl"
+      },
+      "checkbox": {
+        "label": "Checkbox-EintrÃ¤ge",
+        "help": "Verwende Plus und Minus, um neue EintrÃ¤ge hinzuzufÃ¼gen. Klick eine Checkbox an, um diesen Wert bei einem neuen Formulareintrag als Standard festzulegen."
+      },
+      "radio": {
+        "label": "Mehrfach-Auswahl",
+        "help": "Verwende Plus und Minus, um neue EintrÃ¤ge hinzuzufÃ¼gen. Klick einen Radiobutton an, um diesen Wert bei einem neuen Formulareintrag als Standard festzulegen."
+      },
+      "select": {
+        "label": "Dropdown-Auswahl",
+        "help": "Verwende Plus und Minus, um neue EintrÃ¤ge hinzuzufÃ¼gen. Klick einen Radiobutton an, um diesen Wert bei einem neuen Formulareintrag als Standard festzulegen."
+      },
+      "rating": {
+        "min": "Mindestwert",
+        "minHelp": "Dies ist der Mindestwert, den ein Benutzer eingeben kann. EintrÃ¤ge mit .5 erlauben halbe Sterne.",
+        "max": "HÃ¶chstwert",
+        "maxHelp": "Maximale Anzahl an Sternen.",
+        "step": "Stufen",
+        "stepHelp": "Welche Schritte kÃ¶nnen Benutzer zwischen dem Minimum und dem Maximum auswÃ¤hlen? EintrÃ¤ge mit .5 erlauben halbe Sterne."
+      },
+      "tabular": {
+        "label": "Spalten"
+      },
+      "relationship": {
+        "label": "Erlaubte Beziehungen",
+        "help": "Nur dieser Inhaltstyp kann im Formular gesucht werden.",
+        "single": "Nur einen Sucheintrag erlauben.",
+        "hidden": "Widget in diesem Formular verbergen."
+      }
+    },
     "control": {
       "markdown": {
         "syntax": "Dieses Feld erlaubt die Verwendung einer <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
       },
       "image": {
-        "action": "Bild auswählen (oder hier reinziehen)",
+        "action": "Bild auswÃ¤hlen (oder hier reinziehen)",
         "replace": "Bild ersetzen"
       },
       "gallery": {
-        "action": "Bilder ziehen oder auswählen",
+        "action": "Bilder ziehen oder auswÃ¤hlen",
         "instruction": "Eingekreiste Bilder haben Beschreibungen. Einzelne Bilder zum Editieren anklicken. Ziehen zum sortieren.",
-        "delete": "Löschen",
+        "delete": "LÃ¶schen",
         "close": "Speichern / Schliessen"
       },
       "audio": {
-        "action": "Audio-Datei auswählen (oder hier reinziehen)"
+        "action": "Audio-Datei auswÃ¤hlen (oder hier reinziehen)"
       },
       "file": {
-        "action": "Datei auswählen (oder hier reinziehen)",
+        "action": "Datei auswÃ¤hlen (oder hier reinziehen)",
         "url": "oder von einer URL laden?",
-        "select": "Vom Desktop auswählen",
+        "select": "Vom Desktop auswÃ¤hlen",
         "remove": "Entfernen",
         "cancel": "Abbrechen",
         "upload": "Hochladen",
-        "paste": "URL einfügen"
+        "paste": "URL einfÃ¼gen"
       },
       "tabular": {
-        "add": "Zeile hinzufügen"
+        "add": "Zeile hinzufÃ¼gen"
       },
       "embedly": {
         "action": "Holen",
@@ -351,14 +408,14 @@
       }
     },
     "help": "Hilfe",
-    "goBack": "Abbrechen / Zurück zum CMS",
+    "goBack": "Abbrechen / ZurÃ¼ck zum CMS",
     "action": "Formular speichern"
   },
   "start": {
     "title": "Wie sollen wir Deine Seite aufsetzen?",
     "theme": {
       "title": "Lasst Eure Magie spielen...",
-      "instruction": "<p>Wähle eine unserer vorbereiteren Seiten, die auf bekannten CMS- und Design-Strukturen basieren. Anpassungen nimmst Du später selbst vor.</p><p>Beispiele: Ein Blog, ein Portfolio</p>",
+      "instruction": "<p>WÃ¤hle eine unserer vorbereiteren Seiten, die auf bekannten CMS- und Design-Strukturen basieren. Anpassungen nimmst Du spÃ¤ter selbst vor.</p><p>Beispiele: Ein Blog, ein Portfolio</p>",
       "action": "Mit einem Theme starten"
     },
     "empty": {
@@ -368,14 +425,14 @@
     }
   },
   "theme": {
-    "localWarning": "Du kannst nur ein Theme auswählen, wenn Du auf der lokalen Version Deiner Seite (auf Deinem Computer) arbeitest. Nimm Deine Änderungen hier vor und stelle Deine Seite anschließend bereit. Weitere Informationen zum Ändern und Festlegen eines Themes findest Du in unserer <a href='http://www.webhook.com/docs/'>Dokumentation</a>.",
+    "localWarning": "Du kannst nur ein Theme auswÃ¤hlen, wenn Du auf der lokalen Version Deiner Seite (auf Deinem Computer) arbeitest. Nimm Deine Ã„nderungen hier vor und stelle Deine Seite anschlieÃŸend bereit. Weitere Informationen zum Ã„ndern und Festlegen eines Themes findest Du in unserer <a href='http://www.webhook.com/docs/'>Dokumentation</a>.",
     "title": "Mit einem Theme starten",
-    "instruction": "Seiten-Vorlagen installieren automatisch die Formularen, Dateien und Vorlagen die Du brauchst, um sofort mit Deinem Projekt durchzustarten. Möchtest Du Dein eigenes Theme gestalten? In unserer <a href='http://www.webhook.com/docs/creating-a-theme/'>Dokumentation</a> findest Du alles, was Du dazu wissen musst.",
+    "instruction": "Seiten-Vorlagen installieren automatisch die Formularen, Dateien und Vorlagen die Du brauchst, um sofort mit Deinem Projekt durchzustarten. MÃ¶chtest Du Dein eigenes Theme gestalten? In unserer <a href='http://www.webhook.com/docs/creating-a-theme/'>Dokumentation</a> findest Du alles, was Du dazu wissen musst.",
     "scratch": "Mit einer leeren Seite beginnen",
     "error": "Uuups.",
     "upload": {
       "title": "Lokales Theme laden",
-      "label": "Wähle eine .zip-Datei von Deinem Desktop aus",
+      "label": "WÃ¤hle eine .zip-Datei von Deinem Desktop aus",
       "action": "Lokale .zip-Datei laden"
     },
     "url": {

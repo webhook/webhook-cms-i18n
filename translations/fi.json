@@ -127,7 +127,7 @@
       },
       "domain": {
         "title": "Domainit",
-        "description": "Sivustosi on tällä hetkellä saatavilla osoitteessa <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{ domain }}</strong>{{/if}}",
+        "description": "Sivustosi on tällä hetkellä saatavilla osoitteessa <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{domain}}</strong>{{/if}}",
         "form": {
           "title": "Käytä aiemmin ostettua domainia",
           "instruction": "Eikö sinulla ole domainia? Osta sellainen <a href='http://www.namecheap.com/?aff=65093'>Namecheapista</a> tai miltä tahansa domaineja myyvältä sivustolta ja palaa sitten tänne.",
@@ -201,9 +201,9 @@
     "isNewWarning": "<strong>Varoitus!</strong>Muutokset näihin tietoihin voivat vaatia myös muutoksia työpohjiisi.",
     "typeName": "Sisältötyypin nimi",
     "typeNameInvalid": "Tyypin nimi on virheellinen.",
-    "slugInstruction": "<strong>URL slug control</strong><strong>URL slug control</strong>Alla Voit räätälöidä URL osoitteiden sijainteja tälle sisältötyypille. Tyhjäksi jätettynä vakiolistasivu olisi <code>site.com/{{ name }}/</code> ja yksittäiset sivut olisivat <code>site.com/{{ name }}/name-of-item/</code>. Nämä kentät sallivat joidenkin muuttujien, kuten päivämäärien, käsittelyä. Tutustu <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentaatioon täällä</a>.",
-    "listUrlLabel": "URL osoite listasivulle kaikille {{ name }}",
-    "individualUrlLabel": "URL alkuliite yksittäiselle {{ name }} sivulle",
+    "slugInstruction": "<strong>URL slug control</strong><strong>URL slug control</strong>Alla Voit räätälöidä URL osoitteiden sijainteja tälle sisältötyypille. Tyhjäksi jätettynä vakiolistasivu olisi <code>site.com/{{name}}/</code> ja yksittäiset sivut olisivat <code>site.com/{{name}}/name-of-item/</code>. Nämä kentät sallivat joidenkin muuttujien, kuten päivämäärien, käsittelyä. Tutustu <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentaatioon täällä</a>.",
+    "listUrlLabel": "URL osoite listasivulle kaikille {{name}}",
+    "individualUrlLabel": "URL alkuliite yksittäiselle {{name}} sivulle",
     "info": {
       "label": "Kentän nimi",
       "labelTitle": "Lyhyt kuvaus kentän sisällölle.",

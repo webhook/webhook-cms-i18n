@@ -231,9 +231,9 @@
     "isNewWarning": "<strong>Varning</strong>Ändringar i dessa inställningar kan kräva ändringar i dina mallar.",
     "typeName": "Innehållstyp Namn",
     "typeNameInvalid": "Typnamn är felaktigt.",
-    "slugInstruction": "<strong>URL-adress kontroll</strong>Du kan skräddarsy URL:en för den här innehållstypen. Om det lämnas tomt, kommer listsidan finnas på <code>site.com/{{ name }}/</code> och de individuella sidorna hittas på <code>site.com/{{ name }}/name-of-item/</code>. Dessa fält kan innehålla variabler, inklusive datum-hanteraring. Se <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentationen här (engelska).</a>.",
-    "listUrlLabel": "URL för list-sidor åt {{ name }}",
-    "individualUrlLabel": "URL-prefix for a enstaka {{ name }} sidor",
+    "slugInstruction": "<strong>URL-adress kontroll</strong>Du kan skräddarsy URL:en för den här innehållstypen. Om det lämnas tomt, kommer listsidan finnas på <code>site.com/{{name}}/</code> och de individuella sidorna hittas på <code>site.com/{{name}}/name-of-item/</code>. Dessa fält kan innehålla variabler, inklusive datum-hanteraring. Se <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentationen här (engelska).</a>.",
+    "listUrlLabel": "URL för list-sidor åt {{name}}",
+    "individualUrlLabel": "URL-prefix for a enstaka {{name}} sidor",
     "info": {
       "text": {
         "min": "Min tecken",

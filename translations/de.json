@@ -279,9 +279,9 @@
     "isNewWarning": "<strong>ACHTUNG!</strong> Änderungen an diesen Punkten können eine Anpassung Deiner Vorlagen erforderlich machen!",
     "typeName": "Name des Inhaltstyps",
     "typeNameInvalid": "Inhaltstyp ist ungültig",
-    "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{ name }}/</code> and the individual pages would be at <code>site.com/{{ name }}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
-    "listUrlLabel": "URL für alle Einträge vom Typ {{ name }}",
-    "individualUrlLabel": "URL-Präfix für eine einzelne Seite vom Typ {{ name }}",
+    "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{name}}/</code> and the individual pages would be at <code>site.com/{{name}}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
+    "listUrlLabel": "URL für alle Einträge vom Typ {{name}}",
+    "individualUrlLabel": "URL-Präfix für eine einzelne Seite vom Typ {{name}}",
     "info": {
       "text": {
         "min": "Mindestlänge (in Zeichen)",

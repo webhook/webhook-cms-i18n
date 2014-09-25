@@ -408,7 +408,9 @@
         "clear": "Clear"
       }
     },
+    "nameTooltip": "Click to edit the name and URL structure for this content type.",
     "help": "Help",
+    "helpTooltip": "Watch a tutorial video about the form builder.",
     "goBack": "Cancel / Return to CMS",
     "action": "Save form"
   },

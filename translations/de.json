@@ -282,7 +282,51 @@
     "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{name}}/</code> and the individual pages would be at <code>site.com/{{name}}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
     "listUrlLabel": "URL für alle Einträge vom Typ {{name}}",
     "individualUrlLabel": "URL-Präfix für eine einzelne Seite vom Typ {{name}}",
+    "group": {
+      "text": "Text",
+      "basics": "Grundlegendes",
+      "files": "Dateien",
+      "specifics": "Details",
+      "advanced": "Erweitert"
+    },
+    "widget": {
+      "textfield": "Einzelne Textzeile",
+      "textarea": "Mehrzeiliger Text",
+      "wysiwyg": "WYSIWYG Text",
+      "markdown": "Markdown Text",
+      "number": "Zahl",
+      "checkbox": "Checkbox",
+      "radio": "Mehrfach-Auswahl",
+      "select": "Dropdown-Auswahl",
+      "image": "Bild",
+      "gallery": "Galerie",
+      "audio": "Audio-Datei",
+      "file": "Andere Datei",
+      "name": "Person",
+      "address": "Addresse",
+      "phone": "Telefonnummer",
+      "email": "E-Mail",
+      "datetime": "Datum und Zeit",
+      "url": "Webseite",
+      "rating": "Bewertung",
+      "tabular": "Tabelle",
+      "embedly": "Embed.ly",
+      "color": "Farbe",
+      "instruction": "Anleitung",
+      "relation": "Beziehung",
+      "layout": "Seitenlayout"
+    },
     "info": {
+      "label": "Feldname",
+      "labelTitle": "Kurzer Satz, um den Inhalt dieses Feldes zu beschreiben.",
+      "placeholder": "Platzhalter-Eintrag",
+      "placeholderTitle": "Dies wird angezeigt, bis das Feld einen Inhalt hat, jedoch nicht als Standardwert gespeichert.",
+      "instruction": "Anweisungen für den Benutzer",
+      "instructionTitle": "Anweisungen für den Benutzer, was in dieses Feld eingetragen werden soll.",
+      "required": "Erforderlich",
+      "requiredTitle": "Das Formular kann nicht gespeichert werden, bis dieses Feld ausgefüllt ist.",
+      "requiredCheckbox": "Dieses Feld als erforderlich markieren.",
+      "delete": "Dieses Feld löschen.",
       "text": {
         "min": "Mindestlänge (in Zeichen)",
         "max": "Maximallänge (in Zeichen)"
@@ -329,40 +373,6 @@
         "hidden": "Widget in diesem Formular verbergen."
       }
     },
-    "group": {
-      "text": "Text",
-      "basics": "Grundlegendes",
-      "files": "Dateien",
-      "specifics": "Details",
-      "advanced": "Erweitert"
-    },
-    "widget": {
-      "textfield": "Einzelne Textzeile",
-      "textarea": "Mehrzeiliger Text",
-      "wysiwyg": "WYSIWYG Text",
-      "markdown": "Markdown Text",
-      "number": "Zahl",
-      "checkbox": "Checkbox",
-      "radio": "Mehrfach-Auswahl",
-      "select": "Dropdown-Auswahl",
-      "image": "Bild",
-      "gallery": "Galerie",
-      "audio": "Audio-Datei",
-      "file": "Andere Datei",
-      "name": "Person",
-      "address": "Addresse",
-      "phone": "Telefonnummer",
-      "email": "E-Mail",
-      "datetime": "Datum und Zeit",
-      "url": "Webseite",
-      "rating": "Bewertung",
-      "tabular": "Tabelle",
-      "embedly": "Embed.ly",
-      "color": "Farbe",
-      "instruction": "Anleitung",
-      "relation": "Beziehung",
-      "layout": "Seitenlayout"
-    },
     "control": {
       "markdown": {
         "syntax": "Dieses Feld erlaubt die Verwendung einer <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
@@ -398,7 +408,9 @@
         "clear": "Leeren"
       }
     },
+    "nameTooltip": "Hier klicken, um den Namen und die URL-Strukur für diesen Inhaltstyp zu ändern.",
     "help": "Hilfe",
+    "helpTooltip": "Guck Dir ein Tutorial-Video zum Formulareditor an.",
     "goBack": "Abbrechen / Zurück zum CMS",
     "action": "Formular speichern"
   },

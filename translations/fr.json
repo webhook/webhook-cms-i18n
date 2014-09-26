@@ -21,7 +21,6 @@
     "logout": "Déconnexion",
     "navContent": "Votre contenu",
     "configuration": {
-      "title": "Configuration",
       "types": "Ajouter / Modifier les types de contenu",
       "team": "Membres de l'équipe",
       "settings": "Paramètres",
@@ -152,28 +151,13 @@
       "data": {
         "importExport": {
           "title": "Importer / exporter des données",
-          "instruction": "You are not restricted to just uploading backups. You can upload any data you want but it must conform to the expected format. See the <a href='http://www.webhook.com/docs/importing-custom-data/''>documentation</a> for more information.",
           "action": {
             "import": "Importer des données en JSON",
             "export": "Exporter les données en JSON"
           }
         },
         "backups": {
-          "title": "Sauvegardes",
-          "data": {
-            "title": "Data Backups",
-            "instruction": "Webhook automatically exports a JSON backup every night at 3AM PST. We keep these files around for seven days. For new sites, the backups will only work for the days after your site was created."
-          },
-          "templates": {
-            "title": "Template and site files backup",
-            "instruction": "This will download your Webhook site directory including all the templates and static files as they exist on the live website. You can use these files to recreate your site locally if need be.",
-            "action": "Download your website files"
-          }
-        },
-        "wordpress": {
-          "title": "Import Wordpress Blog (Beta)",
-          "instruction": "Wordpress allows you to <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>export your blog data into an XML document</a>. Once downloaded, use the button below to import that data into Webhook. We'll do our best to import the images included in your articles and size them properly.",
-          "action": "Select a Wordpress XML file"
+          "title": "Sauvegardes"
         },
         "search": {
           "title": "Reconstruire l'index de recherche",
@@ -182,45 +166,21 @@
         },
         "reset": {
           "title": "Réinitialiser votre site web",
-          "warning": "You can only reset your website when running it locally.",
-          "instruction": "This will allow you to reset your site so you can start over. Please make a backup before performing this action.",
-          "options": {
-            "data": "<strong>Delete my data.</strong> (This will delete your forms, but your templates will remain.)",
-            "all": "<strong>Delete my templates and my data.</strong> (This will return this site to a completely fresh install. Useful for changing themes.)"
-          },
           "action": "Supprimer {{deleteOption}}"
         }
       }
     },
     "content": {
       "addNewItem": "Ajouter un nouveau {{name}}",
-      "display": "Display",
-      "limited": "For better performance, we have limited the number of records shown on this page to the last {{recordLimit}} created.",
       "noRecords": "Vous n'avez pas ajouté de {{name}} pour l'instant.",
-      "moreRecords": "Load More Records",
       "allTypes": {
         "title": "Vos types de contenu existants",
         "addType": "Ajouter un nouveau type de contenu",
         "contentType": "Type de contenu",
-        "id": "ID",
-        "formStyle": "Form Style",
         "single": "Un seul élément",
         "multiple": "Plusieurs éléments"
       },
       "start": {
-        "title": "OK, let's add a new form to the CMS",
-        "nameLabel": "Name of new object",
-        "namePlaceholder": "ex: comics, articles, about us, homepage, cities, vampires",
-        "duplicate": "There is already an content type with that name",
-        "long": "The content type ID must be 250 characters or shorter. The ID created from the name entered is {{length}} characters long.",
-        "instruction": "This will be the CMS menu name (on <span class='icon icon-circle-arrow-left'></span> left) and also define the URL pattern on your front-facing site, so choose wisely.",
-        "multiple": {
-          "title": "So... how many {{newTypeName}} are there?",
-          "instruction": "For example, there is only one homepage entry, but there are multiple blog entries.",
-          "one": "There is only <strong>one</strong> {{newTypeName}} entry.",
-          "many": "There are <strong>multiple</strong> {{newTypeName}} entries."
-        },
-        "action": "Let's create a {{newTypeName}} form!",
         "cancel": "Annuler"
       }
     }
@@ -228,22 +188,16 @@
   "form": {
     "add": "Ajouter un champ",
     "edit": "Modifier un champ",
-    "isNewWarning": "<strong>Warning</strong>Changes to these details may require changes in your templates as well.",
+
     "typeName": "Nom du type de contenu",
     "typeNameInvalid": "Le nom du type de contenu est invalide.",
-    "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{ name }}/</code> and the individual pages would be at <code>site.com/{{ name }}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
-    "listUrlLabel": "URL for the list page of all {{ name }}",
-    "individualUrlLabel": "URL prefix for a single {{ name }} page",
     "info": {
       "text": {
         "min": "Minimum de caractères",
         "max": "Maximum caractères"
       },
       "wysiwyg": {
-        "label": "What can users add into the WYSIWYG?",
-        "table": "Tables",
         "video": "Vidéos",
-        "image": "Images",
         "quote": "Citations",
         "link": "Liens"
       },
@@ -251,42 +205,17 @@
         "min": "Valeur minimale",
         "max": "Valeur maximale"
       },
-      "checkbox": {
-        "label": "Checkbox options",
-        "help": "Use the plus and minus to add new options. Click the checkbox to make it default when on a fresh form."
-      },
-      "radio": {
-        "label": "Multiple choice options",
-        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
-      },
-      "select": {
-        "label": "Dropdown options",
-        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
-      },
       "rating": {
         "min": "Valeur minimale",
-        "minHelp": "This is the min value a user can enter. Entering .5 would allow a half star.",
         "max": "Valeur maximale",
-        "maxHelp": "The max number of stars allowed. Entering 10 would change the form to have 10 stars.",
-        "step": "Step",
-        "stepHelp": "What increment can people rate between the min and the max? Entering .5 would mean a user can rate in half stars."
+        "step": "Step"
       },
       "tabular": {
         "label": "Colonnes"
-      },
-      "relationship": {
-        "label": "Relationships to allow",
-        "help": "Only this content type will be searchable in the form widget.",
-        "single": "Only allow one searched item and no more.",
-        "hidden": "Hide this widget during form entry."
       }
     },
     "group": {
-      "text": "Texte",
-      "basics": "Basics",
-      "files": "Files",
-      "specifics": "Specifics",
-      "advanced": "Advanced"
+      "text": "Texte"
     },
     "widget": {
       "textfield": "Une seule ligne de texte",
@@ -294,10 +223,6 @@
       "wysiwyg": "Texte WYSIWYG",
       "markdown": "Texte Markdown",
       "number": "Nombre",
-      "checkbox": "Checkbox",
-      "radio": "Multiple choice",
-      "select": "Dropdown",
-      "image": "Image",
       "gallery": "Gallerie",
       "audio": "Fichier audio",
       "file": "Autre fichier",
@@ -307,18 +232,9 @@
       "email": "Courriel",
       "datetime": "Date et heure",
       "url": "Site web",
-      "rating": "Rating",
-      "tabular": "Tabular Data",
-      "embedly": "Embed.ly",
-      "color": "Couleur",
-      "instruction": "Instructions",
-      "relation": "Relation",
-      "layout": "Page Layout"
+      "color": "Couleur"
     },
     "control": {
-      "markdown": {
-        "syntax": "This field allows <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
-      },
       "image": {
         "action": "Faire glisser ou sélectionner l'image",
         "replace": "Remplacer l'image"
@@ -334,7 +250,6 @@
       },
       "file": {
         "action": "Faire glisser ou sélectionner un fichier",
-        "url": "or use a URL?",
         "select": "Sélectionner à partir du bureau",
         "remove": "Enlever",
         "cancel": "Annuler",
@@ -358,7 +273,6 @@
     "title": "Comment devrions-nous configurer votre site?",
     "theme": {
       "title": "Montrez-moi un peu de magie.",
-      "instruction": "<p>Pick one of our pre-built sites that follow common CMS and design patterns. Personnalisez tard.</p><p>Example: A blog site, a portfolio site.</p>",
       "action": "Partir d'un thème"
     },
     "empty": {
@@ -368,9 +282,7 @@
     }
   },
   "theme": {
-    "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterworks. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
     "title": "Partir d'un thème",
-    "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Interested in making your own theme? <a href='http://www.webhook.com/docs/creating-a-theme/'>Read the docs</a>. Can't find what you're looking for?",
     "scratch": "Partir de zéro.",
     "error": "Oups",
     "upload": {

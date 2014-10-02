@@ -3,7 +3,8 @@
     "email": "Sähköposti",
     "password": "Salasana",
     "signIn": "Kirjaudu sisään",
-    "forgotPassword": "Unohtuiko salasana?"
+    "forgotPassword": "Unohtuiko salasana?",
+    "addLanguage": "Auta kääntämään Webhook eri kielille"
   },
   "passwordReset": {
     "prompt": "Syötä sähköpostiosoitteesi nollataksesi salasanasi.",
@@ -17,7 +18,10 @@
     "save": "Tallenna"
   },
   "wh": {
+    "userCount": "linjoilla nyt.",
+    "accountTooltip": "Klikkaa muuttaaksesi salasanasi ja muita tilitietoja.",
     "logout": "Kirjaudu ulos",
+    "search": "Etsi painamalla S",
     "navContent": "Sisältösi",
     "configuration": {
       "title": "Konfiguraatio",
@@ -35,7 +39,7 @@
         "description": "Käteviä linkkejä Webhookilla rakentamisen tueksi:",
         "docs": "Dokumentaatio",
         "support": "Tuki",
-        "issues": "Onglemat",
+        "issues": "Ongelmat",
         "forums": "Foorumit"
       },
       "updates": "Webhook päivitykset",
@@ -66,6 +70,10 @@
         }
       },
       "team": {
+        "deploy": {
+          "title": "Sivu täytyy ottaa sivusto ensin käyttöön",
+          "instruction": "Ennen kuin voit lisätä uusia jäseniä, sinun täytyy ottaa sivusto käyttöön internetissä. Voit tehdä sen ajamalla <code>wh deploy</code> paikallisen sivustosi hakemistossa. Palaa sitten tälle sivulle."
+        },
         "invite": {
           "title": "Kutsu uusi jäsen tiimiin",
           "instruction": "Kutsu yhteistyökumppani sähköpostitse",
@@ -76,7 +84,14 @@
           "title": "Nykyiset tiimin jäsenet",
           "description": "Omistajilla on pääsy laskutukseen ja paikallisiin kehitystyökaluihin. Yhteistyökumppanit voivat vain lisätä tai muokata tietoa julkaistuun CMS:ään.",
           "email": "Sähköposti",
-          "permissions": "Oikeudet"
+          "permissions": "Oikeudet",
+          "owner": "Omistaja",
+          "contributor": "Osallistuja",
+          "toOwner": "Vaihda omistajaa",
+          "toContributor": "Muuta osallistujaksi",
+          "remove": "Poista pääsy kokonaan",
+          "waiting": "Odottetaan vahvistusta",
+          "cancel": "Peru kutsu"
         }
       },
       "general": {
@@ -85,7 +100,8 @@
           "password": {
             "prompt": "Täytyykö sinun vaihtaa salasanaasi?",
             "action": "Vaihda salasanasi tästä"
-          }
+          },
+          "language": "Valitse CMS:n kieli"
         },
         "global": {
           "title": "Globaalit muuttujat",
@@ -123,11 +139,34 @@
         }
       },
       "billing": {
-        "title": "Laskutus"
+        "title": "Laskutus",
+        "trial": {
+          "lastDay": "Tänään on viimeinen kokeilupäiväsi",
+          "days": "Sinulla on {{count}} päivää kokeiluaikaa jäljellä",
+          "instruction": "<p>Kaikki Webhook sivustot alkavat ilmaisina 14 päivän kokeiluina. Jatkaaksesi palvelua ja mahdollistaaksesi omat domainit sinun täytyy päivittää maksettuun tiliin. </p><p>Sinua pyydetään kirjautumaan uudelleen.</p>",
+          "action": "Päivitä nyt"
+        },
+        "paid": {
+          "title": "Kiitos tilauksestasi!",
+          "instruction": "<p>Sivustosi on aktiivinen tili. Jos sinyn täytyy muuttaa laskutustietojasi tai perua tilauksesi, klikkaa itsesi laskutuspotaaliimme.</p><p>Sinua pyydetään kirjautumaan uudelleen.</p>",
+          "action": "Hallitse laskutusta"
+        }
       },
       "domain": {
         "title": "Domainit",
-        "description": "Sivustosi on tällä hetkellä saatavilla osoitteessa <strong>{{buildEnvironment.siteName}}.webhook.org</strong> {{#if domain}}and <strong>{{domain}}</strong>{{/if}}",
+        "description": "Sivustosi on tällä hetkellä saatavilla osoitteessa <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "and <strong>{{domain}}</strong>",
+        "success": {
+          "title": "Melkein valmis",
+          "instruction": "Hienoa. Osoita isäntätietueesi seuraavaan osoitteeseen.",
+          "docs": "Löydät yksityiskohtaisemmat ohjeet dokumentaatiostamme, kohdasta <a href='http://www.webhook.com/docs/deployment-domains/'>kuinka ottaa domainisi käyttöön</a>."
+        },
+        "trial": {
+          "title": "Päivitä ottaaksesi omat domainit käyttöön",
+          "instruction": "Tämä sivusto on yhä ilmainen kokeiluversio. Vain maksetut sivustot voivat käyttää omaa domainia.",
+          "upgrade": "Päivitä osoitteessa webhook.com"
+        },
+        "error": "Ole hyvä ja korjaa seuraavat virheet.",
         "form": {
           "title": "Käytä aiemmin ostettua domainia",
           "instruction": "Eikö sinulla ole domainia? Osta sellainen <a href='http://www.namecheap.com/?aff=65093'>Namecheapista</a> tai miltä tahansa domaineja myyvältä sivustolta ja palaa sitten tänne.",
@@ -142,6 +181,24 @@
           "action": {
             "import": "Tuo JSON dataa",
             "export": "Vie JSON dataa"
+          },
+          "import": {
+            "found": "Löysimme seuraavaa dataa tiedostostasi:",
+            "type": "Sisällön tyyppi",
+            "item": "Kohteiden määrä",
+            "noContent": "Ei sisältöä tuotavaksi.",
+            "setting": "Asetus",
+            "value": "Arvo",
+            "noSettings": "Ei asetuksia tuotavaksi.",
+            "warningTitle": "Varoitus!",
+            "warning": "Backupin käyttäminen tulee <strong>poistamaan pysyvästi</strong> nykyisen datan ja korvaamaan sen vasta ladatulla datalla. Se myös rakentaa sivun uudelleen tuotua dataa käyttäen. Jos et ole vähään aikaan varmuuskopioinut, nyt olisi korkea aika.",
+            "proceed": "Jatka",
+            "cancel": "Peru",
+            "noDataTitle": "Ei dataa",
+            "noData": "Emme löytäneet yhtään käyttökelpoista dataa tuotavaksi.",
+            "goBack": "Palaa",
+            "invalidTitle": "Emme voi jäsentää tiedostoasi.",
+            "invalid": "Varmista että olet lataamassa <strong>yhteensopivan</strong> JSON tiedoston ja yritä uudelleen."
           }
         },
         "backups": {
@@ -164,7 +221,8 @@
         "search": {
           "title": "Rakenna hakuindeksi uudelleen",
           "instruction": "Hakuindeksin uudelleenrakennus voi auttaa, mikäli CMS:n haku ei toimi kunnolla.",
-          "action": "Rakenna hakuindeksi uudelleen"
+          "action": "Rakenna hakuindeksi uudelleen",
+          "indexing": "Indeksoi dataa"
         },
         "reset": {
           "title": "Nollaa sivustosi",
@@ -174,15 +232,19 @@
             "data": "<strong>Poista kaikki data.</strong> (Tämä poistaa lomakkeesi, mutta mallipohjat säilyvät.)",
             "all": "<strong>Poista kaikki pohjat ja data.</strong> (Tämä palauttaa sivuston alkutilaan. Se on hyödyllistä esimerkiksi teemaa vaihtaessa.)"
           },
-          "action": "Poista {{deleteOption}}"
+          "action": {
+            "deleteData": "Poista data",
+            "deleteEverything": "Poista kaikki"
+          },
+          "deleting": "Poistetaan"
         }
       }
     },
     "content": {
-      "addNewItem": "Lisää uusi {{contentType.name}}",
+      "addNewItem": "Lisää uusi {{name}}",
       "display": "Näytä",
       "limited": "Suorituskyvyn parantamiseksi näytämme vain {{recordLimit}} viimeisintä luotua tallennetta.",
-      "noRecords": "Et ole lisännyt vielä yhtään {{contentType.name}}:a.",
+      "noRecords": "Et ole lisännyt vielä yhtään {{name}}:a.",
       "moreRecords": "Lataa lisää tallenteita",
       "allTypes": {
         "title": "Olemassaolevat sisältötyyppisi",
@@ -192,6 +254,22 @@
         "formStyle": "Lomakkeen tyyli",
         "single": "Yksittäinen kohde",
         "multiple": "Monta kohdetta"
+      },
+      "start": {
+        "title": "OK, luodaampa uusi lomake CMS:ään",
+        "nameLabel": "Uuden kohteen nimi",
+        "namePlaceholder": "esim.: sarjakuvat, artikkelit, tietoa meistä, kotisivu, kaupungit, vampyyrit",
+        "duplicate": "Sen niminen sisältötyyppi on jo olemassa",
+        "long": "Sisältötyypin ID saa olla korkeintaan 250 merkkiä pitkä. Syötetystä nimestä muodostuva ID on {{length}} merkkiä pitkä.",
+        "instruction": "Tämä tulee olemaan (vasemmalla <span class='icon icon-circle-arrow-left'></span> näkyvän) CMS valikon nimi ja se määrittää ulospäin näkyvän URL osoitteen, joten valitse harkiten.",
+        "multiple": {
+          "title": "Eli... kuinka monta {{newTypeName}}:a on olemassa?",
+          "instruction": "Esimerkiksi on vain yksi etusivu mutta monta blogipäivitystä.",
+          "one": "On vain <strong>yksi</strong> {{newTypeName}} artikkeli.",
+          "many": "On olemassa <strong>monta</strong> {{newTypeName}} artikkelia."
+        },
+        "action": "Luodaan {{newTypeName}} lomake!",
+        "cancel": "Peru"
       }
     }
   },
@@ -201,21 +279,9 @@
     "isNewWarning": "<strong>Varoitus!</strong>Muutokset näihin tietoihin voivat vaatia myös muutoksia työpohjiisi.",
     "typeName": "Sisältötyypin nimi",
     "typeNameInvalid": "Tyypin nimi on virheellinen.",
-    "slugInstruction": "<strong>URL slug control</strong><strong>URL slug control</strong>Alla Voit räätälöidä URL osoitteiden sijainteja tälle sisältötyypille. Tyhjäksi jätettynä vakiolistasivu olisi <code>site.com/{{name}}/</code> ja yksittäiset sivut olisivat <code>site.com/{{name}}/name-of-item/</code>. Nämä kentät sallivat joidenkin muuttujien, kuten päivämäärien, käsittelyä. Tutustu <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentaatioon täällä</a>.",
+    "slugInstruction": "<strong>URL slug hallinta</strong>Alla Voit räätälöidä URL osoitteiden sijainteja tälle sisältötyypille. Tyhjäksi jätettynä vakiolistasivu olisi <code>sivusto.fi/{{name}}/</code> ja yksittäiset sivut olisivat <code>sivusto.fi/{{name}}/name-of-item/</code>. Nämä kentät sallivat joidenkin muuttujien, kuten päivämäärien, käsittelyä. Tutustu <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>dokumentaatioon täällä</a>.",
     "listUrlLabel": "URL osoite listasivulle kaikille {{name}}",
     "individualUrlLabel": "URL alkuliite yksittäiselle {{name}} sivulle",
-    "info": {
-      "label": "Kentän nimi",
-      "labelTitle": "Lyhyt kuvaus kentän sisällölle.",
-      "placeholder": "Placeholder arvo",
-      "placeholderTitle": "Tämä näkyy kentässä, kunne sille annetaan arvo. Se ei normaalisti tallennu.",
-      "instruction": "Ohjeet käyttäjälle",
-      "instructionTitle": "Ohjeet käyttäjälle siitä, mitä tähän kenttään tulisi syöttää.",
-      "required": "Pakollinen",
-      "requiredTitle": "Lomaketta ei voida tallentaa, ennenkuin tässä kentässä on arvo.",
-      "requiredCheckbox": "Tee tästä kehtästä pakollinen .",
-      "delete": "Poista tämä kenttä"
-    },
     "group": {
       "text": "Teksti",
       "basics": "Perusasiat",
@@ -250,8 +316,134 @@
       "relation": "Suhde",
       "layout": "Sivun taitto"
     },
+    "info": {
+      "label": "Kentän nimi",
+      "labelTitle": "Lyhyt kuvaus kentän sisällölle.",
+      "placeholder": "Placeholder arvo",
+      "placeholderTitle": "Tämä näkyy kentässä, kunne sille annetaan arvo. Se ei normaalisti tallennu.",
+      "instruction": "Ohjeet käyttäjälle",
+      "instructionTitle": "Ohjeet käyttäjälle siitä, mitä tähän kenttään tulisi syöttää.",
+      "required": "Pakollinen",
+      "requiredTitle": "Lomaketta ei voida tallentaa, ennenkuin tässä kentässä on arvo.",
+      "requiredCheckbox": "Tee tästä kehtästä pakollinen .",
+      "delete": "Poista tämä kenttä",
+      "text": {
+        "min": "Minimi määrä merkkejä",
+        "max": "Maksimi määrä merkkejä"
+      },
+      "wysiwyg": {
+        "label": "Mitä käyttäjät voivat lisätä WYSIWYG:iin?",
+        "table": "Taulukoita",
+        "video": "Videoita",
+        "image": "Kuvia",
+        "quote": "Lainauksia",
+        "link": "Linkkejä"
+      },
+      "number": {
+        "min": "Minimi määrä",
+        "max": "Maksimi määrä"
+      },
+      "checkbox": {
+        "label": "Valintaruutuvalinnat",
+        "help": "Käytä plus- ja miinusmerkkjeä lisätäksesi vaihtoehtoja. Klikkaa valintaruutua tehdäksesi siitä valittu jokaisella uudella lomakkeella."
+      },
+      "radio": {
+        "label": "Monivalintavalinnat",
+        "help": "Käytä plus- ja miinusmerkkjeä lisätäksesi vaihtoehtoja. Klikkaa nappia tehdäksesi siitä valittu jokaisella uudella lomakkeella."
+      },
+      "select": {
+        "label": "Pudotusvalikkovalinnat",
+        "help": "Käytä plus- ja miinusmerkkjeä lisätäksesi vaihtoehtoja. Klikkaa nappia tehdäksesi siitä valittu jokaisella uudella lomakkeella."
+      },
+      "rating": {
+        "min": "Minimiarvio",
+        "minHelp": "Tämä on alin arvio minkä käyttäjä voi antaa. Arvo .5 sallisi puoli tähteä.",
+        "max": "Maksimiarvo",
+        "maxHelp": "Tämä on korkein arvio minkä käyttäjä voi antaa. Arvo 10 tarkoittaisi kymmentä tähteä lomakkeella.",
+        "step": "Askel",
+        "stepHelp": "Minkä kokoisissa pykälissä käyttäjä voi valita suurimman ja pienimmän välillä? Arvo .5 tarkoittaisi, että käyttäjä voi antaa arvion puolen tähden tarkkuudella."
+      },
+      "tabular": {
+        "label": "Palstat"
+      },
+      "relationship": {
+        "label": "Sallittavat suhteet",
+        "help": "Vaint tätä sisältötyyppiä voi etsiä muotowidgetillä.",
+        "single": "Salli vain yksi hakukohde.",
+        "hidden": "Piilota widgetti lomaketta täyttäessä."
+      }
+    },
+    "control": {
+      "markdown": {
+        "syntax": "Tämä kenttä sallii <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntaksin</a>."
+      },
+      "image": {
+        "action": "Raahaa tai valitse kuva",
+        "replace": "Korvaa kuva"
+      },
+      "gallery": {
+        "action": "Raahaa tai valitse kuvia",
+        "instruction": "Ympyröissä kuvissa on kuvaukset. Klikkaa muokataksesi yksittäistä kuvaa. Raahaa järjestelläksesi.",
+        "delete": "Poista",
+        "close": "Tallenna / Sulje"
+      },
+      "audio": {
+        "action": "Raahaa tai valitse audiotiedosto"
+      },
+      "file": {
+        "action": "Raahaa tai valitse tiedosto",
+        "url": "tai käytä URL-osoitetta?",
+        "select": "Valitse työpöydältä",
+        "remove": "Poista",
+        "cancel": "Peru",
+        "upload": "Lataa",
+        "paste": "Sijoita URL"
+      },
+      "tabular": {
+        "add": "Lisää rivi"
+      },
+      "embedly": {
+        "action": "Nouda",
+        "preview": "Esikatselu",
+        "clear": "Tyhjennä"
+      }
+    },
+    "nameTooltip": "Klikkaa muokataksesi tämän sisältötyypin URL rakennetta.",
     "help": "Apua",
+    "helpTooltip": "Katso opetusvideo lomakkeen rakentamisesta.",
     "goBack": "Peru / Palaa CMS:ään",
     "action": "Tallenna lomake"
+  },
+  "start": {
+    "title": "Kuinka laittaisimme sivustosi?",
+    "theme": {
+      "title": "Näytä minulle taikaa.",
+      "instruction": "<p>Valitse yksi valmiista sivustoistamme, jotka seuraavat yleisia CMS ja suunnittelukäytäntöjä. Muokkaa myöhemmin.</p><p>Esimerkki: Blogisivu, portfoliosivu.</p>",
+      "action": "Aloita teemasta"
+    },
+    "empty": {
+      "title": "Minä olen se taika!",
+      "instruction": "<p>Käytä lomakkeenrakentajaa luodaksesi oma CMS määrittelemilläsi sivutyypeillä.</p><p>Sinun täytyy koodata designisi käyttäen HTML:ää / CSS:ää.</p>",
+      "action": "Aloita puhtaalta pöydältä"
+    }
+  },
+  "theme": {
+    "localWarning": "Voit asettaa teeman vain paikalliseen (omalla tietokoneellasi sijaitsevaan) versioon tästä sivustosta. Ole hyvä ja tee muutoksesi ja muista ottaa ne käyttöön sen jälkeen. Saadaksesi lisää apua teeman asettamiseen tai muuttamiseen, tutustu <a href='http://www.webhook.com/docs/'>dokumentaatioon täällä</a>",
+    "title": "Aloita teemasta",
+    "instruction": "Sivustopohjat automaattisesti asentavat lomakkeet, staattiset tiedostot ja työpohjat jotka tarvitset päästäksesi nopeasti alkuun. Kiinnostaako oman teeman luominen? <a href='http://www.webhook.com/docs/creating-a-theme/'>Lue dokumentaatio</a>. Etkö löydä etsimääsi?",
+    "scratch": "Aloita puhtaalta pöydältä.",
+    "error": "Hups",
+    "upload": {
+      "title": "Lataa paikallinen teema",
+      "label": "Valitse .zip tiedosto työpöydäötäsi",
+      "action": "Valitse paikallinen zip tiedosto"
+    },
+    "url": {
+      "title": "Lataa teema verkosta",
+      "label": "http:// .zip tiedostosi osoite.",
+      "action": "Lataa zip tiedosto verkosta"
+    },
+    "demo": "Demo",
+    "install": "Asenna"
   }
 }

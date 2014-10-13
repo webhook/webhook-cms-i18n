@@ -1,0 +1,449 @@
+{
+  "login": {
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "signIn": "Log in",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "addLanguage": "Draag bij aan de vertalingen van Webhook"
+  },
+  "passwordReset": {
+    "prompt": "Voer uw e-mail in om uw wachtwoord opnieuw in te stellen.",
+    "action": "Stel wachtwoord opnieuw in",
+    "goBack": "Ga terug naar login",
+    "emailLabel": "E-mail",
+    "provideEmail": "Voer uw e-mail in om uw wachtwoord opnieuw in te stellen.",
+    "success": "Wachtwoord opnieuw instellen e-mail met succes verstuurd."
+  },
+  "button": {
+    "save": "Bewaar"
+  },
+  "wh": {
+    "userCount": "nu online.",
+    "accountTooltip": "Klik om uw wachtwoord en andere gebruikers info te wijzingen.",
+    "logout": "Log uit",
+    "search": "Druk op S om te zoeken",
+    "navContent": "Jouw Inhoud",
+    "configuration": {
+      "title": "Configuratie",
+      "types": "Voeg toe / Bewerk inhoudstypes",
+      "team": "Teamleden",
+      "settings": "Instellingen",
+      "billing": "Facturering",
+      "dns": "Domain",
+      "data": "Back-ups en gegevens"
+    },
+    "localNotice": "<span class='icon icon-code'> Lokale ontwikkeling</span> Hier opslaan zal alleen\nlokaal bouwen starten, niet op uw live website. ",
+    "index": {
+      "welcome": {
+        "title": "Welkom bij uw CMS",
+        "description": "Aantal handige links over bouwen met Webhook:",
+        "docs": "Documentatie",
+        "support": "Ondersteuning",
+        "issues": "Kwesties",
+        "forums": "Fora"
+      },
+      "updates": "Webhook Updates",
+      "history": "Bouw Geschiedenis",
+      "moreHistory": "Haal meer geschiedenis op"
+    },
+    "settings": {
+      "password": {
+        "title": "Wijzig Wachtwoord",
+        "action": "Bewaar",
+        "fields": {
+          "account": {
+            "label": "Account om te wijzigen"
+          },
+          "oldPassword": {
+            "label": "Oud wachtwoord"
+          },
+          "newPassword": {
+            "label": "Nieuw wachtwoord"
+          },
+          "newPassword2": {
+            "label": "Nieuw wachtwoord (herhaal)"
+          }
+        },
+        "error": {
+          "match": "Wachtwoorden moeten gelijk zijn.",
+          "fix": "Los de volgende problemen op."
+        }
+      },
+      "team": {
+        "deploy": {
+          "title": "U dient eerst te deployen",
+          "instruction": "Voordat u nieuwe leden kan toevoegen aan uw team, dient u eerst uw site te deployen naar het Internet. U kunt dit doen door <code>wh deploy</code> uit te voeren binnen uw lokale site map. Keer daarna terug naar deze pagina."
+        },
+        "invite": {
+          "title": "Nodig een Nieuw Teamlid uit",
+          "instruction": "Nodig een nieuwe medewerker uit per e-mail",
+          "help": "De persoon zal niet actief zijn totdat deze zijn of haar e-mail adres verifieert.",
+          "action": "Verstuur Uitnodiging"
+        },
+        "current": {
+          "title": "Huidige Teamleden",
+          "description": "Eigenaren hebben toegang tot de facturering en de lokale ontwikkel gereedschappen. Medewerkers hebben alleen de mogelijkheid om inhoud toe te voegen en te bewerken binnen het live CMS.",
+          "email": "E-mail",
+          "permissions": "Permissies",
+          "owner": "Eigenaar",
+          "contributor": "Medewerker",
+          "toOwner": "Verander naar eigenaar",
+          "toContributor": "Verander naar medewerker",
+          "remove": "Verwijder complete toegang",
+          "waiting": "Wachtend op verificatie",
+          "cancel": "Annuleer uitnodiging"
+        }
+      },
+      "general": {
+        "account": {
+          "title": "Account Instellingen",
+          "password": {
+            "prompt": "Wilt u uw wachtwoord wijzigen?",
+            "action": "Wijzig uw wachtwoord hier"
+          },
+          "language": "Selecteer CMS taal"
+        },
+        "global": {
+          "title": "Globale Variabelen",
+          "description": "Dit zijn de globale waarden die worden gebruikt in uw front-end templates. Om ze op te halen in uw site, bekijkt u hier <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'>de documentatie</a>.",
+          "action": "Bewaar",
+          "fields": {
+            "name": {
+              "label": "Site Naam"
+            },
+            "description": {
+              "label": "Site Omschrijving",
+              "help": "Een korte beschrijving voor je site."
+            },
+            "keywords": {
+              "label": "Site Trefwoorden",
+              "help": "Komma gescheiden lijst van trefwoorden die uw site beschrijven."
+            },
+            "url": {
+              "label": "Site URL",
+              "help": "Gebruik een volledige URL zoals http://www.example.com."
+            },
+            "analytics": {
+              "label": "Site Analytics ID",
+              "help": "Analytics Service ID. Vaak zoiets als UA-XX-XXXX."
+            },
+            "twitter": {
+              "label": "Site Twitter",
+              "help": "Twitter handle, zonder het @ teken."
+            },
+            "facebook": {
+              "label": "Site Facebook",
+              "help": "Facebook naam."
+            }
+          }
+        }
+      },
+      "billing": {
+        "title": "Facturering",
+        "trial": {
+          "lastDay": "Dit is de laatste dag van uw proefperiode",
+          "days": "U heeft nog {{count}} dagen binnen uw proefperiode over",
+          "instruction": "<p>Alle Webhook sites starten met een gratis 14-dagen proefperiode. Om de service te blijven gebruiken en aangepaste domeinnaam te ondersteunen dient u te upgraden naar een betaald account.</p>\n<p>U zal worden gevraagd om opnieuw in te loggen</p>",
+          "action": "Upgrade nu"
+        },
+        "paid": {
+          "title": "Bedankt voor het zaken doen met u!",
+          "instruction": "<p>Uw site is een actief account. Als u uw facturering informatie wilt wijzingen of uw abonnement wilt annuleren, klik dan verder naar ons facturerings portaal.</p>\n<p>U zal worden gevraagd om opnieuw in te loggen</p>",
+          "action": "Beheer facturering"
+        }
+      },
+      "domain": {
+        "title": "Domeinen",
+        "description": "Uw site is op dit moment beschikbaar via <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "en <strong>{{domain}}</strong>",
+        "success": {
+          "title": "Bijna klaar",
+          "instruction": "Super. Richt uw host records naar het volgende adres.",
+          "docs": "U kunt meer gedetailleerde instructies vinden in onze documentatie over <a href='http://www.webhook.com/docs/deployment-domains/'>hoe uw domein op te zetten</a>."
+        },
+        "trial": {
+          "title": "Upgrade om aangepaste domeinen te gebruiken",
+          "instruction": "Deze site is nog steeds in proefperiode. Alleen betaalde sites staan het gebruik van aangepaste domeinen toe.",
+          "upgrade": "Upgrade op webhook.com"
+        },
+        "error": "Los de volgende fouten op",
+        "form": {
+          "title": "Gebruik een eerder aangeschaft domein",
+          "instruction": "Nog geen domein? Schaf er één aan op <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> of ieder andere domein verkoper en kom daarna hier terug.",
+          "label": "Voer hier uw domeinnaam in",
+          "action": "Gebruik dit domein"
+        }
+      },
+      "data": {
+        "importExport": {
+          "title": "Importeer / Exporteer Gegevens",
+          "instruction": "U bent niet beperkt tot het alleen uploaden van back-ups. U kunt alle gegevens uploaden die u wilt, als deze maar voldoet aan het te verwachten formaat. Zie de <a href='http://www.webhook.com/docs/importing-custom-data/''>documentatie</a> voor meer informatie.",
+          "action": {
+            "import": "Importeer JSON Gegevens",
+            "export": "Exporteer JSON Gegevens"
+          },
+          "import": {
+            "found": "We hebben de volgende gegevens gevonden in uw bestand:",
+            "type": "Inhoudstype",
+            "item": "Aantal Items",
+            "noContent": "Geen inhoud om te importeren",
+            "setting": "Instelling",
+            "value": "Waarde",
+            "noSettings": "Geen instellingen om te importeren.",
+            "warningTitle": "Waarschuwing!",
+            "warning": "Met behulp van een back-up <strong>verwijdert u permanent</strong> de huidige gegevens en vervangt deze met de gegevens die u heeft geüpload. Het zal bovendien ook de site herbouwen met de geïmporteerde gegevens. Als u al een tijd geen back-up heeft gemaakt, is dit een goed moment.",
+            "proceed": "Doorgaan",
+            "cancel": "Annuleer",
+            "noDataTitle": "Geen gegevens",
+            "noData": "We kunnen geen valide gegevens vinden om te importeren in uw bestand.",
+            "goBack": "Terug",
+            "invalidTitle": "We kunnen uw bestand niet ontleden.",
+            "invalid": "Zorg ervoor dat u een <strong>geldig</ strong> JSON bestand upload en probeer het opnieuw."
+          }
+        },
+        "backups": {
+          "title": "Back-ups",
+          "data": {
+            "title": "Gegevens Back-ups",
+            "instruction": "Webhook exporteert elke nacht om 03:00 automatisch een JSON back-up. We slaan deze bestanden zeven dagen op. Voor nieuwe sites zullen de back-ups alleen werken voor dagen nadat de site is aangemaakt."
+          },
+          "templates": {
+            "title": "Sjablonen en site bestanden back-up",
+            "instruction": "Dit zal uw Webhook site map downloaden, inclusief alle sjablonen en statische bestanden zoals ze bestaan op de live website. U kunt deze bestanden gebruiken om uw site lokaal na te maken als u dat wilt",
+            "action": "Download uw website bestanden"
+          }
+        },
+        "wordpress": {
+          "title": "Importeer Wordpress Blog (Beta)",
+          "instruction": "Wordpress biedt u de mogelijk om <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>uw blog gegevens te exporteren naar een XML bestand</a>. Wanneer gedownload, kunt u onderstaande knop gebruiken om deze gegevens te importeren in Webhook. We zullen ons best doen om de inbegrepen afbeeldingen bij uw artikelen te importeren en ze correct op maat te maken. ",
+          "action": "Selecteer een Wordpress XML bestand"
+        },
+        "search": {
+          "title": "Herbouw Zoekindex",
+          "instruction": "Als u problemen heeft met het CMS zoeken. Helpt het vaak om uw index te herbouwen.",
+          "action": "Herbouw zoekindex",
+          "indexing": "Indexeer gegevens"
+        },
+        "reset": {
+          "title": "Stel Uw Website Opnieuw In",
+          "warning": "U kunt uw website alleen opnieuw instellen als deze lokaal draait.",
+          "instruction": "Dit zal u de mogelijkheid bieden om uw site opnieuw in te stellen, zodat u opnieuw kunt beginnen. Maak wel een back-up voordat u deze handeling uitvoert.",
+          "options": {
+            "data": "<strong>Verwijder mijn gegevens.</strong> (Dit zal uw formulieren verwijderen, maar uw sjablonen zullen blijven bestaan)",
+            "all": "<strong>Verwijder mijn sjablonen en mijn gegevens.</strong> (Dit zal uw site terugbrengen naar een verse installatie. Handig voor het veranderen van thema's.)"
+          },
+          "action": {
+            "deleteData": "Verwijder gegevens",
+            "deleteEverything": "Verwijder alles"
+          },
+          "deleting": "Aan het verwijderen"
+        }
+      }
+    },
+    "content": {
+      "addNewItem": "Voeg nieuw {{name}} toe",
+      "display": "Weergeven",
+      "limited": "Voor betere prestaties, hebben we het aantal records op deze pagina beperkt naar de laatste {{recordLimit}} aangemaakt.",
+      "noRecords": "U heeft nog geen {{name}} toegevoegd.",
+      "moreRecords": "Laad Meer Records",
+      "allTypes": {
+        "title": "Uw bestaande inhoudstypes",
+        "addType": "Voeg nieuw inhoudstype toe",
+        "contentType": "Inhoudstype",
+        "id": "ID",
+        "formStyle": "Formulier Stijl",
+        "single": "Enkel Item",
+        "multiple": "Meerdere Items"
+      },
+      "start": {
+        "title": "OK, laten we een nieuw formulier toevoegen aan het CMS",
+        "nameLabel": "Naam van het nieuwe object",
+        "namePlaceholder": "bijv: stripboeken, artikelen, over ons, homepagina, steden, vampieren",
+        "duplicate": "Er is al een inhoudstype met deze naam",
+        "long": "Het inhoudstype ID moet 250 karakters of minder bevatten. Het ID aangemaakt vanuit de ingevoerde naam is {{length}} karakters lang.",
+        "instruction": "Dit zal het CMS menu naam (aan de <span class='icon icon-circle-arrow-left'></span> linkerkant) zijn en ook het URL patroon definiëren aan de voorkant van uw site, kies daarom verstandig.",
+        "multiple": {
+          "title": "Dus... hoeveel {{newTypeName}} zijn er?",
+          "instruction": "Bijvoorbeeld, er is alleen één homepagina item, maar er zijn meerdere blog items.",
+          "one": "Er is alleen <strong>één</strong> {{newTypeName}} item.",
+          "many": "Er zijn <strong>meerdere</strong> {{newTypeName}} items."
+        },
+        "action": "Laten we een {{newTypeName}} formulier aanmaken!",
+        "cancel": "Annuleer"
+      }
+    }
+  },
+  "form": {
+    "add": "Voeg veld toe",
+    "edit": "Bewerk veld",
+    "isNewWarning": "<strong>Waarschuwing</strong>Wijzigingen aan deze details vereisen ook wijzigingen aan uw sjablonen.",
+    "typeName": "Naam inhoudstype",
+    "typeNameInvalid": "Naam inhoudstype is niet valide",
+    "slugInstruction": "<strong>Url slug controle</strong>U kunt de locatie van de URL's voor dit inhoudstype hieronder aanpassen. Indien leeg gelaten, zal de standaard lijst pagina <code>site.com/{{name}}/</code> zijn en de individuele pagina's zullen dan <code>site.com/{{name}}/name-of-item/</code> zijn. Deze velden staan variabelen toe, inclusief het hanteren van datums. Zie hiervoor <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>de volledige documentatie</a>.",
+    "listUrlLabel": "URL van de lijst pagina van alle {{name}}",
+    "individualUrlLabel": "URL-voorvoegsel voor een enkele {{name}} pagina",
+    "group": {
+      "text": "Tekst",
+      "basics": "Fundamenten",
+      "files": "Bestanden",
+      "specifics": "Specificaties",
+      "advanced": "Geavanceerd"
+    },
+    "widget": {
+      "textfield": "Enkele regel tekst",
+      "textarea": "Paragraaf tekst",
+      "wysiwyg": "WYSIWYG tekst",
+      "markdown": "Markdown tekst",
+      "number": "Nummer",
+      "checkbox": "Keuzevak",
+      "radio": "Meerkeuze",
+      "select": "Keuzelijst",
+      "image": "Afbeelding",
+      "gallery": "Gallerij",
+      "audio": "Audio bestand",
+      "file": "Ander bestand",
+      "name": "Persoon",
+      "address": "Adres",
+      "phone": "Telefoonnummer",
+      "email": "E-mail",
+      "datetime": "Datum tijd",
+      "url": "Website",
+      "rating": "Ordening",
+      "tabular": "Gegevens In Tabelvorm",
+      "embedly": "Embed.ly",
+      "color": "Kleur",
+      "instruction": "Instructies",
+      "relation": "Relatie",
+      "layout": "Pagina Indeling"
+    },
+    "info": {
+      "label": "Veld label",
+      "labelTitle": "Korte zin die de inhoud van dit veld omschrijft.",
+      "placeholder": "Placeholder waarde",
+      "placeholderTitle": "Dit wordt weergegeven in de input totdat deze een waarde bevat. Het wordt niet als standaard opgeslagen.",
+      "instruction": "Instructies voor gebruiker",
+      "instructionTitle": "Instructies voor de gebruiker over wat zij in dit veld zullen moeten invoeren. ",
+      "required": "Verplicht",
+      "requiredTitle": "Dit formulier kan niet bewaard worden totdat dit veld een waarde bevat.",
+      "requiredCheckbox": "Maak dit veld verplicht.",
+      "delete": "Verwijder dit veld",
+      "text": {
+        "min": "Min karakters",
+        "max": "Max karakters"
+      },
+      "wysiwyg": {
+        "label": "Wat kunnen gebruikers in de WYSIWYG invoeren?",
+        "table": "Tabellen",
+        "video": "Video's",
+        "image": "Afbeeldingen",
+        "quote": "Blok citaten",
+        "link": "Links"
+      },
+      "number": {
+        "min": "Min nummer",
+        "max": "Max nummer"
+      },
+      "checkbox": {
+        "label": "Keuzevak opties",
+        "help": "Gebruik de plus en de minus om nieuwe opties toe te voegen. Klik de keuze aan om dit standaard te maken op een vers formulier."
+      },
+      "radio": {
+        "label": "Meerkeuze opties",
+        "help": "Gebruik de plus en de minus om nieuwe opties toe te voegen. Klik de keuze aan om dit standaard te maken op een vers formulier."
+      },
+      "select": {
+        "label": "Keuzelijst opties",
+        "help": "Gebruik de plus en de minus om nieuwe opties toe te voegen. Klik de keuze aan om dit standaard te maken op een vers formulier."
+      },
+      "rating": {
+        "min": "Min waarde",
+        "minHelp": "Dit is de min waarde de gebruiker kan invoeren. Een .5 invoeren zal een halve ster mogelijk maken.",
+        "max": "Max waarde",
+        "maxHelp": "Het max aantal sterren toegestaan. Een 10 invoeren zal het formulier aanpassen naar 10 toegestane sterren.",
+        "step": "Stap",
+        "stepHelp": "Welke vermeerdering kunnen personen toekennen tussen de min en de max? Een .5 invoeren betekent dat een gebruiker een halve ster kan toekennen."
+      },
+      "tabular": {
+        "label": "Kolommen"
+      },
+      "relationship": {
+        "label": "Toegestane relaties",
+        "help": "Alleen dit inhoudstype zal doorzoekbaar zijn door de formulier widget.",
+        "single": "Alleen één doorzoekbaar item is toegestaan en niet meer.",
+        "hidden": "Verberg deze widget bij invoeren."
+      }
+    },
+    "control": {
+      "markdown": {
+        "syntax": "Dit veld staat <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a> toe."
+      },
+      "image": {
+        "action": "Sleep of selecteer afbeelding",
+        "replace": "Vervang afbeelding"
+      },
+      "gallery": {
+        "action": "Sleep of selecteer afbeeldingen",
+        "instruction": "Omcirkelde afbeeldingen hebben een bijschrift. Klik op een individuele afbeelding om deze te bewerken. Sleep om te sorteren.",
+        "delete": "Verwijder",
+        "close": "Bewaar / Sluiten"
+      },
+      "audio": {
+        "action": "Sleep of selecteer een audio bestand."
+      },
+      "file": {
+        "action": "Sleep of selecteer een bestand.",
+        "url": "of gebruik een URL?",
+        "select": "Selecteer van de desktop",
+        "remove": "Verwijder",
+        "cancel": "Annuleer",
+        "upload": "Uploaden",
+        "paste": "Plak URL"
+      },
+      "tabular": {
+        "add": "Voeg Rij Toe"
+      },
+      "embedly": {
+        "action": "Haal Op",
+        "preview": "Voorbeeld",
+        "clear": "Maak Leeg"
+      }
+    },
+    "nameTooltip": "Klik om de naam en de URL structuur van dit inhoudstype te bewerken.",
+    "help": "Help",
+    "helpTooltip": "Bekijk een tutorial video over de formulier bouwer.",
+    "goBack": "Annuleer / Terug naar CMS",
+    "action": "Bewaar formulier"
+  },
+  "start": {
+    "title": "Hoe zullen we uw site opzetten?",
+    "theme": {
+      "title": "Laat me wat tovenarij zien.",
+      "instruction": "<p>Selecteer één van onze vooraf gebouwde sites die standaard CMS en design patronen volgen. Pas later aan.</p><p>Bijvoorbeeld: een blog site, een portfolio site.</p>",
+      "action": "Start vanaf een thema"
+    },
+    "empty": {
+      "title": "Ik ben de tovenarij!",
+      "instruction": "<p>Gebruik de formulier bouwer om een aangepast CMS op te zetten met pagina types die u definieert.</p><p>U moet dan uw desing in HTML / CSS coderen.</p>",
+      "action": "Beginnen vanaf nul"
+    }
+  },
+  "theme": {
+    "localWarning": "U kun een thema alleen aanpassen als u aan de lokale (op uw computer) versie van deze site werkt. Maak uw wijzigingen hier en onthoudt dat u hierna uw site moet deployen. Voor meer ondersteuning bij het wijzingen of instellen van uw thema, check de <a href='http://www.webhook.com/docs/'>documentatie hier</a>",
+    "title": "Start vanaf een thema",
+    "instruction": "Site sjablonen installeren automatisch de formulieren, statische bestanden en sjablonen om uw project snel te starten. Geïnteresseerd in het maken van uw eigen thema? <a href='http://www.webhook.com/docs/creating-a-theme/'>Lees de documentatie</a>. Kunt u niet vinden wat u zoekt?",
+    "scratch": "Beginnen vanaf nul",
+    "error": "Oeps",
+    "upload": {
+      "title": "Laad lokaal thema",
+      "label": "Selecteer .zip bestand vanaf uw desktop",
+      "action": "Selecteer lokaal zip bestand"
+    },
+    "url": {
+      "title": "Laad thema vanaf afstand",
+      "label": "http:// adres van een .zip bestand.",
+      "action": "Laad een zip bestand vanaf afstand"
+    },
+    "demo": "Demo",
+    "install": "Installeer"
+  }
+}

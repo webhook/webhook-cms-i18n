@@ -314,7 +314,8 @@
       "color": "Color",
       "instruction": "Instructions",
       "relation": "Relationship",
-      "layout": "Page Layout"
+      "layout": "Page Layout",
+      "geolocation": "Map coordinates"
     },
     "info": {
       "label": "Field label",

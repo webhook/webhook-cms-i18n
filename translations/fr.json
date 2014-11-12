@@ -18,17 +18,21 @@
     "save": "Sauvegarder"
   },
   "wh": {
+    "userCount": "en ligne.",
+    "accountTooltip": "Appuyez pour changer votre mot de passe et autres informations.",
     "logout": "Déconnexion",
+    "search": "Appuyez sur S pour rechercher",
     "navContent": "Votre contenu",
     "configuration": {
+      "title": "Configuration",
       "types": "Ajouter / Modifier les types de contenu",
       "team": "Membres de l'équipe",
       "settings": "Paramètres",
       "billing": "Facturation",
       "dns": "Nom de domaine",
-      "data": "Les sauvegardes et les données"
+      "data": "Sauvegardes et données"
     },
-    "localNotice": "<span class='icon icon-code'>  Développement local</span> Les enregistrements vont seulement déclenchés des recompilations localement, pas sur votre site en ligne.",
+    "localNotice": "<span class='icon icon-code'>  Développement local</span> Les enregistrements vont seulement déclencher des recompilations localement, pas sur votre site en ligne.",
     "index": {
       "welcome": {
         "title": "Bienvenue dans votre CMS",
@@ -66,17 +70,28 @@
         }
       },
       "team": {
+        "deploy": {
+          "title": "Vous devez d'abord déployer",
+          "instruction": "Vous devez déployer votre site web avant d'ajouter de nouveaux membres à votre équipe. Vous pouvez déployer votre site web en exécutant <code>wh deploy</code> dans le dossier local de votre site web. Revenez ensuite à cette page-ci."
+        },
         "invite": {
           "title": "Inviter un nouveau membre de l'équipe",
           "instruction": "Invitez un nouveau collaborateur par courriel",
-          "help": "La personne ne sera pas active tant qu'elle n'aura pas vérifier son courriel.",
+          "help": "La personne ne sera pas active tant qu'elle n'aura pas vérifié son courriel.",
           "action": "Envoyer une invitation"
         },
         "current": {
           "title": "Membres actuels de l'équipe",
           "description": "Les propriétaires ont accès à la facturation et aux outils de développement locaux. Les collaborateurs ont seulement la possibilité d'ajouter et de modifier le contenu du CMS en ligne.",
           "email": "Courriel",
-          "permissions": "Autorisations"
+          "permissions": "Autorisations",
+          "owner": "Propriétaire",
+          "contributor": "Collaborateur",
+          "toOwner": "Changer pour propriétaire",
+          "toContributor": "Changer pour collaborateur",
+          "remove": "Retirer l'accès complet",
+          "waiting": "En attente de vérification",
+          "cancel": "Annuler l'invitation"
         }
       },
       "general": {
@@ -124,7 +139,14 @@
         }
       },
       "billing": {
-        "title": "Facturation"
+        "title": "Facturation",
+        "trial": {
+          "lastDay": "Ceci est le dernier jour de votre essai",
+          "days": "Il vous reste {{count}} jours d'essai"
+        },
+        "paid": {
+          "action": "Gérer la facturation"
+        }
       },
       "domain": {
         "title": "Noms de domaine",
@@ -165,8 +187,7 @@
           "action": "Reconstruire l'index de recherche"
         },
         "reset": {
-          "title": "Réinitialiser votre site web",
-          "action": "Supprimer {{deleteOption}}"
+          "title": "Réinitialiser votre site web"
         }
       }
     },
@@ -188,16 +209,51 @@
   "form": {
     "add": "Ajouter un champ",
     "edit": "Modifier un champ",
-
     "typeName": "Nom du type de contenu",
     "typeNameInvalid": "Le nom du type de contenu est invalide.",
+    "group": {
+      "text": "Texte"
+    },
+    "widget": {
+      "textfield": "Une seule ligne de texte",
+      "textarea": "Paragraphe",
+      "wysiwyg": "Texte WYSIWYG",
+      "markdown": "Texte Markdown",
+      "number": "Nombre",
+      "checkbox": "Case à cocher",
+      "radio": "Choix multiple",
+      "select": "Liste déroulante",
+      "image": "Image",
+      "gallery": "Gallerie",
+      "audio": "Fichier audio",
+      "file": "Autre fichier",
+      "name": "Personne",
+      "address": "Adresse",
+      "phone": "Numéro de téléphone",
+      "email": "Courriel",
+      "datetime": "Date et heure",
+      "url": "Site web",
+      "embedly": "Embed.ly",
+      "color": "Couleur",
+      "instruction": "Instructions",
+      "relation": "Relation",
+      "geolocation": "Coordonnées géographiques"
+    },
     "info": {
+      "instruction": "Instructions pour l'utilisateur",
+      "instructionTitle": "Instructions pour l'utilisateur sur ce qu'ils devraient entrer dans ce champ",
+      "required": "Requis",
+      "requiredTitle": "Ce formulaire ne peut être sauvegardé tant que ce champ n'a pas de valeur",
+      "requiredCheckbox": "Rendre ce champ requis",
+      "delete": "Supprimer ce champ",
       "text": {
         "min": "Minimum de caractères",
         "max": "Maximum caractères"
       },
       "wysiwyg": {
+        "table": "Tables",
         "video": "Vidéos",
+        "image": "Images",
         "quote": "Citations",
         "link": "Liens"
       },
@@ -213,26 +269,6 @@
       "tabular": {
         "label": "Colonnes"
       }
-    },
-    "group": {
-      "text": "Texte"
-    },
-    "widget": {
-      "textfield": "Une seule ligne de texte",
-      "textarea": "Paragraphe",
-      "wysiwyg": "Texte WYSIWYG",
-      "markdown": "Texte Markdown",
-      "number": "Nombre",
-      "gallery": "Gallerie",
-      "audio": "Fichier audio",
-      "file": "Autre fichier",
-      "name": "Personne",
-      "address": "Adresse",
-      "phone": "Numéro de téléphone",
-      "email": "Courriel",
-      "datetime": "Date et heure",
-      "url": "Site web",
-      "color": "Couleur"
     },
     "control": {
       "image": {
@@ -250,6 +286,7 @@
       },
       "file": {
         "action": "Faire glisser ou sélectionner un fichier",
+        "url": "ou utilisez une URL?",
         "select": "Sélectionner à partir du bureau",
         "remove": "Enlever",
         "cancel": "Annuler",

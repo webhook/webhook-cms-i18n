@@ -40,6 +40,8 @@
         "docs": "Documentation",
         "support": "Support",
         "issues": "Issues",
+        "noTypesTitle": "You need to setup your CMS",
+        "noTypesMessage": "You deployed your website without setting up any forms or templates. The live CMS can not add new forms. You'll need to add some on your local CMS, then create some templates, then deploy that data to your live site.",
         "forums": "Forums"
       },
       "updates": "Webhook Updates",

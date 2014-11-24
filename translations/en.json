@@ -437,8 +437,8 @@
       "action": "Start from a theme"
     },
     "empty": {
-      "instruction": "<p>Pick one of our pre-built sites that follow common CMS and design patterns. Customize later.</p><p>Example: A blog site, a portfolio site.</p>",
-      "action": "Start from a theme"
+      "instruction": "<p>Use the formbuilder to set up a custom CMS with page types that you define.</p><p>You'll need to code your design in HTML / CSS.</p>",
+      "action": "Start from scratch"
     },
     "wordpress": {
       "instruction": "<p>We'll import your site and convert your posts, authors, tags and images.</p><p>We'll also set up basic scaffolding that you can design on top of.</p>",

@@ -86,9 +86,9 @@
           "email": "E-mail",
           "permissions": "Permissies",
           "owner": "Eigenaar",
-          "contributor": "Medewerker",
+          "editor": "Medewerker",
           "toOwner": "Verander naar eigenaar",
-          "toContributor": "Verander naar medewerker",
+          "toEditor": "Verander naar medewerker",
           "remove": "Verwijder complete toegang",
           "waiting": "Wachtend op verificatie",
           "cancel": "Annuleer uitnodiging"

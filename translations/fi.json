@@ -86,9 +86,9 @@
           "email": "Sähköposti",
           "permissions": "Oikeudet",
           "owner": "Omistaja",
-          "contributor": "Osallistuja",
+          "editor": "Osallistuja",
           "toOwner": "Vaihda omistajaa",
-          "toContributor": "Muuta osallistujaksi",
+          "toEditor": "Muuta osallistujaksi",
           "remove": "Poista pääsy kokonaan",
           "waiting": "Odottetaan vahvistusta",
           "cancel": "Peru kutsu"

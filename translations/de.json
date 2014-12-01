@@ -86,9 +86,9 @@
           "email": "E-Mail",
           "permissions": "Berechtigungen",
           "owner": "Besitzer",
-          "contributor": "Mitarbeiter",
+          "editor": "Mitarbeiter",
           "toOwner": "Zum Besitzer machen",
-          "toContributor": "Zum Mitarbeiter machen",
+          "toEditor": "Zum Mitarbeiter machen",
           "remove": "Zugriff komplett verweigern",
           "waiting": "Warte auf Bestätigung",
           "cancel": "Einladung zurückziehen"

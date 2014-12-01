@@ -101,9 +101,9 @@
           "email": "Email",
           "permissions": "Uprawnienia",
           "owner": "Właściciel",
-          "contributor": "Współpracownik",
+          "editor": "Współpracownik",
           "toOwner": "Zmień na właściciela",
-          "toContributor": "Zmień na współpracownika",
+          "toEditor": "Zmień na współpracownika",
           "remove": "Usuń wszystkie uprawnienia",
           "waiting": "Oczekiwanie na weryfikację",
           "cancel": "Odwołaj zaproszenie"

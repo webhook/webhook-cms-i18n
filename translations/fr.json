@@ -86,9 +86,9 @@
           "email": "Courriel",
           "permissions": "Autorisations",
           "owner": "Propriétaire",
-          "contributor": "Collaborateur",
+          "editor": "Collaborateur",
           "toOwner": "Changer pour propriétaire",
-          "toContributor": "Changer pour collaborateur",
+          "toEditor": "Changer pour collaborateur",
           "remove": "Retirer l'accès complet",
           "waiting": "En attente de vérification",
           "cancel": "Annuler l'invitation"

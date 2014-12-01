@@ -89,6 +89,29 @@
           "title": "You need to deploy first",
           "instruction": "Before you can add new members to your team you need to deploy the site onto the Internet. You can do this by running <code>wh deploy</code> in your local site directory. Then return to this page."
         },
+        "groups": {
+          "title": "Manage group permissions",
+          "instruction": "Invite a new collaborator by email",
+          "help": "Create groups to restrict access to portions of your CMS. Webhook's two default groups (owners and editors) can not be edited.",
+          "action": "Add a new group",
+          "owners": "Owners",
+          "ownersPerm": "Full permissions.",
+          "editors": "Editors",
+          "editorsPerm": "Full permissions, minus configuration.",
+          "groupNameEdit": "Edit name",
+          "groupClose": "Close",
+          "groupSaving": "Saving",
+          "groupSaved": "Saved"
+        },
+        "perms": {
+          "view": "Can view",
+          "draft": "Can draft",
+          "publish": "Can publish",
+          "delete": "Can delete",
+          "edit": "Can edit",
+          "mixed": "Mixed permissions.",
+          "editPerms": "edit"
+        },
         "invite": {
           "title": "Invite a New Team Member",
           "instruction": "Invite a new collaborator by email",
@@ -97,13 +120,13 @@
         },
         "current": {
           "title": "Current Team Members",
-          "description": "Owners have access to billing and the local dev tools. Contributors only have the ability to add and edit content on the live CMS.",
+          "description": "Owners have access to billing and the local dev tools. Editors only have the ability to add and edit content on the live CMS.",
           "email": "Email",
           "permissions": "Permissions",
           "owner": "Owner",
-          "contributor": "Contributor",
+          "editor": "Editor",
           "toOwner": "Change to owner",
-          "toContributor": "Change to contributor",
+          "toEditor": "Change to editor",
           "remove": "Remove access entirely",
           "waiting": "Waiting on verification",
           "cancel": "Cancel invite"

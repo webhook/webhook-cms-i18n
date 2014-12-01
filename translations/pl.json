@@ -1,0 +1,467 @@
+{
+  "login": {
+    "email": "Email",
+    "password": "Hasło",
+    "signIn": "Zaloguj się",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "addLanguage": "Pomóż w tłumaczeniu Webhooka"
+  },
+  "passwordReset": {
+    "prompt": "Wippen adres Email, żeby zresetować hasło",
+    "action": "Resetuj hasło",
+    "goBack": "Powróć do logowania",
+    "emailLabel": "Email",
+    "provideEmail": "Wprowadź adres Email żeby zresetować hasło.",
+    "success": "Email z resetem hasła wysłany poprawnie"
+  },
+  "button": {
+    "save": "Zapisz"
+  },
+  "wh": {
+    "userCount": "Online.",
+    "accountTooltip": "Wybierz, aby zmienić hasło i inne ustawienia konta.",
+    "logout": "Wyloguj",
+    "search": "Wybierz S żeby wyszukać",
+    "navContent": "Twoja treść",
+    "configuration": {
+      "title": "Konfiguracja",
+      "types": "Dodaj/Edytuj Typy Treści",
+      "team": "Użytkownicy",
+      "settings": "Ustawienia",
+      "billing": "Billing",
+      "dns": "Domena",
+      "data": "Backupy"
+    },
+    "localNotice": "<span class='icon icon-code’>Praca lokalna</span> Zapisanie zmian spowoduje kompilację strony lokalnie, nie na serwerze produkcyjnym online.",
+    "index": {
+      "welcome": {
+        "title": "Witaj w CMS",
+        "description": "Przydatne linki Webhook:",
+        "docs": "Dokumentacja",
+        "support": "Pomoc",
+        "issues": "Problemy",
+        "noTypesTitle": "Musisz skonfigurować CMS",
+        "noTypesMessage": "Wysłałeś swoją stronę na serwer produkcyjny online bez dodania jakichkolwiek formularzy i szablonów. Poprzez CMS online nie można dodać nowych formularzy. Musisz je dodać w CMS lokalnie, następnie utworzyć szablony i dopiero wysłać stronę na serwer.",
+        "forums": "Forum"
+      },
+      "updates": "Aktualizacje Webhook ",
+      "history": "Historia Zmian",
+      "moreHistory": "Załaduj więcej"
+    },
+    "settings": {
+      "password": {
+        "title": "Zmień hasło",
+        "action": "Zapisz",
+        "fields": {
+          "account": {
+            "label": "Konto którego dotyczy zmiana"
+          },
+          "oldPassword": {
+            "label": "Stare hasło"
+          },
+          "newPassword": {
+            "label": "Nowe hasło"
+          },
+          "newPassword2": {
+            "label": "Nowe hasło (powtórz)"
+          }
+        },
+        "error": {
+          "match": "Hasła muszą być takie same",
+          "fix": "Proszę poprawić następujące błędy"
+        }
+      },
+      "urls": {
+        "title": "Ustaw przekierowania URL",
+        "infoTitle": "Przekierowania URL",
+        "infoMessage": "Ta strona pozwala na utworzenie stałych przekierowań 301 adresów URL według <a href='http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite'> składni Nginx </a>. Mają zastosowanie następujące reguły:",
+        "infoRuleOne": "Działa jedynie dla stron z przypisanymi własnymi domenami, nie dla stron w subdomenie webhook.org.",
+        "infoRuleTwo": "Przekierowania adresów URL ustawione tutaj mają priorytet w stosunku do reguł wynikających z ustawień CMS i struktury katalogów.",
+        "noDomainTitle": "Brak własnej domeny",
+        "noDomainMessage": "Reguły przekierowań działają jedynie jeśli przypisano własną domenę<a href='#/wh/settings/domain/'>Skonfiguruj własną domenę</a>.",
+        "action": "Zapisz",
+        "tableRedirect": "Przekierowanie URL",
+        "tableDestination": "Docelowy URL",
+        "tableAddRow": "Dodaj wiersz"
+      },
+      "team": {
+        "deploy": {
+          "title": "Musisz najpierw wdrożyć stronę online",
+          "instruction": "Zanim będziesz mógł dodawać nowych użytkowników, musisz wysłać stronę na serwer produkcyjny online. Możesz to zrobić uruchamiając <code>wh deploy</code> w lokalnym katalogu swojej strony Webhook. Następnie wróć na tę stronę."
+        },
+        "invite": {
+          "title": "Zaproś nowego użytkownika",
+          "instruction": "Wyślij Email z zaproszeniem do współpracy",
+          "help": "Osoba będzie aktywna po zweryfikowaniu adresu Email",
+          "action": "Wyślij zaproszenie"
+        },
+        "current": {
+          "title": "Aktualni użytkownicy",
+          "description": "Właściciele mają dostęp do bilingu oraz lokalnych narzędzi dev tools. Współpracownicy mają jedynie możliwość dodawania i edycji treści poprzez online CMS.",
+          "email": "Email",
+          "permissions": "Uprawnienia",
+          "owner": "Właściciel",
+          "contributor": "Współpracownik",
+          "toOwner": "Zmień na właściciela",
+          "toContributor": "Zmień na współpracownika",
+          "remove": "Usuń wszystkie uprawnienia",
+          "waiting": "Oczekiwanie na weryfikację",
+          "cancel": "Odwołaj zaproszenie"
+        }
+      },
+      "general": {
+        "account": {
+          "title": "Ustawienia Konta",
+          "password": {
+            "prompt": "Chcesz zmienić hasło?",
+            "action": "Zmień swoje hasło tutaj"
+          },
+          "language": "Wybierz język CMS"
+        },
+        "global": {
+          "title": "Zmienne globalne",
+          "description": "To są zmienne globalne używane w twoich szablonach. Jak wykorzystać je na swojej stronie - dowiesz się z <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank’>dokumentacji</a>.",
+          "action": "Zapisz",
+          "fields": {
+            "name": {
+              "label": "Nazwa strony"
+            },
+            "description": {
+              "label": "Opis",
+              "help": "Krótki opis strony"
+            },
+            "keywords": {
+              "label": "Słowa kluczowe",
+              "help": "Oddzielone przecinkami słowa kluczowe dla twojej strony"
+            },
+            "url": {
+              "label": "Adres URL strony",
+              "help": "Proszę wpisać pełny URL, taki jak np. http://www.example.com."
+            },
+            "analytics": {
+              "label": "Analityka strony - Analytics ID",
+              "help": "Analytics Service ID. Zazwyczaj w postaci UA-XX-XXXX"
+            },
+            "twitter": {
+              "label": "Konto Twitter",
+              "help": "Nazwa użytkownika Twitter, bez znaku @"
+            },
+            "facebook": {
+              "label": "Strona Facebook",
+              "help": "Nazwa Facebook"
+            }
+          }
+        }
+      },
+      "billing": {
+        "title": "Billing",
+        "trial": {
+          "lastDay": "To ostatni dzień okresu próbnego",
+          "days": "Pozostało ci {{count}} dni okresu próbnego.",
+          "instruction": "<p>Wszystkie strony Webhook mają darmowy 14-dniowy okres próbny. Żeby zachować ciągłość usługi i wykorzystać posiadaną domenę przejdź na płatny plan.</p><p>Zostaniesz poproszony o ponowne zalogowanie.</p>",
+          "action": "Zmień plan"
+        },
+        "paid": {
+          "title": "Dziękujemy!",
+          "instruction": "<p>Twoje konto jest aktywne. Jeżeli chcesz sprawdzić płatności lub anulować subskrypcję, wejdź do sekcji Billing</p><p>Zostaniesz poproszony o ponowne zalogowanie.</p>",
+          "action": "Zarządzaj "
+        }
+      },
+      "domain": {
+        "title": "Domeny",
+        "description": "Twoja strona jest dostępna pod adresem <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "i <strong>{{domain}}</strong>",
+        "success": {
+          "title": "Prawie gotowe",
+          "instruction": "Super. Skieruj rekord na następujący adres.",
+          "docs": "Szczegółowe instrukcje znajdziesz w dokumentacji <a href='http://www.webhook.com/docs/deployment-domains/'>Jak ustawić własną domenę?</a>."
+        },
+        "trial": {
+          "title": "Przejdź na płatny plan, żeby wykorzystać własną domenę.",
+          "instruction": "Ta strong jest w darmowym okresie próbnym. Tylko w ramach płatnych planów można używać własnych domen.",
+          "upgrade": "Zmień plan na webhook.com"
+        },
+        "error": "Proszę popraw następujące błędy",
+        "form": {
+          "title": "Użyj zakupionej przez siebie domeny",
+          "instruction": "Nie masz domeny? Kup na <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> lub u innego sprzedawcy i wróć tutaj.",
+          "label": "Wpisz dane swojej domeny",
+          "action": "Użyj tej domeny"
+        }
+      },
+      "data": {
+        "importExport": {
+          "title": "Importuj / Eksportuj Dane",
+          "instruction": "Możesz załadować backupy ale także nine dane, jeśli są w obsługiwanym formacie. Zobacz <a href='http://www.webhook.com/docs/importing-custom-data/''>dokumentację</a>.",
+          "action": {
+            "import": "Importuj dane JSON",
+            "export": "Eksportuj dane JSON"
+          },
+          "import": {
+            "found": "W twoim pliku znajdują się dane:",
+            "type": "Typ zawartości",
+            "item": "Liczba pozycji",
+            "noContent": "Brak zawartości do importu",
+            "setting": "Ustawienia",
+            "value": "Wartość",
+            "noSettings": "Brak ustawień do importu",
+            "warningTitle": "Uwaga!",
+            "warning": "Użycie kopii<strong>ostatecznie usunie</strong> aktualne dane i zastąpi je danymi kopii. Skompiluje także twoją stronę ponownie z użyciem nowych danych. Jeśli nie sporządziłeś jeszcze backupu, zrób to teraz.",
+            "proceed": "Wykonaj",
+            "cancel": "Przerwij",
+            "noDataTitle": "Brak danych",
+            "noData": "Nie znaleziono żadnych poprawnych danych w twoim pliku",
+            "goBack": "Powrót",
+            "invalidTitle": "Parsowanie twojego pliku nie powiodło się",
+            "invalid": "Upewnij się, że załadowałeś <strong>poprawny</strong> plik JSON i spróbuj ponownie."
+          }
+        },
+        "backups": {
+          "title": "Backupy",
+          "data": {
+            "title": "Backupy danych",
+            "instruction": "Webhook automatycznie eksportuje JSON backup o godzinie 3.00 czasu PST. Pliki są utrzymywane przez 7 dni. Dla nowych stron pliki są dostępne od momentu utworzenia strony."
+          },
+          "templates": {
+            "title": "Kopia zapasowa szablonów i plików",
+            "instruction": "Kopia całego katalogu twojej strony Webhook zawierającego wszystkie szablony i statyczne pliki, tak jak są umieszczone na serwerze. Możesz użyć tych plików do odtworzenia swojej strony lokalnie, jeśli zajdzie taka potrzeba.",
+            "action": "Skopiuj pliki swojej strony"
+          }
+        },
+        "wordpress": {
+          "title": "Importuj z blogu Wordpress (Beta)",
+          "instruction": "Wordpress pozwala na <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank’>eksport do pliku XML</a>. Po ściągnięciu eksportu użyj przycisku poniżej do zaimportowania pliku do Webhook. Rozmiar grafik z artykułów zostanie automatycznie dopasowany.",
+          "action": "Wybierz plik Worpress XML"
+        },
+        "search": {
+          "title": "Wygeneruj ponownie indeks wyszukiwania",
+          "instruction": "Ponowne generowanie indeksu wyszukiwarki może pomóc, jeśli wystąpiły problemy z wyszukiwaniem w CMS.",
+          "action": "Generuj indeks wyszukiwarki",
+          "indexing": "Indeksowanie danych"
+        },
+        "reset": {
+          "title": "Reset strony",
+          "warning": "Możesz zresetować stronę tylko jeśli jest uruchomiona lokalnie",
+          "instruction": "To pozwoli ci na zresetowanie twojej strony i rozpoczęcie od nowa. Wykonaj kopię zapasową przed tą akcją.",
+          "options": {
+            "data": "<strong>Usuń moje dane.</strong> (To usunie twoje formularze, ale szablony pozostaną bez zmian)",
+            "all": "<strong>Usuń moje szablony i dane</strong> (To przywróci całkiem nową instancję. Użyteczne przy zmienianiu motywów. )"
+          },
+          "action": {
+            "deleteData": "Usuń dane",
+            "deleteEverything": "Usuń wszystko"
+          },
+          "deleting": "Usuwanie"
+        }
+      }
+    },
+    "content": {
+      "addNewItem": "Dodaj {{name}}",
+      "display": "Display",
+      "limited": "Dla uzyskania lepszej wydajności ograniczono liczbę rekordów na tej stronie do {{recordLimit}} utworzonych rekordów.",
+      "noRecords": "Nie dodałeś jeszcze {{name}}.",
+      "moreRecords": "Załaduj więcej rekordów",
+      "allTypes": {
+        "title": "Twoje typy treści",
+        "addType": "Dodaj nowy typ",
+        "contentType": "Typ Treści",
+        "id": "ID",
+        "formStyle": "Styl Formularza",
+        "single": "Pojedynczy element",
+        "multiple": "Wiele elementów"
+      },
+      "start": {
+        "title": "OK, dodaj nowy formularz do CMS",
+        "nameLabel": "Nazwa nowego obiektu",
+        "namePlaceholder": "np: komiksy, artykuły, o nas, start, miasta, wampiry",
+        "duplicate": "Już istnieje typ treści o takiej nazwie",
+        "long": " ID może mieć maksymalnie 250 znaków. Utworzone ID ma {{length}} znaków.",
+        "instruction": "To będzie nazwa menu CMS (po <span class='icon icon-circle-arrow-left'></span> lewej) która również wpływa na wzorzec URL dla twojej strony, więc wybierz ją rozsądnie.",
+        "multiple": {
+          "title": "Ile jest {{newTypeName}}?",
+          "instruction": "Na przykład: jest jedna strona startowa, ale wiele postów na blogu.",
+          "one": "Jest tylko <strong>jeden</strong> element {{newTypeName}}.",
+          "many": "Jest <strong>wiele</strong> elementów {{newTypeName}}."
+        },
+        "action": "Stwórz teraz formularz dla {{newTypeName}}!",
+        "cancel": "Anuluj"
+      }
+    }
+  },
+  "form": {
+    "add": "Dodaj Pole",
+    "edit": "Edytuj Pole",
+    "isNewWarning": "<strong>Uwaga</strong>Ta zmiana może wymagać również zmiany twoich szablonów.",
+    "typeName": "Nazwa typu treści",
+    "typeNameInvalid": "Nazwa jest nieprawidłowa",
+    "slugInstruction": "<strong>URL slug control</strong>Możliwe jest dostosowanie adresów URL pod jakimi będą występowały poniższe typy treści . \nDomyślnie strona listy elementów będzie dostępna pod <code>site.com/{{name}}/</code> a pojedynczy element pod <code>site.com/{{name}}/name-of-item/</code>. W polach można użyć także zmiennych, można stosować daty. Zobacz <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank’>pełną dokumentację</a>.",
+    "listUrlLabel": "URL dla strony listy {{name}}",
+    "individualUrlLabel": "URL prefix dla strony pojedynczego elementu  {{name}}",
+    "group": {
+      "text": "Text",
+      "basics": "Podstawowe",
+      "files": "Pliki",
+      "specifics": "Info",
+      "advanced": "Zaawansowane"
+    },
+    "widget": {
+      "textfield": "Linia tekstu",
+      "textarea": "Akapit",
+      "wysiwyg": "Tekst WYSIWYG",
+      "markdown": "Markdown",
+      "number": "Liczba",
+      "checkbox": "Checkbox",
+      "radio": "Wielokrotny wybór",
+      "select": "Lista rozwijana",
+      "image": "Obraz",
+      "gallery": "Galeria",
+      "audio": "Plik Audio",
+      "file": "Inny Plik",
+      "name": "Osoba",
+      "address": "Adres",
+      "phone": "Numer telefonu",
+      "email": "Email",
+      "datetime": "Data ",
+      "url": "Strona www",
+      "rating": "Rating",
+      "tabular": "Tabela",
+      "embedly": "Embed.ly",
+      "color": "Kolor",
+      "instruction": "Instrukcja",
+      "relation": "Relacja",
+      "layout": "Layout",
+      "geolocation": "Geo koordynaty (Mapa)"
+    },
+    "info": {
+      "label": "Nagłówek pola",
+      "labelTitle": "Krótki tekst opisujący zawartość pola",
+      "placeholder": "Placeholder ",
+      "placeholderTitle": "Widoczny do momentu wprowadzenia treści w pole formularza, nie jest zapisywany.",
+      "instruction": "Instrukcje dla użytkownika",
+      "instructionTitle": "Instrukcja - opis, co użytkownik powinien wprowadzić w tym polu.",
+      "required": "Obowiązkowe",
+      "requiredTitle": "Formularz nie może być zapisany bez uzupełnienia tego pola.",
+      "requiredCheckbox": "Ustaw to pole jako obowiązkowe",
+      "delete": "Usuń to pole",
+      "text": {
+        "min": "Minimalna liczba znaków",
+        "max": "Maksymalna liczba znaków"
+      },
+      "wysiwyg": {
+        "label": "Co użytkownik może dodać w edytorze WYSIWYG?",
+        "table": "Tabele",
+        "video": "Video",
+        "image": "Obrazy",
+        "quote": "Cytaty",
+        "link": "Linki"
+      },
+      "number": {
+        "min": "Minimalny limit",
+        "max": "Maksymalny limit"
+      },
+      "checkbox": {
+        "label": "Checkbox - opcje",
+        "help": "Użyj plus i minus dla ustawienia opcji.  Zaznacz checkbox jeśli ma mieć taki stan domyślnie."
+      },
+      "radio": {
+        "label": "Wielokrotny wybór - opcje",
+        "help": "Użyj plus i minus dla ustawienia opcji.  Zaznacz radio-button, jeśli ma mieć taki stan domyślnie."
+      },
+      "select": {
+        "label": "Lista rozwijana - opcje",
+        "help": "Użyj plus i minus dla ustawienia opcji.  Zaznacz radio-button, jeśli ma mieć taki stan domyślnie."
+      },
+      "rating": {
+        "min": "Minimalna ocena",
+        "minHelp": "Najmniejsza wartość jaką użytkownik może wprowadzić. Wpisanie .5 oznacza pół gwiazdki.",
+        "max": "Maksymalna ocena",
+        "maxHelp": "Największa wartość jaką użytkownik może wprowadzić. Wpisanie 10 pozwoli na ocenę maksymalną 10 gwiazdek.",
+        "step": "Krok",
+        "stepHelp": "W jakich odstępach użytkownicy mogą oceniać pomiędzy minimalną, a maksymalną oceną? Wpisanie .5 pozwala na ocenianie w odstępach pół gwiazdki."
+      },
+      "tabular": {
+        "label": "Kolumny"
+      },
+      "relationship": {
+        "label": "Dozwolone relacje",
+        "help": "Tylko ten typ treści będzie wyszukiwalny w formularzu.",
+        "single": "Zezwól na wyszukiwanie tylko pojedynczego elementu.",
+        "hidden": "Nie pokazuj tego widżetu w formularzu."
+      }
+    },
+    "control": {
+      "markdown": {
+        "syntax": "W tym polu wpisujemy tekst <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown </a>."
+      },
+      "image": {
+        "action": "Przeciągnij lub wybierz obraz",
+        "replace": "Zastąp obraz"
+      },
+      "gallery": {
+        "action": "Przeciągnij lub wybierz obrazy",
+        "instruction": "Obrazy mają podpisy. Kliknij żeby edytować, przeciągnij żeby posortować obrazy.",
+        "delete": "Usuń",
+        "close": "Zapisz /Zamknij"
+      },
+      "audio": {
+        "action": "Przeciągnij lub wybierz plik audio"
+      },
+      "file": {
+        "action": "Przeciągnij lub wybierz plik",
+        "url": "lub wprowadź URL?",
+        "select": "Wybierz z pulpitu",
+        "remove": "Usuń",
+        "cancel": "Anuluj",
+        "upload": "Załaduj",
+        "paste": "Wklej URL"
+      },
+      "tabular": {
+        "add": "Dodaj wiersz"
+      },
+      "embedly": {
+        "action": "Pobierz",
+        "preview": "Podgląd",
+        "clear": "Wyczyść"
+      }
+    },
+    "nameTooltip": "Kliknij żeby edytować nazwę i URL dla tego typu treści",
+    "help": "Pomoc",
+    "helpTooltip": "Zobacz tutorial video o budowaniu formularzy",
+    "goBack": "Anuluj / Powróć do CMS",
+    "action": "Zapisz formularz"
+  },
+  "start": {
+    "title": "Od czego chciałbyś rozpocząć?",
+    "theme": {
+      "instruction": "<p>Wybierz jedną ze wstępnie przygotowanych stron, co pozwoli ci także zapoznać się z CMS i projektowaniem strony, a następnie dostosuj.</p><p>Przykład: Blog, Portfolio</p>",
+      "action": "Zacznij od motywu"
+    },
+    "empty": {
+      "instruction": "<p>Sam zdecyduj jaką stronę chcesz stworzyć, zbuduj formularze dla własnego CMS.</p><p>Będziesz musiał napisać trochę kodu w  HTML / CSS.</p>",
+      "action": "Zacznij od zera"
+    },
+    "wordpress": {
+      "instruction": "<p>Twoja strona zostanie zaimportowana wraz z konwersją postów, autorów, tagów i obrazów.</p><p>Uzyskasz podstawową strukturę strony do dalszego projektowania</p>",
+      "action": "Zaimportuj plik WordPress XML"
+    }
+  },
+  "theme": {
+    "localWarning": "Możesz wybrać motyw tylko w przypadku pracy na lokalnej (na twoim komputerze) wersji strony. Wprowadź zmiany i pamiętaj o wdrożeniu, tj wysłaniu strony na serwer produkcyjny online (wh deploy). Więcej informacji o motywach jest w <a href='http://www.webhook.com/docs/'>dokumentacji tutaj</a>",
+    "title": "Zacznij od gotowego motywu",
+    "instruction": "Gotowe szablony - motywy automatycznie instalują formularze, statyczne pliki i szablony potrzebne do szybkiego rozpoczęcia projektu. Chciałbyś zrobić swój własny motyw? <a href='http://www.webhook.com/docs/creating-a-theme/'>Przeczytaj dokumentację</a>. ",
+    "scratch": "Zacznij od zera",
+    "error": "Upps",
+    "upload": {
+      "title": "Załaduj motyw z dysku",
+      "label": "Wybierz plik .zip",
+      "action": "Wybieranie lokalnego pliku .zip"
+    },
+    "url": {
+      "title": "Załaduj motyw z sieci",
+      "label": "http:// adres pliku .zip",
+      "action": "Ładowanie .zip z sieci"
+    },
+    "demo": "Demo",
+    "install": "Instalacja"
+  }
+}

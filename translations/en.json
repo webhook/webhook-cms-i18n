@@ -125,6 +125,7 @@
           "permissions": "Permissions",
           "owner": "Owner",
           "editor": "Editor",
+          "change": "Change to",
           "toOwner": "Change to owner",
           "toEditor": "Change to editor",
           "remove": "Remove access entirely",

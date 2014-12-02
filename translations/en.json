@@ -99,7 +99,7 @@
           "editors": "Editors",
           "editorsPerm": "Full permissions, minus configuration.",
           "groupNameEdit": "Edit name",
-          "groupNameSave": "Save new name?",
+          "groupNameSave": "Save",
           "groupClose": "Close",
           "groupSaving": "Saving",
           "groupSaved": "Saved"

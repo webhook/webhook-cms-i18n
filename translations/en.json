@@ -257,6 +257,11 @@
           "instruction": "Wordpress allows you to <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>export your blog data into an XML document</a>. Once downloaded, use the button below to import that data into Webhook. We'll do our best to import the images included in your articles and size them properly.",
           "action": "Select a Wordpress XML file"
         },
+        "api": {
+          "title": "API Key",
+          "instruction": "Webhook allows you to perform external builds, edits, inserts and deletes through an API.",
+          "docs": "Documentation for the API is here."
+        },
         "search": {
           "title": "Rebuild Search Index",
           "instruction": "If you're having trouble with the CMS search. Rebuilding your index can often help.",

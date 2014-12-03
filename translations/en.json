@@ -114,7 +114,6 @@
           "editPerms": "edit"
         },
         "invite": {
-          "title": "Invite a New Team Member",
           "instruction": "Invite a new collaborator by email",
           "help": "The person will not be active until they verify their email address.",
           "action": "Send Invite"

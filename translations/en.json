@@ -354,7 +354,8 @@
       "instruction": "Instructions",
       "relation": "Relationship",
       "layout": "Page Layout",
-      "geolocation": "Map coordinates"
+      "geolocation": "Map coordinates",
+      "grid": "Repeatable Form"
     },
     "info": {
       "label": "Field label",

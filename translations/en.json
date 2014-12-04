@@ -260,7 +260,8 @@
         "api": {
           "title": "API Key",
           "instruction": "Webhook allows you to perform external builds, edits, inserts and deletes through an API.",
-          "docs": "Documentation for the API is here."
+          "docs": "Documentation for the API is here.",
+          "warning": "Are you sure you want to reset your key?"
         },
         "search": {
           "title": "Rebuild Search Index",

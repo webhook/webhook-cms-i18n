@@ -1,0 +1,498 @@
+{
+  "login": {
+    "email": "Dirección de Email",
+    "password": "Contraseña",
+    "signIn": "Ingresar",
+    "forgotPassword": "¿Contraseña Olvidada?",
+    "addLanguage": "Contribuir a las traducciones de Webhook"
+  },
+  "passwordReset": {
+    "prompt": "Direction de email para enviar contraseña.",
+    "action": "Restablecer  contraseña",
+    "goBack": "Ir a la pàgina de ingreso",
+    "emailLabel": "Dirección de Email",
+    "provideEmail": "Provea su dirección email para restablecer su contraseña.",
+    "success": "Correo con contraseña restablecida ha sido enviado"
+  },
+  "button": {
+    "save": "Guardar"
+  },
+  "wh": {
+    "userCount": "está conectado.",
+    "accountTooltip": "Haha click to change your password and other account info.",
+    "logout": "Egresar",
+    "search": "Presionar S para búsqueda",
+    "navContent": "El Contenido",
+    "configuration": {
+      "title": "Configuración",
+      "types": "Agregar / Editor Tipos de Contenido",
+      "team": "Miembros",
+      "settings": "Ajustes",
+      "billing": "Facturación",
+      "dns": "Dominio",
+      "data": "Datos y Copia de Seguridad"
+    },
+    "localNotice": "<span class='icon icon-code'> Desarrollo local </span> Cambios guardados aqui solo se Susan para desarrollo local, no en la versión web de su sitio.",
+    "index": {
+      "welcome": {
+        "title": "Bienvenido a su CMS (Administrador de Contenido)",
+        "description": "Algunos enlaces útiles para construir sitios con Webhook:",
+        "docs": "Documentación",
+        "support": "Soporte",
+        "issues": "Cuestiones",
+        "noTypesTitle": "Necesita ajustar su CMS (Administrador de Contenido)",
+        "noTypesMessage": "You deployed your website without setting up any forms or templates. The live CMS can not add new forms. You'll need to add some on your local CMS, then create some templates, then deploy that data to your live site.",
+        "forums": "Foros"
+      },
+      "updates": "Actualizaciones de Webhook",
+      "history": "Historical de Builds",
+      "moreHistory": "Cargar mas historial"
+    },
+    "settings": {
+      "password": {
+        "title": "Cambiar Contraseña",
+        "action": "Guardar",
+        "fields": {
+          "account": {
+            "label": "Cuenta a cambiar"
+          },
+          "oldPassword": {
+            "label": "Contraseña anterior"
+          },
+          "newPassword": {
+            "label": "Nueva Contraseña"
+          },
+          "newPassword2": {
+            "label": "Nueva Contraseña (Repetir)"
+          }
+        },
+        "error": {
+          "match": "Las contraseñas deben ser iguales",
+          "fix": "Por favor arregle los siguientes porblemas"
+        }
+      },
+      "urls": {
+        "title": "Ajustar redirección de URLs",
+        "infoTitle": "Ajustar redirección de URLs",
+        "infoMessage": "This page allows you to set up permanent 301 redirects for URLs on your site using <a href='http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite'>Nginx syntax</a> syntax. It follows the following basic rules:",
+        "infoRuleOne": "It only works on Webhook sites using custom domains, not the webhook.org domains.",
+        "infoRuleTwo": "Any redirects set here will trump any URL handling you are managing in the CMS or through your directory structure.",
+        "noDomainTitle": "No custom domain",
+        "noDomainMessage": "Redirect rules only work if you have a custom domain set up. <a href='#/wh/settings/domain/'>Configure your domain</a>.",
+        "action": "Save",
+        "tableRedirect": "Redirect URL",
+        "tableDestination": "Destination URL",
+        "tableAddRow": "Add a row"
+      },
+      "team": {
+        "deploy": {
+          "title": "You need to deploy first",
+          "instruction": "Before you can add new members to your team you need to deploy the site onto the Internet. You can do this by running <code>wh deploy</code> in your local site directory. Then return to this page."
+        },
+        "groups": {
+          "title": "Manage group permissions",
+          "instruction": "Invite a new collaborator by email",
+          "help": "Create groups to restrict access to portions of your CMS. Webhook's two default groups (owners and editors) can not be edited.",
+          "action": "Add a new group",
+          "owners": "Owners",
+          "ownersPerm": "Full permissions.",
+          "editors": "Editors",
+          "editorsPerm": "Full permissions, minus configuration.",
+          "groupNameEdit": "Edit name",
+          "groupNameSave": "Save",
+          "groupClose": "Close",
+          "groupSaving": "Saving",
+          "groupSaved": "Saved"
+        },
+        "perms": {
+          "view": "Can view",
+          "draft": "Can draft",
+          "publish": "Can publish",
+          "delete": "Can delete",
+          "edit": "Can edit",
+          "mixed": "Mixed permissions.",
+          "editPerms": "edit"
+        },
+        "invite": {
+          "instruction": "Invite a new collaborator by email",
+          "help": "The person will not be active until they verify their email address.",
+          "action": "Send Invite"
+        },
+        "current": {
+          "title": "Current Team Members",
+          "description": "Owners have access to billing and the local dev tools. Editors only have the ability to add and edit content on the live CMS.",
+          "email": "Email",
+          "permissions": "Permissions",
+          "owner": "Owner",
+          "editor": "Editor",
+          "change": "Change to",
+          "toOwner": "Change to owner",
+          "toEditor": "Change to editor",
+          "remove": "Remove access entirely",
+          "waiting": "Waiting on verification",
+          "cancel": "Cancel invite"
+        }
+      },
+      "general": {
+        "account": {
+          "title": "Account Settings",
+          "password": {
+            "prompt": "Need to change your password?",
+            "action": "Change your password here"
+          },
+          "language": "Select CMS language"
+        },
+        "global": {
+          "title": "Global Variables",
+          "description": "These are global values used in your front end templates. To retrieve them into your site, check the <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'>documentation here</a>.",
+          "action": "Save",
+          "fields": {
+            "name": {
+              "label": "Site Name"
+            },
+            "description": {
+              "label": "Site Description",
+              "help": "A short description for your site."
+            },
+            "keywords": {
+              "label": "Site Keywords",
+              "help": "Comma separated list of keywords describing your site."
+            },
+            "url": {
+              "label": "Site URL",
+              "help": "Please use full URL like http://www.example.com."
+            },
+            "analytics": {
+              "label": "Site Analytics ID",
+              "help": "Analytics Service ID. Usually something like UA-XX-XXXX"
+            },
+            "twitter": {
+              "label": "Site Twitter",
+              "help": "Twitter handle, without the @ sign."
+            },
+            "facebook": {
+              "label": "Site Facebook",
+              "help": "Facebook name."
+            }
+          }
+        }
+      },
+      "billing": {
+        "title": "Billing",
+        "trial": {
+          "lastDay": "This is the last day of your trial",
+          "days": "You have {{count}} trial days left",
+          "instruction": "<p>All Webhook sites start as 14-day free trials. To continue service and allow for custom domains you'll need to upgrade to a paid account.</p><p>You'll be asked to login again.</p>",
+          "action": "Upgrade now"
+        },
+        "paid": {
+          "title": "Thanks for your business!",
+          "instruction": "<p>Your site is an active account. If you need to change your billing information or cancel your subscription, click on over to our billing portal.</p><p>You'll be asked to login again.</p>",
+          "action": "Manage billing"
+        }
+      },
+      "domain": {
+        "title": "Domains",
+        "description": "Your site is currently available at <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "and <strong>{{domain}}</strong>",
+        "success": {
+          "title": "Almost done",
+          "instruction": "Great. Point your host records to the following address.",
+          "docs": "You can find more detailed instructions in our docs on <a href='http://www.webhook.com/docs/deployment-domains/'>how to set up your domain</a>."
+        },
+        "trial": {
+          "title": "Upgrade to use custom domains",
+          "instruction": "This site is still on a free trial. Only paid sites allow the use of custom domains.",
+          "upgrade": "Upgrade at webhook.com"
+        },
+        "error": "Please fix the following errors.",
+        "form": {
+          "title": "Use a previously purchased domain",
+          "instruction": "Don't have a domain? Buy one over at <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> or any domain seller, then return here.",
+          "label": "Enter your domain name",
+          "action": "Use this domain"
+        }
+      },
+      "data": {
+        "importExport": {
+          "title": "Import / Export Data",
+          "instruction": "You are not restricted to just uploading backups. You can upload any data you want but it must conform to the expected format. See the <a href='http://www.webhook.com/docs/importing-custom-data/''>documentation</a> for more information.",
+          "action": {
+            "import": "Import JSON data",
+            "export": "Export JSON data"
+          },
+          "import": {
+            "found": "We found the following data in your file:",
+            "type": "Content Type",
+            "item": "Item Count",
+            "noContent": "No content to import.",
+            "setting": "Setting",
+            "value": "Value",
+            "noSettings": "No settings to import.",
+            "warningTitle": "Warning!",
+            "warning": "Using a backup will <strong>permenantly delete</strong> current data and replace it with the data you just uploaded. It will also rebuild your site with the imported data. If you have not created a backup in a while, now would be a good time.",
+            "proceed": "Proceed",
+            "cancel": "Cancel",
+            "noDataTitle": "No data",
+            "noData": "We could not find any valid data to import from your file.",
+            "goBack": "Back",
+            "invalidTitle": "We were unable to parse your file.",
+            "invalid": "Please make sure you are uploading a <strong>valid</strong> JSON file and try again."
+          }
+        },
+        "backups": {
+          "title": "Backups",
+          "data": {
+            "title": "Data Backups",
+            "instruction": "Webhook automatically exports a JSON backup every night at 3AM PST. We keep these files around for seven days. For new sites, the backups will only work for the days after your site was created."
+          },
+          "templates": {
+            "title": "Template and site files backup",
+            "instruction": "This will download your Webhook site directory including all the templates and static files as they exist on the live website. You can use these files to recreate your site locally if need be.",
+            "action": "Download your website files"
+          }
+        },
+        "wordpress": {
+          "title": "Import Wordpress Blog (Beta)",
+          "instruction": "Wordpress allows you to <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>export your blog data into an XML document</a>. Once downloaded, use the button below to import that data into Webhook. We'll do our best to import the images included in your articles and size them properly.",
+          "action": "Select a Wordpress XML file"
+        },
+        "api": {
+          "title": "API Key",
+          "instruction": "Webhook allows you to perform external builds, edits, inserts and deletes through an API.",
+          "docs": "Documentation for the API is here.",
+          "warning": "Are you sure you want to reset your key?"
+        },
+        "search": {
+          "title": "Rebuild Search Index",
+          "instruction": "If you're having trouble with the CMS search. Rebuilding your index can often help.",
+          "action": "Rebuild search index",
+          "indexing": "Indexing data"
+        },
+        "reset": {
+          "title": "Reset Your Website",
+          "warning": "You can only reset your website when running it locally.",
+          "instruction": "This will allow you to reset your site so you can start over. Please make a backup before performing this action.",
+          "options": {
+            "data": "<strong>Delete my data.</strong> (This will delete your forms, but your templates will remain.)",
+            "all": "<strong>Delete my templates and my data.</strong> (This will return this site to a completely fresh install. Useful for changing themes.)"
+          },
+          "action": {
+            "deleteData": "Delete data",
+            "deleteEverything": "Delete everything"
+          },
+          "deleting": "Deleting"
+        }
+      }
+    },
+    "content": {
+      "addNewItem": "Add new {{name}}",
+      "display": "Display",
+      "limited": "For better performance, we have limited the number of records shown on this page to the last {{recordLimit}} created.",
+      "noRecords": "You haven't added any {{name}} yet.",
+      "moreRecords": "Load More Records",
+      "allTypes": {
+        "title": "Your existing content types",
+        "addType": "Add new content type",
+        "contentType": "Content Type",
+        "id": "ID",
+        "formStyle": "Form Style",
+        "single": "Single Item",
+        "multiple": "Multiple Items"
+      },
+      "start": {
+        "title": "OK, let's add a new form to the CMS",
+        "nameLabel": "Name of new object",
+        "namePlaceholder": "ex: comics, articles, about us, homepage, cities, vampires",
+        "duplicate": "There is already an content type with that name",
+        "long": "The content type ID must be 250 characters or shorter. The ID created from the name entered is {{length}} characters long.",
+        "instruction": "This will be the CMS menu name (on <span class='icon icon-circle-arrow-left'></span> left) and also define the URL pattern on your front-facing site, so choose wisely.",
+        "multiple": {
+          "title": "So... how many {{newTypeName}} are there?",
+          "instruction": "For example, there is only one homepage entry, but there are multiple blog entries.",
+          "one": "There is only <strong>one</strong> {{newTypeName}} entry.",
+          "many": "There are <strong>multiple</strong> {{newTypeName}} entries."
+        },
+        "action": "Let's create a {{newTypeName}} form!",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "form": {
+    "add": "Add Field",
+    "edit": "Edit Field",
+    "isNewWarning": "<strong>Warning</strong>Changes to these details may require changes in your templates as well.",
+    "typeName": "Content type name",
+    "typeNameInvalid": "Type name is invalid.",
+    "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{name}}/</code> and the individual pages would be at <code>site.com/{{name}}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
+    "listUrlLabel": "URL for the list page of all {{name}}",
+    "individualUrlLabel": "URL prefix for a single {{name}} page",
+    "group": {
+      "text": "Text",
+      "basics": "Basics",
+      "files": "Files",
+      "specifics": "Specifics",
+      "advanced": "Advanced"
+    },
+    "widget": {
+      "textfield": "Single line text",
+      "textarea": "Paragraph text",
+      "wysiwyg": "WYSIWYG text",
+      "markdown": "Markdown text",
+      "number": "Number",
+      "checkbox": "Checkbox",
+      "radio": "Multiple choice",
+      "select": "Dropdown",
+      "image": "Image",
+      "gallery": "Gallery",
+      "audio": "Audio file",
+      "file": "Other file",
+      "name": "Person",
+      "address": "Address",
+      "phone": "Phone number",
+      "email": "Email",
+      "datetime": "Date time",
+      "url": "Website",
+      "rating": "Rating",
+      "tabular": "Tabular Data",
+      "embedly": "Embed.ly",
+      "color": "Color",
+      "instruction": "Instructions",
+      "relation": "Relationship",
+      "layout": "Page Layout",
+      "geolocation": "Map coordinates",
+      "grid": "Repeatable Form"
+    },
+    "info": {
+      "label": "Field label",
+      "labelTitle": "Short phase to describe the content in this field.",
+      "placeholder": "Placeholder value",
+      "placeholderTitle": "This will show within the input until it has a value. It does not save as a default.",
+      "instruction": "Instructions for user",
+      "instructionTitle": "Instructions to the user on what they should enter into this field.",
+      "required": "Required",
+      "requiredTitle": "The form can't be saved unless this field has a value.",
+      "requiredCheckbox": "Make this field required.",
+      "delete": "Delete this field",
+      "text": {
+        "min": "Min characters",
+        "max": "Max characters"
+      },
+      "wysiwyg": {
+        "label": "What can users add into the WYSIWYG?",
+        "table": "Tables",
+        "video": "Videos",
+        "image": "Images",
+        "quote": "Block quotes",
+        "link": "Links"
+      },
+      "number": {
+        "min": "Min number",
+        "max": "Max number"
+      },
+      "checkbox": {
+        "label": "Checkbox options",
+        "help": "Use the plus and minus to add new options. Click the checkbox to make it default when on a fresh form."
+      },
+      "radio": {
+        "label": "Multiple choice options",
+        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
+      },
+      "select": {
+        "label": "Dropdown options",
+        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
+      },
+      "rating": {
+        "min": "Min value",
+        "minHelp": "This is the min value a user can enter. Entering .5 would allow a half star.",
+        "max": "Max value",
+        "maxHelp": "The max number of stars allowed. Entering 10 would change the form to have 10 stars.",
+        "step": "Step",
+        "stepHelp": "What increment can people rate between the min and the max? Entering .5 would mean a user can rate in half stars."
+      },
+      "tabular": {
+        "label": "Columns"
+      },
+      "relationship": {
+        "label": "Relationships to allow",
+        "help": "Only this content type will be searchable in the form widget.",
+        "single": "Only allow one searched item and no more.",
+        "hidden": "Hide this widget during form entry."
+      }
+    },
+    "control": {
+      "markdown": {
+        "syntax": "This field allows <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
+      },
+      "image": {
+        "action": "Drag or select image",
+        "replace": "Replace image"
+      },
+      "gallery": {
+        "action": "Drag or select images",
+        "instruction": "Circled images have captions. Click to edit an individual image. Drag to sort.",
+        "delete": "Borrar",
+        "close": "Guardar / Cerrar"
+      },
+      "audio": {
+        "action": "Arrastre o seleccione un archivo de audio"
+      },
+      "file": {
+        "action": "Arraste o seleccione archivo",
+        "url": "ó use una URL",
+        "select": "Select from desktop",
+        "remove": "Remove",
+        "cancel": "Cancel",
+        "upload": "Upload",
+        "paste": "Paste URL"
+      },
+      "tabular": {
+        "add": "Add Row"
+      },
+      "embedly": {
+        "action": "Fetch",
+        "preview": "Preview",
+        "clear": "Clear"
+      }
+    },
+    "nameTooltip": "Click to edit the name and URL structure for this content type.",
+    "help": "Help",
+    "helpTooltip": "Watch a tutorial video about the form builder.",
+    "goBack": "Cancel / Return to CMS",
+    "action": "Save form"
+  },
+  "start": {
+    "title": "How should we set up your site?",
+    "theme": {
+      "instruction": "<p>Pick one of our pre-built sites that follow common CMS and design patterns. Customize later.</p><p>Example: A blog site, a portfolio site.</p>",
+      "action": "Start from a theme"
+    },
+    "empty": {
+      "instruction": "<p>Use the formbuilder to set up a custom CMS with page types that you define.</p><p>You'll need to code your design in HTML / CSS.</p>",
+      "action": "Start from scratch"
+    },
+    "wordpress": {
+      "instruction": "<p>We'll import your site and convert your posts, authors, tags and images.</p><p>We'll also set up basic scaffolding that you can design on top of.</p>",
+      "action": "Import a WordPress XML file"
+    }
+  },
+  "theme": {
+    "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterworks. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
+    "title": "Start from a theme",
+    "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Interested in making your own theme? <a href='http://www.webhook.com/docs/creating-a-theme/'>Read the docs</a>. Can't find what you're looking for?",
+    "scratch": "Start from scratch.",
+    "error": "Whoops",
+    "upload": {
+      "title": "Load local theme",
+      "label": "Select .zip file from your desktop",
+      "action": "Select local zip file"
+    },
+    "url": {
+      "title": "Load remote theme",
+      "label": "http:// address of a .zip file.",
+      "action": "Load remote zip file"
+    },
+    "demo": "Demo",
+    "install": "Install"
+  }
+}

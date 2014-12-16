@@ -32,7 +32,7 @@
       "dns": "Dominio",
       "data": "Datos y Copia de Seguridad"
     },
-    "localNotice": "<span class='icon icon-code'> Desarrollo local </span> Cambios guardados aqui solo se Susan para desarrollo local, no en la versión web de su sitio.",
+    "localNotice": "<span class='icon icon-code'> Desarrollo local </span> Cambios guardados aqui solo se usan para desarrollo local, no en la versión web de su sitio.",
     "index": {
       "welcome": {
         "title": "Bienvenido a su CMS (Administrador de Contenido)",
@@ -41,12 +41,12 @@
         "support": "Soporte",
         "issues": "Cuestiones",
         "noTypesTitle": "Necesita ajustar su CMS (Administrador de Contenido)",
-        "noTypesMessage": "You deployed your website without setting up any forms or templates. The live CMS can not add new forms. You'll need to add some on your local CMS, then create some templates, then deploy that data to your live site.",
+        "noTypesMessage": "Su sitio se desplegó  sin haber creado ninguna forma o plantillas. La versión web del CMS no puede agregar nuevas formas. Necesitará agregarlas por medio del CMS en su desarrollo local y luego desplegar la información a su sitio web.",
         "forums": "Foros"
       },
       "updates": "Actualizaciones de Webhook",
       "history": "Historical de Builds",
-      "moreHistory": "Cargar mas historial"
+      "moreHistory": "Cargar más historial"
     },
     "settings": {
       "password": {
@@ -74,151 +74,151 @@
       "urls": {
         "title": "Ajustar redirección de URLs",
         "infoTitle": "Ajustar redirección de URLs",
-        "infoMessage": "This page allows you to set up permanent 301 redirects for URLs on your site using <a href='http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite'>Nginx syntax</a> syntax. It follows the following basic rules:",
-        "infoRuleOne": "It only works on Webhook sites using custom domains, not the webhook.org domains.",
-        "infoRuleTwo": "Any redirects set here will trump any URL handling you are managing in the CMS or through your directory structure.",
-        "noDomainTitle": "No custom domain",
-        "noDomainMessage": "Redirect rules only work if you have a custom domain set up. <a href='#/wh/settings/domain/'>Configure your domain</a>.",
-        "action": "Save",
-        "tableRedirect": "Redirect URL",
-        "tableDestination": "Destination URL",
-        "tableAddRow": "Add a row"
+        "infoMessage": "Esta página permite ajustar redireccionamientos 301 permanentes para URL, usando sintaxis <a href='http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite'>Nginx</a>. Esta sigue las siguientes reglas básicas:",
+        "infoRuleOne": "Solo funciona con sitios Webhook que usan dominios personales, no con dominios en webhook.org.",
+        "infoRuleTwo": "Redireccionamientos creados aqui tienen mas peso que las URL manejadas a traves del CMS o a traves de su estructura de directorios.",
+        "noDomainTitle": "No usa dominio personal",
+        "noDomainMessage": "Reglas de redireccionamiento solo funcionan con dominios personales <a href='#/wh/settings/domain/'>Configurar su dominio</a>.",
+        "action": "Guardar",
+        "tableRedirect": "Redireccionar URL",
+        "tableDestination": "URL Destino",
+        "tableAddRow": "Agregar una fila"
       },
       "team": {
         "deploy": {
-          "title": "You need to deploy first",
-          "instruction": "Before you can add new members to your team you need to deploy the site onto the Internet. You can do this by running <code>wh deploy</code> in your local site directory. Then return to this page."
+          "title": "Primero necesita desplegar su sitio",
+          "instruction": "Antes de agregar nuevos miembros a su equipo, debe desplegar su sito. Puede hacero con em comando <code>wh deploy</code> en el directorio local de su sitio. Luego regrese a esta página."
         },
         "groups": {
-          "title": "Manage group permissions",
-          "instruction": "Invite a new collaborator by email",
-          "help": "Create groups to restrict access to portions of your CMS. Webhook's two default groups (owners and editors) can not be edited.",
-          "action": "Add a new group",
-          "owners": "Owners",
-          "ownersPerm": "Full permissions.",
-          "editors": "Editors",
-          "editorsPerm": "Full permissions, minus configuration.",
-          "groupNameEdit": "Edit name",
-          "groupNameSave": "Save",
-          "groupClose": "Close",
-          "groupSaving": "Saving",
-          "groupSaved": "Saved"
+          "title": "Administrar permisos de grupo",
+          "instruction": "Invitar a nuevo colaborador por correo",
+          "help": "Cree grupos para restringir el acceso a ciertas areas de su CMS. Webhoo viene con dos grupos, (propietarios y editores) que no se pueden editar.",
+          "action": "Agregar nuevo grupo",
+          "owners": "Propietarios",
+          "ownersPerm": "Todos los permisos.",
+          "editors": "Editores",
+          "editorsPerm": "Todos los permisosn, pero sin configuración.",
+          "groupNameEdit": "Editar nombre",
+          "groupNameSave": "Guardar",
+          "groupClose": "Cerrar",
+          "groupSaving": "Guardando",
+          "groupSaved": "Guardado"
         },
         "perms": {
-          "view": "Can view",
-          "draft": "Can draft",
-          "publish": "Can publish",
-          "delete": "Can delete",
-          "edit": "Can edit",
-          "mixed": "Mixed permissions.",
-          "editPerms": "edit"
+          "view": "Puede ver",
+          "draft": "Puede redactar",
+          "publish": "Puede publicar",
+          "delete": "Puede borrar",
+          "edit": "Puede editar",
+          "mixed": "Permisos mezclados.",
+          "editPerms": "editar"
         },
         "invite": {
-          "instruction": "Invite a new collaborator by email",
-          "help": "The person will not be active until they verify their email address.",
-          "action": "Send Invite"
+          "instruction": "Invitar a nuevo colaborador por correo",
+          "help": "Esta persona no será activada hasta que no verifique su correo",
+          "action": "Enviar invitación"
         },
         "current": {
-          "title": "Current Team Members",
-          "description": "Owners have access to billing and the local dev tools. Editors only have the ability to add and edit content on the live CMS.",
-          "email": "Email",
-          "permissions": "Permissions",
-          "owner": "Owner",
+          "title": "Miembros Actuales",
+          "description": "Los Propietarios tienen accesso a la facturación y herramientas de desarrollo local. Los Editores solo pueden agregar y editar contenido en el CMS del sitio web.",
+          "email": "Correo",
+          "permissions": "Permisos",
+          "owner": "Propietario",
           "editor": "Editor",
-          "change": "Change to",
-          "toOwner": "Change to owner",
-          "toEditor": "Change to editor",
-          "remove": "Remove access entirely",
-          "waiting": "Waiting on verification",
-          "cancel": "Cancel invite"
+          "change": "Cambiar a",
+          "toOwner": "Cambiar a propietario",
+          "toEditor": "Cambiar a editor",
+          "remove": "Retirar acceso completamente",
+          "waiting": "Esperando la verificación",
+          "cancel": "Cancelar invitación"
         }
       },
       "general": {
         "account": {
-          "title": "Account Settings",
+          "title": "Ajustes de Cuenta",
           "password": {
-            "prompt": "Need to change your password?",
-            "action": "Change your password here"
+            "prompt": "¿Necesita cambiar su contraseña?",
+            "action": "Cambie su contraseña aqui"
           },
-          "language": "Select CMS language"
+          "language": "Seleccione el lenguaje del CMS"
         },
         "global": {
-          "title": "Global Variables",
-          "description": "These are global values used in your front end templates. To retrieve them into your site, check the <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'>documentation here</a>.",
-          "action": "Save",
+          "title": "Variables Globales",
+          "description": "Estos valores globales son usados en las plantillas que muestran el contenido a los visitantes. Para cargarlas, visite la <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'>documentación aqui</a>.",
+          "action": "Guardar",
           "fields": {
             "name": {
-              "label": "Site Name"
+              "label": "Nombre del Sitio"
             },
             "description": {
-              "label": "Site Description",
-              "help": "A short description for your site."
+              "label": "Descripción del Sitio",
+              "help": "Descripción corta de su sitio."
             },
             "keywords": {
-              "label": "Site Keywords",
-              "help": "Comma separated list of keywords describing your site."
+              "label": "Palabras clave (Keywords)",
+              "help": "Lista de palabras clave (separadas por comas) que describen su sitio."
             },
             "url": {
-              "label": "Site URL",
-              "help": "Please use full URL like http://www.example.com."
+              "label": "URL del Sitio",
+              "help": "Por favor use este formato: http://www.ejemplo.com."
             },
             "analytics": {
-              "label": "Site Analytics ID",
-              "help": "Analytics Service ID. Usually something like UA-XX-XXXX"
+              "label": "ID de Analytics",
+              "help": "ID del Servicio de Analytics. Usualmente en este formato: UA-XX-XXXX"
             },
             "twitter": {
-              "label": "Site Twitter",
-              "help": "Twitter handle, without the @ sign."
+              "label": "Usuario de Twitter",
+              "help": "El usuario de Twitter de su sitio, no ponga el simbolo @."
             },
             "facebook": {
-              "label": "Site Facebook",
-              "help": "Facebook name."
+              "label": "Sitio de Facebook",
+              "help": "Nombre de Facebook"
             }
           }
         }
       },
       "billing": {
-        "title": "Billing",
+        "title": "Facturación",
         "trial": {
-          "lastDay": "This is the last day of your trial",
-          "days": "You have {{count}} trial days left",
-          "instruction": "<p>All Webhook sites start as 14-day free trials. To continue service and allow for custom domains you'll need to upgrade to a paid account.</p><p>You'll be asked to login again.</p>",
-          "action": "Upgrade now"
+          "lastDay": "Hoy es su último dia de prueba",
+          "days": "Le quedan {{count}} dias de prueba",
+          "instruction": "<p>Todos los sitios de Webhook vienen con un perido de prueva de 14 días. Para continuar el servicio y para poder usarlo con un dominio personal, necesitará subscribirse a una cuenta paga.</p><p>Se le pedirá que ingrese a su sitio nuevamente.</p>",
+          "action": "Subscribirse ahora"
         },
         "paid": {
-          "title": "Thanks for your business!",
-          "instruction": "<p>Your site is an active account. If you need to change your billing information or cancel your subscription, click on over to our billing portal.</p><p>You'll be asked to login again.</p>",
-          "action": "Manage billing"
+          "title": "Gracias por subscribirse!",
+          "instruction": "<p>Su sitio está en una cuenta activa. Si necesita cambiar la información de su facturación o cancelar su cuenta, haga click en nuestro portal de facturaciónl.</p><p>Se le pedirá que ingrese nuevamente.</p>",
+          "action": "Administrar facturación"
         }
       },
       "domain": {
-        "title": "Domains",
-        "description": "Your site is currently available at <strong>{{siteName}}.webhook.org</strong>",
-        "descriptionDomain": "and <strong>{{domain}}</strong>",
+        "title": "Dominios",
+        "description": "Su sitio es actualmente visible en  <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "y <strong>{{domain}}</strong>",
         "success": {
-          "title": "Almost done",
-          "instruction": "Great. Point your host records to the following address.",
-          "docs": "You can find more detailed instructions in our docs on <a href='http://www.webhook.com/docs/deployment-domains/'>how to set up your domain</a>."
+          "title": "Casi listo",
+          "instruction": "Grandioso. Haga que su host apunte a el siguiente registro:",
+          "docs": "Puede encontrar más infomación (en inglés),  <a href='http://www.webhook.com/docs/deployment-domains/'>aqui</a>."
         },
         "trial": {
-          "title": "Upgrade to use custom domains",
-          "instruction": "This site is still on a free trial. Only paid sites allow the use of custom domains.",
-          "upgrade": "Upgrade at webhook.com"
+          "title": "Subscribase para usar un dominio personal",
+          "instruction": "Este sitio aun esta en el periodo de prueba. Solo sitios subscritos a nuestro servicio pueden agregar dominios personales. ",
+          "upgrade": "Subscribase en webhook.com"
         },
-        "error": "Please fix the following errors.",
+        "error": "Por favor corrija los siguientes errores.",
         "form": {
-          "title": "Use a previously purchased domain",
-          "instruction": "Don't have a domain? Buy one over at <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> or any domain seller, then return here.",
-          "label": "Enter your domain name",
-          "action": "Use this domain"
+          "title": "Usar un dominio adquirido previamente",
+          "instruction": "¿No tiene dominio? Adquieralo en  <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> o cualquier otro proveedor de dominios, y luego regrese aqui.",
+          "label": "Ingrese su dominio aqui",
+          "action": "Usar este dominio"
         }
       },
       "data": {
         "importExport": {
-          "title": "Import / Export Data",
+          "title": "Importar / Exportar Datos",
           "instruction": "You are not restricted to just uploading backups. You can upload any data you want but it must conform to the expected format. See the <a href='http://www.webhook.com/docs/importing-custom-data/''>documentation</a> for more information.",
           "action": {
-            "import": "Import JSON data",
+            "import": "Importar Datos JSON",
             "export": "Export JSON data"
           },
           "import": {
@@ -370,44 +370,44 @@
       "placeholderTitle": "This will show within the input until it has a value. It does not save as a default.",
       "instruction": "Instructions for user",
       "instructionTitle": "Instructions to the user on what they should enter into this field.",
-      "required": "Required",
+      "required": "Requerido",
       "requiredTitle": "The form can't be saved unless this field has a value.",
-      "requiredCheckbox": "Make this field required.",
-      "delete": "Delete this field",
+      "requiredCheckbox": "Hacer este campo requerido",
+      "delete": "Borrar este campo",
       "text": {
-        "min": "Min characters",
-        "max": "Max characters"
+        "min": "Minimo numero de caracteres",
+        "max": "Maximo numero de caracteres"
       },
       "wysiwyg": {
         "label": "What can users add into the WYSIWYG?",
-        "table": "Tables",
-        "video": "Videos",
-        "image": "Images",
-        "quote": "Block quotes",
-        "link": "Links"
+        "table": "Tablas",
+        "video": "Védeos",
+        "image": "Imagenés",
+        "quote": "Bloque de cita",
+        "link": "Enlaces"
       },
       "number": {
         "min": "Min number",
-        "max": "Max number"
+        "max": "Numero Maximo"
       },
       "checkbox": {
-        "label": "Checkbox options",
+        "label": "Opciones de Caja Chequeable",
         "help": "Use the plus and minus to add new options. Click the checkbox to make it default when on a fresh form."
       },
       "radio": {
-        "label": "Multiple choice options",
+        "label": "Opciones de Selección Multiple",
         "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
       },
       "select": {
-        "label": "Dropdown options",
+        "label": "Opciones del Menu Desplegable",
         "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
       },
       "rating": {
-        "min": "Min value",
+        "min": "Valor Minimo",
         "minHelp": "This is the min value a user can enter. Entering .5 would allow a half star.",
-        "max": "Max value",
+        "max": "Valor Maximo",
         "maxHelp": "The max number of stars allowed. Entering 10 would change the form to have 10 stars.",
-        "step": "Step",
+        "step": "Paso",
         "stepHelp": "What increment can people rate between the min and the max? Entering .5 would mean a user can rate in half stars."
       },
       "tabular": {
@@ -440,36 +440,36 @@
       "file": {
         "action": "Arraste o seleccione archivo",
         "url": "ó use una URL",
-        "select": "Select from desktop",
-        "remove": "Remove",
-        "cancel": "Cancel",
-        "upload": "Upload",
-        "paste": "Paste URL"
+        "select": "Seleccione desde su computador",
+        "remove": "Remover",
+        "cancel": "Cancelar",
+        "upload": "Cargar",
+        "paste": "Pegue la URL"
       },
       "tabular": {
-        "add": "Add Row"
+        "add": "Agregar Fila"
       },
       "embedly": {
-        "action": "Fetch",
-        "preview": "Preview",
-        "clear": "Clear"
+        "action": "Traer",
+        "preview": "Vista previa",
+        "clear": "Limpiar"
       }
     },
     "nameTooltip": "Click to edit the name and URL structure for this content type.",
-    "help": "Help",
+    "help": "Ayuda",
     "helpTooltip": "Watch a tutorial video about the form builder.",
-    "goBack": "Cancel / Return to CMS",
-    "action": "Save form"
+    "goBack": "Cancelar / Regresar al CMS",
+    "action": "Guardar forma"
   },
   "start": {
     "title": "How should we set up your site?",
     "theme": {
       "instruction": "<p>Pick one of our pre-built sites that follow common CMS and design patterns. Customize later.</p><p>Example: A blog site, a portfolio site.</p>",
-      "action": "Start from a theme"
+      "action": "Empezar con un tema"
     },
     "empty": {
       "instruction": "<p>Use the formbuilder to set up a custom CMS with page types that you define.</p><p>You'll need to code your design in HTML / CSS.</p>",
-      "action": "Start from scratch"
+      "action": "Empezar desde cero"
     },
     "wordpress": {
       "instruction": "<p>We'll import your site and convert your posts, authors, tags and images.</p><p>We'll also set up basic scaffolding that you can design on top of.</p>",
@@ -478,21 +478,21 @@
   },
   "theme": {
     "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterworks. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
-    "title": "Start from a theme",
+    "title": "Empezar con un tema",
     "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Interested in making your own theme? <a href='http://www.webhook.com/docs/creating-a-theme/'>Read the docs</a>. Can't find what you're looking for?",
-    "scratch": "Start from scratch.",
-    "error": "Whoops",
+    "scratch": "Empezar desde cero",
+    "error": "¡Epa!",
     "upload": {
-      "title": "Load local theme",
-      "label": "Select .zip file from your desktop",
-      "action": "Select local zip file"
+      "title": "Cargar tema local",
+      "label": "Seleccione archivo .zip desde su computador",
+      "action": "Seleccional archivo .zip local"
     },
     "url": {
-      "title": "Load remote theme",
-      "label": "http:// address of a .zip file.",
-      "action": "Load remote zip file"
+      "title": "Cargar tema remoto",
+      "label": "Dirección http:// del archivo a .zip",
+      "action": "Cargar archivo zip remoto"
     },
-    "demo": "Demo",
-    "install": "Install"
+    "demo": "Demostración ",
+    "install": "Instalar"
   }
 }

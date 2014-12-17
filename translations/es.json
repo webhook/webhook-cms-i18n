@@ -216,162 +216,162 @@
       "data": {
         "importExport": {
           "title": "Importar / Exportar Datos",
-          "instruction": "You are not restricted to just uploading backups. You can upload any data you want but it must conform to the expected format. See the <a href='http://www.webhook.com/docs/importing-custom-data/''>documentation</a> for more information.",
+          "instruction": "No está restringido a cargar únicamente copias de seguridad. Tambien puede cargar cualquier contenido, pero debe seguir el formato adecuado. Para más información lea la <a href='http://www.webhook.com/docs/importing-custom-data/''>documentación</a> (en inglés).",
           "action": {
             "import": "Importar Datos JSON",
             "export": "Export JSON data"
           },
           "import": {
-            "found": "We found the following data in your file:",
-            "type": "Content Type",
-            "item": "Item Count",
-            "noContent": "No content to import.",
-            "setting": "Setting",
-            "value": "Value",
-            "noSettings": "No settings to import.",
-            "warningTitle": "Warning!",
-            "warning": "Using a backup will <strong>permenantly delete</strong> current data and replace it with the data you just uploaded. It will also rebuild your site with the imported data. If you have not created a backup in a while, now would be a good time.",
-            "proceed": "Proceed",
-            "cancel": "Cancel",
-            "noDataTitle": "No data",
-            "noData": "We could not find any valid data to import from your file.",
-            "goBack": "Back",
-            "invalidTitle": "We were unable to parse your file.",
-            "invalid": "Please make sure you are uploading a <strong>valid</strong> JSON file and try again."
+            "found": "Econtramos los siguientes datos en su archivo:",
+            "type": "Tipo de Contenido",
+            "item": "Conteo de Items",
+            "noContent": "No hay contenido para importar.",
+            "setting": "Ajuste",
+            "value": "Valor",
+            "noSettings": "No hay ajustes para importar.",
+            "warningTitle": "Advertencia!",
+            "warning": "Al usar una copia de seguirdad, se borra\n <strong>permenantemente</strong> contenido existente y se reemplaza con lo que cargará. Ademas se reconstruirá su sitio con el contenido importado. Si no ha hecho una copia de seguridad anteriormente, ahora es un buen momento para hacer una.",
+            "proceed": "Continuar",
+            "cancel": "Cancelar",
+            "noDataTitle": "No hay datos",
+            "noData": "No encontramos datos válidos para importar de su archivo.",
+            "goBack": "Atrás",
+            "invalidTitle": "No pudimos analizar sintácticamente su archivo.",
+            "invalid": "Asegúrese de estar subiendo un archivo JSON\n<strong>válido</strong> e intente de nuevo"
           }
         },
         "backups": {
-          "title": "Backups",
+          "title": "Copias de Seguridad",
           "data": {
-            "title": "Data Backups",
-            "instruction": "Webhook automatically exports a JSON backup every night at 3AM PST. We keep these files around for seven days. For new sites, the backups will only work for the days after your site was created."
+            "title": "Copia de Seguridad de sus Datos",
+            "instruction": "Webhook automáticamente exporta una copia de seguridad JSON cada noche a las 3AM PST. Estos archivos son mantenidos por 7 dias. Para sitios nuevos, las copias de seguridad solo son mantenidas los dias despues que su sitio fue creado."
           },
           "templates": {
-            "title": "Template and site files backup",
-            "instruction": "This will download your Webhook site directory including all the templates and static files as they exist on the live website. You can use these files to recreate your site locally if need be.",
-            "action": "Download your website files"
+            "title": "Copia de seguridad de datos y plantillas",
+            "instruction": "Esto descarga el directorio de su sitio Webhook incluyendo todas las plantillas, archivos estáticos como se encuentran en su sitio web. Estos archivos se pueden usar para recrear su sitio localmente si lo necesita.",
+            "action": "Descargar sus archivos web"
           }
         },
         "wordpress": {
-          "title": "Import Wordpress Blog (Beta)",
-          "instruction": "Wordpress allows you to <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>export your blog data into an XML document</a>. Once downloaded, use the button below to import that data into Webhook. We'll do our best to import the images included in your articles and size them properly.",
-          "action": "Select a Wordpress XML file"
+          "title": "Importar Blog de Wordpress Blog (en Beta)",
+          "instruction": "Wordpress le permite <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>exportar los datos de su blog a un documento XML</a>. Luego de descargarlo, use el botón inferior para importar sus datos a Webhook. Haremos lo mejor posible para importar las imágenes incluidas en sus articulos y aplicar el tamaño adecuado.",
+          "action": "Seleccionar archivo XML de Wordpress"
         },
         "api": {
-          "title": "API Key",
-          "instruction": "Webhook allows you to perform external builds, edits, inserts and deletes through an API.",
-          "docs": "Documentation for the API is here.",
-          "warning": "Are you sure you want to reset your key?"
+          "title": "Llave API",
+          "instruction": "Webhook permite hacer operaciones externas, tales como editar, insertar y borrar, a través de un API.",
+          "docs": "Aquí encuentra la documentación del API.",
+          "warning": "¿Está seguro de querer reestablecer su llave?"
         },
         "search": {
-          "title": "Rebuild Search Index",
-          "instruction": "If you're having trouble with the CMS search. Rebuilding your index can often help.",
-          "action": "Rebuild search index",
-          "indexing": "Indexing data"
+          "title": "Reconstruir el índice de búsqueda",
+          "instruction": "Si tiene problemas con las búsquedas en el CMS, reconstruir el índice puede que resuelva estos problemas.",
+          "action": "Reconstruir el índice de búsqueda",
+          "indexing": "Indexando sus datos"
         },
         "reset": {
-          "title": "Reset Your Website",
-          "warning": "You can only reset your website when running it locally.",
-          "instruction": "This will allow you to reset your site so you can start over. Please make a backup before performing this action.",
+          "title": "Reestablecer su sitio web.",
+          "warning": "Solo puede restablecer su sitio web cuando lo está ejecutando localmente.",
+          "instruction": "Esto le permite restablecer su sitio para empezar de nuevo. Por favor haga una copia de seguridad antes de continuar.",
           "options": {
-            "data": "<strong>Delete my data.</strong> (This will delete your forms, but your templates will remain.)",
-            "all": "<strong>Delete my templates and my data.</strong> (This will return this site to a completely fresh install. Useful for changing themes.)"
+            "data": "<strong>Borrar mis datos.</strong> (Esto borra sus formas, pero sus plantillas seran mantenidas.)",
+            "all": "<strong>Borrar mis plantillas y datos.</strong> (Esto restablece su sitio a cero, es útil cuando se desea cambiar el tema..)"
           },
           "action": {
-            "deleteData": "Delete data",
-            "deleteEverything": "Delete everything"
+            "deleteData": "Borrar datos",
+            "deleteEverything": "Borrar todo"
           },
-          "deleting": "Deleting"
+          "deleting": "Borrando"
         }
       }
     },
     "content": {
-      "addNewItem": "Add new {{name}}",
-      "display": "Display",
-      "limited": "For better performance, we have limited the number of records shown on this page to the last {{recordLimit}} created.",
-      "noRecords": "You haven't added any {{name}} yet.",
-      "moreRecords": "Load More Records",
+      "addNewItem": "Agregar nuevo {{name}}",
+      "display": "Mostrar",
+      "limited": "Para mejor rendimiento, hemos limitado el número de registros mostrados en esta página a {{recordLimit}}.",
+      "noRecords": "No ha agregado ningún {{name}} aún.",
+      "moreRecords": "Cargar más registros",
       "allTypes": {
-        "title": "Your existing content types",
-        "addType": "Add new content type",
-        "contentType": "Content Type",
+        "title": "Sus tipos de contenido existentes",
+        "addType": "Agregar nuevo tipo de contenido",
+        "contentType": "Tipo de Contenido",
         "id": "ID",
-        "formStyle": "Form Style",
-        "single": "Single Item",
-        "multiple": "Multiple Items"
+        "formStyle": "Estilo de la Forma",
+        "single": "Item Individual",
+        "multiple": "Items Multiples"
       },
       "start": {
-        "title": "OK, let's add a new form to the CMS",
-        "nameLabel": "Name of new object",
-        "namePlaceholder": "ex: comics, articles, about us, homepage, cities, vampires",
-        "duplicate": "There is already an content type with that name",
-        "long": "The content type ID must be 250 characters or shorter. The ID created from the name entered is {{length}} characters long.",
-        "instruction": "This will be the CMS menu name (on <span class='icon icon-circle-arrow-left'></span> left) and also define the URL pattern on your front-facing site, so choose wisely.",
+        "title": "OK, agreguemos nuevas formas a su CMS",
+        "nameLabel": "Nombre para los nuevos objetos",
+        "namePlaceholder": "ej: comics, articulos, paginas, pagina inicial, ciudades, vampiros",
+        "duplicate": "Ya hay un tipo de contenido con ese nombre",
+        "long": "El ID del tipo de contenido debe ser 250 caracteres o mas corto. El ID dado tiene  {{length}} caractéres.",
+        "instruction": "Este sera el nombre del menú en el CMS (a la <span class='icon icon-circle-arrow-left'></span> izquierda) y también define el patrón de las URLs en su sitio, escojalo con cuidado.",
         "multiple": {
-          "title": "So... how many {{newTypeName}} are there?",
-          "instruction": "For example, there is only one homepage entry, but there are multiple blog entries.",
-          "one": "There is only <strong>one</strong> {{newTypeName}} entry.",
-          "many": "There are <strong>multiple</strong> {{newTypeName}} entries."
+          "title": "¿Cuántos {{newTypeName}} hay?",
+          "instruction": "Por ejemplo, solo hay una Página Inicio (homepage), pero hay multiples ítems en el Blog.",
+          "one": "Solo hay <strong>un</strong> {{newTypeName}}.",
+          "many": "Hay <strong>multiples</strong> {{newTypeName}}."
         },
-        "action": "Let's create a {{newTypeName}} form!",
-        "cancel": "Cancel"
+        "action": "¡Creemos una {{newTypeName}} forma!",
+        "cancel": "Cancelar"
       }
     }
   },
   "form": {
-    "add": "Add Field",
-    "edit": "Edit Field",
-    "isNewWarning": "<strong>Warning</strong>Changes to these details may require changes in your templates as well.",
-    "typeName": "Content type name",
-    "typeNameInvalid": "Type name is invalid.",
-    "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{name}}/</code> and the individual pages would be at <code>site.com/{{name}}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
-    "listUrlLabel": "URL for the list page of all {{name}}",
-    "individualUrlLabel": "URL prefix for a single {{name}} page",
+    "add": "Agregar campo",
+    "edit": "Editar campo",
+    "isNewWarning": "<strong>Advertencia</strong> Cambios hechos en estos cambios puede que requieran cambios en sus plantillas tambien.",
+    "typeName": "Nombre del tipo de contenido",
+    "typeNameInvalid": "El nombre es inválido.",
+    "slugInstruction": "<strong>control de URL slug</strong> Puede adaptar la ubicación de las URLs para el tipo de contenido. Si se deja vació la lista de ítems estará visible en <code>site.com/{{name}}/</code> y las páginas individuales en <code>site.com/{{name}}/name-of-item/</code>. Estos campos permiten el uso de ciertas variables, incluyendo fechas. Vea la <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>documentación</a> aqui.",
+    "listUrlLabel": "URL para la pagina con la lista de {{name}}",
+    "individualUrlLabel": "Prefijo para la URL para un item individual {{name}} page",
     "group": {
-      "text": "Text",
-      "basics": "Basics",
-      "files": "Files",
-      "specifics": "Specifics",
-      "advanced": "Advanced"
+      "text": "Texto",
+      "basics": "Campos Básicos",
+      "files": "Archivos",
+      "specifics": "Campos Específicos",
+      "advanced": "Campos Avanzados"
     },
     "widget": {
-      "textfield": "Single line text",
-      "textarea": "Paragraph text",
-      "wysiwyg": "WYSIWYG text",
-      "markdown": "Markdown text",
-      "number": "Number",
-      "checkbox": "Checkbox",
-      "radio": "Multiple choice",
-      "select": "Dropdown",
-      "image": "Image",
-      "gallery": "Gallery",
-      "audio": "Audio file",
-      "file": "Other file",
-      "name": "Person",
-      "address": "Address",
-      "phone": "Phone number",
-      "email": "Email",
-      "datetime": "Date time",
-      "url": "Website",
-      "rating": "Rating",
-      "tabular": "Tabular Data",
+      "textfield": "Linea de texto",
+      "textarea": "Párrafo de texto",
+      "wysiwyg": "Texto WYSIWYG",
+      "markdown": "Texto Markdown",
+      "number": "Número",
+      "checkbox": "Cuadro de cheque",
+      "radio": "Selección múltiple",
+      "select": "Selección desplegable",
+      "image": "Imagén",
+      "gallery": "Galería",
+      "audio": "Archivo de audio",
+      "file": "Otro archivo",
+      "name": "Persona",
+      "address": "Dirección",
+      "phone": "Número de teléfono",
+      "email": "Dirección Email",
+      "datetime": "Fecha/hora",
+      "url": "Sitio web",
+      "rating": "Valuación",
+      "tabular": "Datos tabulares",
       "embedly": "Embed.ly",
       "color": "Color",
-      "instruction": "Instructions",
-      "relation": "Relationship",
-      "layout": "Page Layout",
-      "geolocation": "Map coordinates",
-      "grid": "Repeatable Form"
+      "instruction": "Instrucciones",
+      "relation": "Relación",
+      "layout": "Diseño de página",
+      "geolocation": "Coordinadas de mapa",
+      "grid": "Forma repetible"
     },
     "info": {
-      "label": "Field label",
-      "labelTitle": "Short phase to describe the content in this field.",
-      "placeholder": "Placeholder value",
-      "placeholderTitle": "This will show within the input until it has a value. It does not save as a default.",
-      "instruction": "Instructions for user",
-      "instructionTitle": "Instructions to the user on what they should enter into this field.",
+      "label": "Etiqueta de campo",
+      "labelTitle": "Frase corta para describir el contenido de este campo.",
+      "placeholder": "Valor de marcador de posición",
+      "placeholderTitle": "Esto se muestra en el campo hasta que el usuario cambie el contenido del campo, Este valor no se guarda en su contenido.",
+      "instruction": "Instrucciones para el usuario",
+      "instructionTitle": "Instrucciones para el usuario acerca de lo que pueden agregar en este campo.",
       "required": "Requerido",
-      "requiredTitle": "The form can't be saved unless this field has a value.",
+      "requiredTitle": "Esta forma no se puede guardar a menos que este campo tenga un valor.",
       "requiredCheckbox": "Hacer este campo requerido",
       "delete": "Borrar este campo",
       "text": {
@@ -379,7 +379,7 @@
         "max": "Maximo numero de caracteres"
       },
       "wysiwyg": {
-        "label": "What can users add into the WYSIWYG?",
+        "label": "Que puede agregar los usuarios en este bloque WYSIWYG?",
         "table": "Tablas",
         "video": "Védeos",
         "image": "Imagenés",
@@ -387,50 +387,50 @@
         "link": "Enlaces"
       },
       "number": {
-        "min": "Min number",
-        "max": "Numero Maximo"
+        "min": "Número mínimo",
+        "max": "Número máximo"
       },
       "checkbox": {
-        "label": "Opciones de Caja Chequeable",
-        "help": "Use the plus and minus to add new options. Click the checkbox to make it default when on a fresh form."
+        "label": "Opciones de cuadro de cheques",
+        "help": "Use los botones de suma y resta para agregar mas opciones. Haga click en el cuadro de cheque que quiere que sea el valor predeterminado cuando esta forma es llenada."
       },
       "radio": {
         "label": "Opciones de Selección Multiple",
-        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
+        "help": "Use los botones de suma y resta para agregar mas opciones. Haga click en el circulo que quiere que sea el valor predeterminado cuando esta forma es llenada."
       },
       "select": {
-        "label": "Opciones del Menu Desplegable",
-        "help": "Use the plus and minus to add new options. Click the radio to make it default when on a fresh form."
+        "label": "Opciones del selección desplegable",
+        "help": "Use los botones de suma y resta para agregar mas opciones. Haga click en el circulo que quiere que sea el valor predeterminado cuando esta forma es llenada."
       },
       "rating": {
-        "min": "Valor Minimo",
-        "minHelp": "This is the min value a user can enter. Entering .5 would allow a half star.",
-        "max": "Valor Maximo",
-        "maxHelp": "The max number of stars allowed. Entering 10 would change the form to have 10 stars.",
+        "min": "Valor mínimo",
+        "minHelp": "Este es el valor mínimo que se puede ingresar. Si ingresa .5, se muesta una media estrella.",
+        "max": "Valor máximo",
+        "maxHelp": "El número máximo de estrellas que es permitido. Si se ingresa 10, cambiara la forma para que acepte 10 estrellas.",
         "step": "Paso",
-        "stepHelp": "What increment can people rate between the min and the max? Entering .5 would mean a user can rate in half stars."
+        "stepHelp": "El incremento que se puede usar entre el valor mínimo y máximo. Si ingresa .5, se muesta una media estrella."
       },
       "tabular": {
-        "label": "Columns"
+        "label": "Columnas"
       },
       "relationship": {
-        "label": "Relationships to allow",
-        "help": "Only this content type will be searchable in the form widget.",
-        "single": "Only allow one searched item and no more.",
-        "hidden": "Hide this widget during form entry."
+        "label": "Relaciones permitidas",
+        "help": "Solo este tipo de contenido sera el que se puede buscar cuando se esta rellenando la forma.",
+        "single": "Solo permitir un ítem.",
+        "hidden": "Esconder este campo de la forma."
       }
     },
     "control": {
       "markdown": {
-        "syntax": "This field allows <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
+        "syntax": "Este campo permite <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Sintáxis </a>."
       },
       "image": {
-        "action": "Drag or select image",
-        "replace": "Replace image"
+        "action": "Arraste o seleccione archivo de la imagen",
+        "replace": "Reemplazar imagen"
       },
       "gallery": {
-        "action": "Drag or select images",
-        "instruction": "Circled images have captions. Click to edit an individual image. Drag to sort.",
+        "action": "Arraste o seleccione archivos de las imagenes",
+        "instruction": "Las imagenes en círculos tienen títulos. Haga click para editar imagenes individuales. Arrastelas para ordenarlas.",
         "delete": "Borrar",
         "close": "Guardar / Cerrar"
       },
@@ -455,31 +455,31 @@
         "clear": "Limpiar"
       }
     },
-    "nameTooltip": "Click to edit the name and URL structure for this content type.",
+    "nameTooltip": "Haga click para editar el nomber y la estructura de la URL para este tipo de contenido.",
     "help": "Ayuda",
-    "helpTooltip": "Watch a tutorial video about the form builder.",
+    "helpTooltip": "Vea un tutorial sobre el constructor de formas.",
     "goBack": "Cancelar / Regresar al CMS",
     "action": "Guardar forma"
   },
   "start": {
-    "title": "How should we set up your site?",
+    "title": "¿Cómo se debe configurar su sitio web?",
     "theme": {
-      "instruction": "<p>Pick one of our pre-built sites that follow common CMS and design patterns. Customize later.</p><p>Example: A blog site, a portfolio site.</p>",
+      "instruction": "<p>Seleccione uno de nuestros temas predeterminads, los cuales usan nuestros patrones comunes para el CMS. Se pueden ajustar/personalizar mas tarde.</p><p>Ejemplos: Sitio web, Sitio con un portafolio.</p>",
       "action": "Empezar con un tema"
     },
     "empty": {
-      "instruction": "<p>Use the formbuilder to set up a custom CMS with page types that you define.</p><p>You'll need to code your design in HTML / CSS.</p>",
+      "instruction": "<p>Use el contructor de formas para crear un CMS con páginas personalizadas que puede definir a su gusto..</p><p>Necesitará saber como manejar el código HTML / CSS de su plantilla.</p>",
       "action": "Empezar desde cero"
     },
     "wordpress": {
-      "instruction": "<p>We'll import your site and convert your posts, authors, tags and images.</p><p>We'll also set up basic scaffolding that you can design on top of.</p>",
-      "action": "Import a WordPress XML file"
+      "instruction": "<p>Importaremos su sitio y convertiremos sus articulos, autores e imagenes. También crearemos los bloques básicos sobre los cuales puede aplicar su diseño propio</p>",
+      "action": "Importar un archvio XML de WordPress"
     }
   },
   "theme": {
-    "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterworks. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
+    "localWarning": "Solo puede establecer un tema cuando se esta trabajando en la versión local (en su computador) de su sitio. No en la versión web. Por favor haga sus cambios locales y luego despliegue su sitio. Para más información sobre como cambiar o ajustar su propio tema, lea la <a href='http://www.webhook.com/docs/'>documentación</a> (en inglés).",
     "title": "Empezar con un tema",
-    "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Interested in making your own theme? <a href='http://www.webhook.com/docs/creating-a-theme/'>Read the docs</a>. Can't find what you're looking for?",
+    "instruction": "Las plantillas automaticamente instalan las formas, archivos estáticos y plantillas necesarias para iniciar su proyecto. Si está interesado en hacer su propio tema, vea la <a href='http://www.webhook.com/docs/creating-a-theme/'>documentación</a> (en inglés).",
     "scratch": "Empezar desde cero",
     "error": "¡Epa!",
     "upload": {

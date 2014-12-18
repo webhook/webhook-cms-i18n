@@ -1,0 +1,498 @@
+{
+  "login": {
+    "email": "Dirección de Email",
+    "password": "Contraseña",
+    "signIn": "Ingresar",
+    "forgotPassword": "¿Contraseña Olvidada?",
+    "addLanguage": "Contribuir a las traducciones de Webhook"
+  },
+  "passwordReset": {
+    "prompt": "Direction de email para enviar contraseña.",
+    "action": "Restablecer  contraseña",
+    "goBack": "Ir a la pàgina de ingreso",
+    "emailLabel": "Dirección de Email",
+    "provideEmail": "Provea su dirección email para restablecer su contraseña.",
+    "success": "Correo con contraseña restablecida ha sido enviado"
+  },
+  "button": {
+    "save": "Guardar"
+  },
+  "wh": {
+    "userCount": "está conectado.",
+    "accountTooltip": "Haha click to change your password and other account info.",
+    "logout": "Egresar",
+    "search": "Presionar S para búsqueda",
+    "navContent": "El Contenido",
+    "configuration": {
+      "title": "Configuración",
+      "types": "Agregar / Editor Tipos de Contenido",
+      "team": "Miembros",
+      "settings": "Ajustes",
+      "billing": "Facturación",
+      "dns": "Dominio",
+      "data": "Datos y Copia de Seguridad"
+    },
+    "localNotice": "<span class='icon icon-code'> Desarrollo local </span> Cambios guardados aqui solo se usan para desarrollo local, no en la versión web de su sitio.",
+    "index": {
+      "welcome": {
+        "title": "Bienvenido a su CMS (Administrador de Contenido)",
+        "description": "Algunos enlaces útiles para construir sitios con Webhook:",
+        "docs": "Documentación",
+        "support": "Soporte",
+        "issues": "Cuestiones",
+        "noTypesTitle": "Necesita ajustar su CMS (Administrador de Contenido)",
+        "noTypesMessage": "Su sitio se desplegó  sin haber creado ninguna forma o plantillas. La versión web del CMS no puede agregar nuevas formas. Necesitará agregarlas por medio del CMS en su desarrollo local y luego desplegar la información a su sitio web.",
+        "forums": "Foros"
+      },
+      "updates": "Actualizaciones de Webhook",
+      "history": "Historical de Builds",
+      "moreHistory": "Cargar más historial"
+    },
+    "settings": {
+      "password": {
+        "title": "Cambiar Contraseña",
+        "action": "Guardar",
+        "fields": {
+          "account": {
+            "label": "Cuenta a cambiar"
+          },
+          "oldPassword": {
+            "label": "Contraseña anterior"
+          },
+          "newPassword": {
+            "label": "Nueva Contraseña"
+          },
+          "newPassword2": {
+            "label": "Nueva Contraseña (Repetir)"
+          }
+        },
+        "error": {
+          "match": "Las contraseñas deben ser iguales",
+          "fix": "Por favor arregle los siguientes porblemas"
+        }
+      },
+      "urls": {
+        "title": "Ajustar redirección de URLs",
+        "infoTitle": "Ajustar redirección de URLs",
+        "infoMessage": "Esta página permite ajustar redireccionamientos 301 permanentes para URL, usando sintaxis <a href='http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite'>Nginx</a>. Esta sigue las siguientes reglas básicas:",
+        "infoRuleOne": "Solo funciona con sitios Webhook que usan dominios personales, no con dominios en webhook.org.",
+        "infoRuleTwo": "Redireccionamientos creados aqui tienen mas peso que las URL manejadas a traves del CMS o a traves de su estructura de directorios.",
+        "noDomainTitle": "No usa dominio personal",
+        "noDomainMessage": "Reglas de redireccionamiento solo funcionan con dominios personales <a href='#/wh/settings/domain/'>Configurar su dominio</a>.",
+        "action": "Guardar",
+        "tableRedirect": "Redireccionar URL",
+        "tableDestination": "URL Destino",
+        "tableAddRow": "Agregar una fila"
+      },
+      "team": {
+        "deploy": {
+          "title": "Primero necesita desplegar su sitio",
+          "instruction": "Antes de agregar nuevos miembros a su equipo, debe desplegar su sito. Puede hacero con em comando <code>wh deploy</code> en el directorio local de su sitio. Luego regrese a esta página."
+        },
+        "groups": {
+          "title": "Administrar permisos de grupo",
+          "instruction": "Invitar a nuevo colaborador por correo",
+          "help": "Cree grupos para restringir el acceso a ciertas areas de su CMS. Webhoo viene con dos grupos, (propietarios y editores) que no se pueden editar.",
+          "action": "Agregar nuevo grupo",
+          "owners": "Propietarios",
+          "ownersPerm": "Todos los permisos.",
+          "editors": "Editores",
+          "editorsPerm": "Todos los permisosn, pero sin configuración.",
+          "groupNameEdit": "Editar nombre",
+          "groupNameSave": "Guardar",
+          "groupClose": "Cerrar",
+          "groupSaving": "Guardando",
+          "groupSaved": "Guardado"
+        },
+        "perms": {
+          "view": "Puede ver",
+          "draft": "Puede redactar",
+          "publish": "Puede publicar",
+          "delete": "Puede borrar",
+          "edit": "Puede editar",
+          "mixed": "Permisos mezclados.",
+          "editPerms": "editar"
+        },
+        "invite": {
+          "instruction": "Invitar a nuevo colaborador por correo",
+          "help": "Esta persona no será activada hasta que no verifique su correo",
+          "action": "Enviar invitación"
+        },
+        "current": {
+          "title": "Miembros Actuales",
+          "description": "Los Propietarios tienen accesso a la facturación y herramientas de desarrollo local. Los Editores solo pueden agregar y editar contenido en el CMS del sitio web.",
+          "email": "Correo",
+          "permissions": "Permisos",
+          "owner": "Propietario",
+          "editor": "Editor",
+          "change": "Cambiar a",
+          "toOwner": "Cambiar a propietario",
+          "toEditor": "Cambiar a editor",
+          "remove": "Retirar acceso completamente",
+          "waiting": "Esperando la verificación",
+          "cancel": "Cancelar invitación"
+        }
+      },
+      "general": {
+        "account": {
+          "title": "Ajustes de Cuenta",
+          "password": {
+            "prompt": "¿Necesita cambiar su contraseña?",
+            "action": "Cambie su contraseña aqui"
+          },
+          "language": "Seleccione el lenguaje del CMS"
+        },
+        "global": {
+          "title": "Variables Globales",
+          "description": "Estos valores globales son usados en las plantillas que muestran el contenido a los visitantes. Para cargarlas, visite la <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'>documentación aqui</a>.",
+          "action": "Guardar",
+          "fields": {
+            "name": {
+              "label": "Nombre del Sitio"
+            },
+            "description": {
+              "label": "Descripción del Sitio",
+              "help": "Descripción corta de su sitio."
+            },
+            "keywords": {
+              "label": "Palabras clave (Keywords)",
+              "help": "Lista de palabras clave (separadas por comas) que describen su sitio."
+            },
+            "url": {
+              "label": "URL del Sitio",
+              "help": "Por favor use este formato: http://www.ejemplo.com."
+            },
+            "analytics": {
+              "label": "ID de Analytics",
+              "help": "ID del Servicio de Analytics. Usualmente en este formato: UA-XX-XXXX"
+            },
+            "twitter": {
+              "label": "Usuario de Twitter",
+              "help": "El usuario de Twitter de su sitio, no ponga el simbolo @."
+            },
+            "facebook": {
+              "label": "Sitio de Facebook",
+              "help": "Nombre de Facebook"
+            }
+          }
+        }
+      },
+      "billing": {
+        "title": "Facturación",
+        "trial": {
+          "lastDay": "Hoy es su último dia de prueba",
+          "days": "Le quedan {{count}} dias de prueba",
+          "instruction": "<p>Todos los sitios de Webhook vienen con un perido de prueva de 14 días. Para continuar el servicio y para poder usarlo con un dominio personal, necesitará subscribirse a una cuenta paga.</p><p>Se le pedirá que ingrese a su sitio nuevamente.</p>",
+          "action": "Subscribirse ahora"
+        },
+        "paid": {
+          "title": "Gracias por subscribirse!",
+          "instruction": "<p>Su sitio está en una cuenta activa. Si necesita cambiar la información de su facturación o cancelar su cuenta, haga click en nuestro portal de facturaciónl.</p><p>Se le pedirá que ingrese nuevamente.</p>",
+          "action": "Administrar facturación"
+        }
+      },
+      "domain": {
+        "title": "Dominios",
+        "description": "Su sitio es actualmente visible en  <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "y <strong>{{domain}}</strong>",
+        "success": {
+          "title": "Casi listo",
+          "instruction": "Grandioso. Haga que su host apunte a el siguiente registro:",
+          "docs": "Puede encontrar más infomación (en inglés),  <a href='http://www.webhook.com/docs/deployment-domains/'>aqui</a>."
+        },
+        "trial": {
+          "title": "Subscribase para usar un dominio personal",
+          "instruction": "Este sitio aun esta en el periodo de prueba. Solo sitios subscritos a nuestro servicio pueden agregar dominios personales. ",
+          "upgrade": "Subscribase en webhook.com"
+        },
+        "error": "Por favor corrija los siguientes errores.",
+        "form": {
+          "title": "Usar un dominio adquirido previamente",
+          "instruction": "¿No tiene dominio? Adquieralo en  <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> o cualquier otro proveedor de dominios, y luego regrese aqui.",
+          "label": "Ingrese su dominio aqui",
+          "action": "Usar este dominio"
+        }
+      },
+      "data": {
+        "importExport": {
+          "title": "Importar / Exportar Datos",
+          "instruction": "No está restringido a cargar únicamente copias de seguridad. Tambien puede cargar cualquier contenido, pero debe seguir el formato adecuado. Para más información lea la <a href='http://www.webhook.com/docs/importing-custom-data/''>documentación</a> (en inglés).",
+          "action": {
+            "import": "Importar Datos JSON",
+            "export": "Export JSON data"
+          },
+          "import": {
+            "found": "Econtramos los siguientes datos en su archivo:",
+            "type": "Tipo de Contenido",
+            "item": "Conteo de Items",
+            "noContent": "No hay contenido para importar.",
+            "setting": "Ajuste",
+            "value": "Valor",
+            "noSettings": "No hay ajustes para importar.",
+            "warningTitle": "Advertencia!",
+            "warning": "Al usar una copia de seguirdad, se borra\n <strong>permenantemente</strong> contenido existente y se reemplaza con lo que cargará. Ademas se reconstruirá su sitio con el contenido importado. Si no ha hecho una copia de seguridad anteriormente, ahora es un buen momento para hacer una.",
+            "proceed": "Continuar",
+            "cancel": "Cancelar",
+            "noDataTitle": "No hay datos",
+            "noData": "No encontramos datos válidos para importar de su archivo.",
+            "goBack": "Atrás",
+            "invalidTitle": "No pudimos analizar sintácticamente su archivo.",
+            "invalid": "Asegúrese de estar subiendo un archivo JSON\n<strong>válido</strong> e intente de nuevo"
+          }
+        },
+        "backups": {
+          "title": "Copias de Seguridad",
+          "data": {
+            "title": "Copia de Seguridad de sus Datos",
+            "instruction": "Webhook automáticamente exporta una copia de seguridad JSON cada noche a las 3AM PST. Estos archivos son mantenidos por 7 dias. Para sitios nuevos, las copias de seguridad solo son mantenidas los dias despues que su sitio fue creado."
+          },
+          "templates": {
+            "title": "Copia de seguridad de datos y plantillas",
+            "instruction": "Esto descarga el directorio de su sitio Webhook incluyendo todas las plantillas, archivos estáticos como se encuentran en su sitio web. Estos archivos se pueden usar para recrear su sitio localmente si lo necesita.",
+            "action": "Descargar sus archivos web"
+          }
+        },
+        "wordpress": {
+          "title": "Importar Blog de Wordpress Blog (en Beta)",
+          "instruction": "Wordpress le permite <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>exportar los datos de su blog a un documento XML</a>. Luego de descargarlo, use el botón inferior para importar sus datos a Webhook. Haremos lo mejor posible para importar las imágenes incluidas en sus articulos y aplicar el tamaño adecuado.",
+          "action": "Seleccionar archivo XML de Wordpress"
+        },
+        "api": {
+          "title": "Llave API",
+          "instruction": "Webhook permite hacer operaciones externas, tales como editar, insertar y borrar, a través de un API.",
+          "docs": "Aquí encuentra la documentación del API.",
+          "warning": "¿Está seguro de querer reestablecer su llave?"
+        },
+        "search": {
+          "title": "Reconstruir el índice de búsqueda",
+          "instruction": "Si tiene problemas con las búsquedas en el CMS, reconstruir el índice puede que resuelva estos problemas.",
+          "action": "Reconstruir el índice de búsqueda",
+          "indexing": "Indexando sus datos"
+        },
+        "reset": {
+          "title": "Reestablecer su sitio web.",
+          "warning": "Solo puede restablecer su sitio web cuando lo está ejecutando localmente.",
+          "instruction": "Esto le permite restablecer su sitio para empezar de nuevo. Por favor haga una copia de seguridad antes de continuar.",
+          "options": {
+            "data": "<strong>Borrar mis datos.</strong> (Esto borra sus formas, pero sus plantillas seran mantenidas.)",
+            "all": "<strong>Borrar mis plantillas y datos.</strong> (Esto restablece su sitio a cero, es útil cuando se desea cambiar el tema..)"
+          },
+          "action": {
+            "deleteData": "Borrar datos",
+            "deleteEverything": "Borrar todo"
+          },
+          "deleting": "Borrando"
+        }
+      }
+    },
+    "content": {
+      "addNewItem": "Agregar nuevo {{name}}",
+      "display": "Mostrar",
+      "limited": "Para mejor rendimiento, hemos limitado el número de registros mostrados en esta página a {{recordLimit}}.",
+      "noRecords": "No ha agregado ningún {{name}} aún.",
+      "moreRecords": "Cargar más registros",
+      "allTypes": {
+        "title": "Sus tipos de contenido existentes",
+        "addType": "Agregar nuevo tipo de contenido",
+        "contentType": "Tipo de Contenido",
+        "id": "ID",
+        "formStyle": "Estilo de la Forma",
+        "single": "Item Individual",
+        "multiple": "Items Multiples"
+      },
+      "start": {
+        "title": "OK, agreguemos nuevas formas a su CMS",
+        "nameLabel": "Nombre para los nuevos objetos",
+        "namePlaceholder": "ej: comics, articulos, paginas, pagina inicial, ciudades, vampiros",
+        "duplicate": "Ya hay un tipo de contenido con ese nombre",
+        "long": "El ID del tipo de contenido debe ser 250 caracteres o mas corto. El ID dado tiene  {{length}} caractéres.",
+        "instruction": "Este sera el nombre del menú en el CMS (a la <span class='icon icon-circle-arrow-left'></span> izquierda) y también define el patrón de las URLs en su sitio, escojalo con cuidado.",
+        "multiple": {
+          "title": "¿Cuántos {{newTypeName}} hay?",
+          "instruction": "Por ejemplo, solo hay una Página Inicio (homepage), pero hay multiples ítems en el Blog.",
+          "one": "Solo hay <strong>un</strong> {{newTypeName}}.",
+          "many": "Hay <strong>multiples</strong> {{newTypeName}}."
+        },
+        "action": "¡Creemos una {{newTypeName}} forma!",
+        "cancel": "Cancelar"
+      }
+    }
+  },
+  "form": {
+    "add": "Agregar campo",
+    "edit": "Editar campo",
+    "isNewWarning": "<strong>Advertencia</strong> Cambios hechos en estos cambios puede que requieran cambios en sus plantillas tambien.",
+    "typeName": "Nombre del tipo de contenido",
+    "typeNameInvalid": "El nombre es inválido.",
+    "slugInstruction": "<strong>control de URL slug</strong> Puede adaptar la ubicación de las URLs para el tipo de contenido. Si se deja vació la lista de ítems estará visible en <code>site.com/{{name}}/</code> y las páginas individuales en <code>site.com/{{name}}/name-of-item/</code>. Estos campos permiten el uso de ciertas variables, incluyendo fechas. Vea la <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>documentación</a> aqui.",
+    "listUrlLabel": "URL para la pagina con la lista de {{name}}",
+    "individualUrlLabel": "Prefijo para la URL para un item individual {{name}} page",
+    "group": {
+      "text": "Texto",
+      "basics": "Campos Básicos",
+      "files": "Archivos",
+      "specifics": "Campos Específicos",
+      "advanced": "Campos Avanzados"
+    },
+    "widget": {
+      "textfield": "Linea de texto",
+      "textarea": "Párrafo de texto",
+      "wysiwyg": "Texto WYSIWYG",
+      "markdown": "Texto Markdown",
+      "number": "Número",
+      "checkbox": "Cuadro de cheque",
+      "radio": "Selección múltiple",
+      "select": "Selección desplegable",
+      "image": "Imagén",
+      "gallery": "Galería",
+      "audio": "Archivo de audio",
+      "file": "Otro archivo",
+      "name": "Persona",
+      "address": "Dirección",
+      "phone": "Número de teléfono",
+      "email": "Dirección Email",
+      "datetime": "Fecha/hora",
+      "url": "Sitio web",
+      "rating": "Valuación",
+      "tabular": "Datos tabulares",
+      "embedly": "Embed.ly",
+      "color": "Color",
+      "instruction": "Instrucciones",
+      "relation": "Relación",
+      "layout": "Diseño de página",
+      "geolocation": "Coordinadas de mapa",
+      "grid": "Forma repetible"
+    },
+    "info": {
+      "label": "Etiqueta de campo",
+      "labelTitle": "Frase corta para describir el contenido de este campo.",
+      "placeholder": "Valor de marcador de posición",
+      "placeholderTitle": "Esto se muestra en el campo hasta que el usuario cambie el contenido del campo, Este valor no se guarda en su contenido.",
+      "instruction": "Instrucciones para el usuario",
+      "instructionTitle": "Instrucciones para el usuario acerca de lo que pueden agregar en este campo.",
+      "required": "Requerido",
+      "requiredTitle": "Esta forma no se puede guardar a menos que este campo tenga un valor.",
+      "requiredCheckbox": "Hacer este campo requerido",
+      "delete": "Borrar este campo",
+      "text": {
+        "min": "Minimo numero de caracteres",
+        "max": "Maximo numero de caracteres"
+      },
+      "wysiwyg": {
+        "label": "Que puede agregar los usuarios en este bloque WYSIWYG?",
+        "table": "Tablas",
+        "video": "Védeos",
+        "image": "Imagenés",
+        "quote": "Bloque de cita",
+        "link": "Enlaces"
+      },
+      "number": {
+        "min": "Número mínimo",
+        "max": "Número máximo"
+      },
+      "checkbox": {
+        "label": "Opciones de cuadro de cheques",
+        "help": "Use los botones de suma y resta para agregar mas opciones. Haga click en el cuadro de cheque que quiere que sea el valor predeterminado cuando esta forma es llenada."
+      },
+      "radio": {
+        "label": "Opciones de Selección Multiple",
+        "help": "Use los botones de suma y resta para agregar mas opciones. Haga click en el circulo que quiere que sea el valor predeterminado cuando esta forma es llenada."
+      },
+      "select": {
+        "label": "Opciones del selección desplegable",
+        "help": "Use los botones de suma y resta para agregar mas opciones. Haga click en el circulo que quiere que sea el valor predeterminado cuando esta forma es llenada."
+      },
+      "rating": {
+        "min": "Valor mínimo",
+        "minHelp": "Este es el valor mínimo que se puede ingresar. Si ingresa .5, se muesta una media estrella.",
+        "max": "Valor máximo",
+        "maxHelp": "El número máximo de estrellas que es permitido. Si se ingresa 10, cambiara la forma para que acepte 10 estrellas.",
+        "step": "Paso",
+        "stepHelp": "El incremento que se puede usar entre el valor mínimo y máximo. Si ingresa .5, se muesta una media estrella."
+      },
+      "tabular": {
+        "label": "Columnas"
+      },
+      "relationship": {
+        "label": "Relaciones permitidas",
+        "help": "Solo este tipo de contenido sera el que se puede buscar cuando se esta rellenando la forma.",
+        "single": "Solo permitir un ítem.",
+        "hidden": "Esconder este campo de la forma."
+      }
+    },
+    "control": {
+      "markdown": {
+        "syntax": "Este campo permite <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Sintáxis </a>."
+      },
+      "image": {
+        "action": "Arraste o seleccione archivo de la imagen",
+        "replace": "Reemplazar imagen"
+      },
+      "gallery": {
+        "action": "Arraste o seleccione archivos de las imagenes",
+        "instruction": "Las imagenes en círculos tienen títulos. Haga click para editar imagenes individuales. Arrastelas para ordenarlas.",
+        "delete": "Borrar",
+        "close": "Guardar / Cerrar"
+      },
+      "audio": {
+        "action": "Arrastre o seleccione un archivo de audio"
+      },
+      "file": {
+        "action": "Arraste o seleccione archivo",
+        "url": "ó use una URL",
+        "select": "Seleccione desde su computador",
+        "remove": "Remover",
+        "cancel": "Cancelar",
+        "upload": "Cargar",
+        "paste": "Pegue la URL"
+      },
+      "tabular": {
+        "add": "Agregar Fila"
+      },
+      "embedly": {
+        "action": "Traer",
+        "preview": "Vista previa",
+        "clear": "Limpiar"
+      }
+    },
+    "nameTooltip": "Haga click para editar el nomber y la estructura de la URL para este tipo de contenido.",
+    "help": "Ayuda",
+    "helpTooltip": "Vea un tutorial sobre el constructor de formas.",
+    "goBack": "Cancelar / Regresar al CMS",
+    "action": "Guardar forma"
+  },
+  "start": {
+    "title": "¿Cómo se debe configurar su sitio web?",
+    "theme": {
+      "instruction": "<p>Seleccione uno de nuestros temas predeterminads, los cuales usan nuestros patrones comunes para el CMS. Se pueden ajustar/personalizar mas tarde.</p><p>Ejemplos: Sitio web, Sitio con un portafolio.</p>",
+      "action": "Empezar con un tema"
+    },
+    "empty": {
+      "instruction": "<p>Use el contructor de formas para crear un CMS con páginas personalizadas que puede definir a su gusto..</p><p>Necesitará saber como manejar el código HTML / CSS de su plantilla.</p>",
+      "action": "Empezar desde cero"
+    },
+    "wordpress": {
+      "instruction": "<p>Importaremos su sitio y convertiremos sus articulos, autores e imagenes. También crearemos los bloques básicos sobre los cuales puede aplicar su diseño propio</p>",
+      "action": "Importar un archvio XML de WordPress"
+    }
+  },
+  "theme": {
+    "localWarning": "Solo puede establecer un tema cuando se esta trabajando en la versión local (en su computador) de su sitio. No en la versión web. Por favor haga sus cambios locales y luego despliegue su sitio. Para más información sobre como cambiar o ajustar su propio tema, lea la <a href='http://www.webhook.com/docs/'>documentación</a> (en inglés).",
+    "title": "Empezar con un tema",
+    "instruction": "Las plantillas automaticamente instalan las formas, archivos estáticos y plantillas necesarias para iniciar su proyecto. Si está interesado en hacer su propio tema, vea la <a href='http://www.webhook.com/docs/creating-a-theme/'>documentación</a> (en inglés).",
+    "scratch": "Empezar desde cero",
+    "error": "¡Epa!",
+    "upload": {
+      "title": "Cargar tema local",
+      "label": "Seleccione archivo .zip desde su computador",
+      "action": "Seleccional archivo .zip local"
+    },
+    "url": {
+      "title": "Cargar tema remoto",
+      "label": "Dirección http:// del archivo a .zip",
+      "action": "Cargar archivo zip remoto"
+    },
+    "demo": "Demostración ",
+    "install": "Instalar"
+  }
+}

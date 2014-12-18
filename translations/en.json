@@ -477,7 +477,7 @@
     }
   },
   "theme": {
-    "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterworks. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
+    "localWarning": "You can only set a theme when working on the local (on your computer) version of this site. Please make your changes there and then remember to deploy your site afterwards. For more help on changing or setting your theme, check the <a href='http://www.webhook.com/docs/'>documentation here</a>",
     "title": "Start from a theme",
     "instruction": "Site templates automatically install the forms, static files and templates needed to jump start your project. Interested in making your own theme? <a href='http://www.webhook.com/docs/creating-a-theme/'>Read the docs</a>. Can't find what you're looking for?",
     "scratch": "Start from scratch.",

@@ -327,6 +327,8 @@
     "slugInstruction": "<strong>URL slug control</strong>You can tailor the location of the URLs for this content type below. Left empty the default list page would live a <code>site.com/{{name}}/</code> and the individual pages would be at <code>site.com/{{name}}/name-of-item/</code>. These fields allow some variables, including date handling. See the <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>full documentation here</a>.",
     "listUrlLabel": "URL for the list page of all {{name}}",
     "individualUrlLabel": "URL prefix for a single {{name}} page",
+    "emptyTitle": "Start by dragging in some form elements.",
+    "emptyTip": "Pro tip: Use the relationship widget to link two forms. (ex: Article to Author)",
     "group": {
       "text": "Text",
       "basics": "Basics",

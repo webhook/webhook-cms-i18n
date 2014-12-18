@@ -361,7 +361,7 @@
       "relation": "Relationship",
       "layout": "Page Layout",
       "geolocation": "Map coordinates",
-      "grid": "Repeatable Form"
+      "grid": "Repeatable form"
     },
     "info": {
       "label": "Field label",
@@ -453,6 +453,16 @@
         "action": "Fetch",
         "preview": "Preview",
         "clear": "Clear"
+      },
+      "grid": {
+        "action": "Done / close",
+        "delete": "delete",
+        "tooltipRow": "Click to edit or close, drag to reorder.",
+        "tooltipAdd": "Add a new row below this one.",
+        "tooltipDelete": "Delete this row.",
+        "valueName": "Repeatable item (Editors can fill out this sub-form multiple times.)",
+        "emptyTitle": "Drag elements into this repeatable form",
+        "emptyDesc": "This will make a repeatable form that can make infinite items."
       }
     },
     "nameTooltip": "Click to edit the name and URL structure for this content type.",

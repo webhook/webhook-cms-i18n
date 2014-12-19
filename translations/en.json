@@ -30,7 +30,8 @@
       "settings": "Settings",
       "billing": "Billing",
       "dns": "Domain",
-      "data": "Backups and Data"
+      "data": "Backups and Data",
+      "urls": "URL redirects"
     },
     "localNotice": "<span class='icon icon-code'> Local development</span> Saves here will only trigger builds locally, not on your live website.",
     "index": {
@@ -47,6 +48,11 @@
       "updates": "Webhook Updates",
       "history": "Build History",
       "moreHistory": "Fetch more history"
+    },
+    "trial": {
+      "upgrade": "Upgrade",
+      "lastDay": "Last day of trial",
+      "daysLeft": "trial days left"
     },
     "settings": {
       "password": {
@@ -261,6 +267,8 @@
           "title": "API Key",
           "instruction": "Webhook allows you to perform external builds, edits, inserts and deletes through an API.",
           "docs": "Documentation for the API is here.",
+          "resetting": "Resetting",
+          "reset": "Reset API key",
           "warning": "Are you sure you want to reset your key?"
         },
         "search": {

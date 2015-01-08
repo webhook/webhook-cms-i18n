@@ -379,6 +379,7 @@
       "placeholder": "Placeholder value",
       "placeholderTitle": "This will show within the input until it has a value. It does not save as a default.",
       "instruction": "Instructions for user",
+      "instruction_message": "This field allows <a href='https://help.github.com/articles/github-flavored-markdown/' target='_blank'>markdown syntax</a>.",
       "instructionTitle": "Instructions to the user on what they should enter into this field.",
       "required": "Required",
       "requiredTitle": "The form can't be saved unless this field has a value.",

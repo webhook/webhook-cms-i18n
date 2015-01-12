@@ -473,7 +473,8 @@
         "tooltipDelete": "Delete this row.",
         "valueName": "Repeatable item (Editors can fill out this sub-form multiple times.)",
         "emptyTitle": "Drag elements into this repeatable form",
-        "emptyDesc": "This will make a repeatable form that can make infinite items."
+        "emptyDesc": "This will make a repeatable form that can make infinite items.",
+        "newRow": "Click to add a new row."
       }
     },
     "nameTooltip": "Click to edit the name and URL structure for this content type.",

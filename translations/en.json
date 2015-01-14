@@ -306,7 +306,11 @@
         "id": "ID",
         "formStyle": "Form Style",
         "single": "Single Item",
-        "multiple": "Multiple Items"
+        "multiple": "Multiple Items",
+        "rebuild": "Rebuild templates",
+        "rebuildTip": "This will regenerate the scaffolding templates for this type. It will overwrite any files that you may have edited in this folder.",
+        "deleteTip": "This will delete the content type completely, including any attached data.",
+        "actions": "Actions"
       },
       "start": {
         "title": "OK, let's add a new form to the CMS",

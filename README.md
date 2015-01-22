@@ -27,3 +27,13 @@ Webhook CMS uses the `translations.js` file found in the `lib` directory. It is 
 The default `grunt` task runs a watch command that looks for changes to the JSON files in the `translations` and compiles the `translations.js` file.
 
 If you are not running the default `grunt` task, you need to run the `grunt compile` command to generate a new `translations.js` file with your changes.
+
+### Versioning
+
+We try to use Semantic Versioning for webhook-cms-i18n.
+
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+1. MAJOR version when you make incompatible API changes,
+1. MINOR version when you **add a language** in a backwards-compatible manner, and
+1. PATCH version when you **add translation** and backwards-compatible bug fixes.

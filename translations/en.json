@@ -36,6 +36,9 @@
     "localNotice": "<span class='icon icon-code'> Local development</span> Saves here will only trigger builds locally, not on your live website.",
     "index": {
       "welcome": {
+        "edit": "Edit welcome message",
+        "save": "Save",
+        "cancel": "Cancel",
         "title": "Welcome to your CMS",
         "description": "Some handy links for building with Webhook:",
         "docs": "Documentation",

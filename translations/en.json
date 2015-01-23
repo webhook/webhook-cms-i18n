@@ -378,7 +378,8 @@
       "relation": "Relationship",
       "layout": "Page Layout",
       "geolocation": "Map coordinates",
-      "grid": "Repeatable form"
+      "grid": "Repeatable form",
+      "boolean": "Switch"
     },
     "info": {
       "label": "Field label",

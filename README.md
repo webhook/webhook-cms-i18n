@@ -35,5 +35,7 @@ We try to use Semantic Versioning for webhook-cms-i18n.
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
 1. MAJOR version when you make incompatible API changes,
-1. MINOR version when you **add a language** in a backwards-compatible manner, and
-1. PATCH version when you **add translation** and backwards-compatible bug fixes.
+2. MINOR version when you **add a language** in a backwards-compatible manner, and
+3. PATCH version when you **add translation** and backwards-compatible bug fixes.
+
+Versioning can be done with the `grunt version:type` command.

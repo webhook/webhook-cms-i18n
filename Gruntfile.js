@@ -32,6 +32,11 @@ module.exports = function(grunt) {
     jsonlint: {
       uses_defaults: ['translations/**/*.json']
     },
+    release: {
+      options: {
+        additionalFiles: ['bower.json']
+      }
+    },
     concat: {
       translations: {
         options: {
@@ -57,6 +62,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jsonlint');
+  grunt.loadNpmTasks('grunt-release');
 
   grunt.registerTask('compile', ['jsonlint', 'concat']);
 

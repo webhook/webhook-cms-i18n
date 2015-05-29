@@ -12,7 +12,7 @@
     "goBack": "Take me back to login",
     "emailLabel": "Email",
     "provideEmail": "Provide your email to reset your password.",
-    "success": "Password reset email sent successfully"
+    "success": "We sent you an email with instructions. If you still have problems contact support."
   },
   "button": {
     "save": "Save"

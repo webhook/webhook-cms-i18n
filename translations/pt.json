@@ -1,0 +1,529 @@
+{
+  "login": {
+    "email": "Email",
+    "password": "Senha",
+    "signIn": "Logar",
+    "forgotPassword": "Esqueceu sua senha?",
+    "addLanguage": "Contribua com as traduções do Webhook"
+  },
+  "passwordReset": {
+    "prompt": "Preencha seu email para renovar sua senha.",
+    "action": "Renovar senha",
+    "goBack": "Voltar para o login",
+    "emailLabel": "Email",
+    "provideEmail": "Preencha seu email para renovar sua senha.",
+    "success": "Enviamos um email com as instruções. Se continuar tendo problemas, entre em contato com o suporte."
+  },
+  "button": {
+    "save": "Salvar"
+  },
+  "wh": {
+    "userCount": "online agora.",
+    "accountTooltip": "Clique para mudar sua senha ou outra informação da sua conta.",
+    "logout": "Sair",
+    "search": "Pressione S para buscar",
+    "navContent": "Tipo de Conteúdos",
+    "configuration": {
+      "title": "Configurações",
+      "types": "Adicionar / Alterar Conteúdo",
+      "team": "Membros do Time",
+      "settings": "Configurações",
+      "billing": "Faturamento",
+      "dns": "Domínio",
+      "data": "Backups e Informações",
+      "urls": "Redirecionamento de URL"
+    },
+    "localNotice": "<span class='icon icon-code'> Ambiente Local</span> Atualizações terão efeito somente local, não online.",
+    "index": {
+      "welcome": {
+        "edit": "Alterar mensagens de boas vindas",
+        "save": "Salvar",
+        "cancel": "Cancelar",
+        "title": "Bem vindo ao CMS",
+        "description": "Alguns links úteis para utilizar o webhook:",
+        "docs": "Documentação",
+        "support": "Suporte",
+        "issues": "Problemas",
+        "noTypesTitle": "Você precisa configurar o seu CMS",
+        "noTypesMessage": "Você publicou seu site sem configurar nenhum formulário ou template. O CMS online não pode adicionar novos formulários. Você precisará adicionar ao menos um em seu CMS local, criar alguns templates e então publicar informações ao site online.",
+        "forums": "Fóruns"
+      },
+      "updates": "Novidades Webhook",
+      "history": "Histórico de Publicações",
+      "moreHistory": "Carregar mais históricos"
+    },
+    "trial": {
+      "upgrade": "Atualizar",
+      "lastDay": "Último dia de avaliação",
+      "daysLeft": "dias para o fim da avaliação"
+    },
+    "settings": {
+      "password": {
+        "title": "Alterar Senha",
+        "action": "Salvar",
+        "fields": {
+          "account": {
+            "label": "Conta para alteração"
+          },
+          "oldPassword": {
+            "label": "Senha atual"
+          },
+          "newPassword": {
+            "label": "Nova senha"
+          },
+          "newPassword2": {
+            "label": "Nova senha (novamente)"
+          }
+        },
+        "error": {
+          "match": "As senhas devem ser iguais",
+          "fix": "Por favor reveja os seguintes erros."
+        }
+      },
+      "urls": {
+        "title": "Configurar redirecionamentos de URL",
+        "infoTitle": "Configurar redirecionamentos de URL",
+        "infoMessage": "Esta página permite configurar o redirectionamento 301 de forma permanente para as URLs do seu site, utilizando <a href='http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#rewrite'>sintaxe Nginx </a>. Veja as regras básicas a seguir:",
+        "infoRuleOne": "Funciona somente em sites Webhook com domínios personalizados e não em domínios webhook.org.",
+        "infoRuleTwo": "Todos os redirecionamentos definidos irão afetar referências de URL que você está pode estar usando em seu CMS ou através de sua estrutura de diretório.",
+        "noDomainTitle": "Nenhum domínio personalizado",
+        "noDomainMessage": "Regras de redirecionamento funcionam somente se você tem um domínio personalizado configurado. <a href='#/wh/settings/domain/'>Configurar seu domínio</a>.",
+        "action": "Salvar",
+        "tableRedirect": "URL de redirecionamento",
+        "tableDestination": "URL de destino",
+        "tableAddRow": "Adicionar uma linha"
+      },
+      "team": {
+        "deploy": {
+          "title": "Você precisar publicar antes",
+          "instruction": "Antes de poder adicionar novos membros em seu time você precisa subir o site na internet. Você pode fazer isso rodando o comando <code>wh deploy</code> na pasta do seu site local. Depois volte para esta página."
+        },
+        "groups": {
+          "title": "Gerencie permissões de grupo",
+          "instruction": "Convide um novo colaborador por email",
+          "help": "Crie grupos para restringir acesso do seu CMS. O Webhook tem dois grupos padrões (administradores e editores) que não podem ser alterados.",
+          "action": "Adicionar novo grupo",
+          "owners": "Administradores",
+          "ownersPerm": "Permissão completa.",
+          "editors": "Editores",
+          "editorsPerm": "Permissões completas, sem alterar configurações.",
+          "groupNameEdit": "Alterar nome",
+          "groupNameSave": "Salvar",
+          "groupClose": "Fechar",
+          "groupSaving": "Salvando",
+          "groupSaved": "Salvo"
+        },
+        "perms": {
+          "view": "Pode ver",
+          "draft": "Pode criar",
+          "publish": "Pode publicar",
+          "delete": "Pode apagar",
+          "edit": "Pode alterar",
+          "mixed": "Permissões mistas.",
+          "editPerms": "alterar"
+        },
+        "invite": {
+          "instruction": "Convide um novo colaborador por email",
+          "help": "A pessoa não será habilitada até que verifique seu email.",
+          "action": "Enviar convite"
+        },
+        "current": {
+          "title": "Membros do Time",
+          "description": "Administradores tem acesso para faturas e ferramentas locais de desenvolvimento. Editores tem permissão somente para adicionar e alterar conteúdos no CMS.",
+          "email": "Email",
+          "permissions": "Permissões",
+          "owner": "Administrador",
+          "editor": "Editor",
+          "change": "Mudar para",
+          "toOwner": "Mudar para administrador",
+          "toEditor": "Mudar para editor",
+          "remove": "Apagar o acesso totalmente",
+          "waiting": "Aguardando verificação",
+          "cancel": "Cancelar convite"
+        }
+      },
+      "general": {
+        "account": {
+          "title": "Preferências da Conta",
+          "password": {
+            "prompt": "Deseja alterar sua senha?",
+            "action": "Altere sua senha aqui"
+          },
+          "language": "Escolha o idioma do CMS"
+        },
+        "global": {
+          "title": "Variáveis Globais",
+          "description": "Estas são informações globais utilizadas nos seus templates de front end. Para usar eles em seu site, veja a <a href='http://www.webhook.com/docs/template-rules-and-filters/#_getsetting' target='_blank'>documentação aqui</a>.",
+          "action": "Salvar",
+          "fields": {
+            "name": {
+              "label": "Nome do Site"
+            },
+            "description": {
+              "label": "Descrição do Site",
+              "help": "Breve descrição do seu site."
+            },
+            "keywords": {
+              "label": "Palavras-chave do Site",
+              "help": "Lista de palavras-chave que descrevem seu site separadas por vírgula."
+            },
+            "url": {
+              "label": "URL do Site",
+              "help": "Por favor utilize a URL completa. Exemplo: http://www.exemplo.com."
+            },
+            "analytics": {
+              "label": "ID do Analytics do Site",
+              "help": "ID do Google Analytics. Geralmente algo como UA-XX-XXXX"
+            },
+            "twitter": {
+              "label": "Twitter do Site",
+              "help": "Conta do Twitter, sem o @."
+            },
+            "facebook": {
+              "label": "Facebook do Site",
+              "help": "Nome no Facebook."
+            }
+          }
+        }
+      },
+      "billing": {
+        "title": "Faturamento",
+        "trial": {
+          "lastDay": "Este é o último dia de avaliação",
+          "days": "Você tem {{count}} dias restantes para avaliação",
+          "instruction": "<p>Todos os sites Webhook iniciam com 14 dias de avaliação gratuita. Para continuar e permitir domínios personalizados você terá que atualizar para a versão paga.</p><p>Será solicitado seu login novamente.</p>",
+          "action": "Atualizar agora"
+        },
+        "paid": {
+          "title": "Obrigado por fazer negócio!",
+          "instruction": "<p>Seu site está ativo. Se precisar mudar informações de faturamento ou cancelar sua inscrição, clique e vá até a nossa área de faturamento.</p><p>Será solicitado seu login novamente.</p>",
+          "action": "Gerenciar faturamento"
+        }
+      },
+      "domain": {
+        "title": "Domínios",
+        "description": "Seu site está disponível em <strong>{{siteName}}.webhook.org</strong>",
+        "descriptionDomain": "e <strong>{{domain}}</strong>",
+        "success": {
+          "title": "Quase pronto",
+          "instruction": "Legal. Aponte seus registros de servidor para os seguintes endereços.",
+          "docs": "Você pode encontrar instruções mais detalhadas em nossa documentação <a href='http://www.webhook.com/docs/deployment-domains/'> sobre como configurar seu domínio</a>."
+        },
+        "trial": {
+          "title": "Atualizar para utilizar domínios personalizados",
+          "instruction": "Este site está em período de avaliação gratuita. Somente sites pagos permitem o uso de domínios personalizados.",
+          "upgrade": "Atualizar agora em webhook.com"
+        },
+        "error": "Por favor corrija os seguintes erros.",
+        "form": {
+          "title": "Utilize um domínio comprado anteriormente",
+          "instruction": "Não tem um domínio? Compre um no <a href='http://www.namecheap.com/?aff=65093'>Namecheap</a> ou em qualquer revendedor de domínios, depois volte aqui.",
+          "label": "Digite o nome do seu domínio",
+          "action": "Usar este domínio"
+        }
+      },
+      "data": {
+        "importExport": {
+          "title": "Importar / Exportar Informações",
+          "instruction": "Você não precisa subir somente backups. Você pode subir qualquer informação que quiser, mas deverá seguir a formatação correta. Veja a <a href='http://www.webhook.com/docs/importing-custom-data/''>documentação</a> para mais informações.",
+          "action": {
+            "import": "Importar JSON",
+            "export": "Exportar JSON"
+          },
+          "import": {
+            "found": "Encontramos os seguintes erros em seu arquivo:",
+            "type": "Tipo de Conteúdo",
+            "item": "Número de itens",
+            "noContent": "Nenhuma informação para importar.",
+            "setting": "Configuração",
+            "value": "Valor",
+            "noSettings": "Nenhuma configuração para importar.",
+            "warningTitle": "Aviso!",
+            "warning": "Utilizando o backup você <strong>apagará permanentemente</strong> as informações atuais e sobrescreverá o conteúdo do mesmo. O site será recriado com as informações do backup. Se você ainda não fez um backup, agora é uma boa hora.",
+            "proceed": "Prosseguir",
+            "cancel": "Cancelar",
+            "noDataTitle": "Sem informações",
+            "noData": "Não encontramos nenhuma informação válida no arquivo importado.",
+            "goBack": "Voltar",
+            "invalidTitle": "Não conseguimos entender seu arquivo.",
+            "invalid": "Certifique-se que está subindo um JSON <strong>válido</strong> e tente novamente."
+          }
+        },
+        "backups": {
+          "title": "Backups",
+          "data": {
+            "title": "Backup de Informações",
+            "instruction": "Webhook realiza backups automáticos todas as noite as 3AM PST e mantemos estes arquivos por 7 dias. Para sites novos, teremos o backup somente a partir do dia que ele foi criado."
+          },
+          "templates": {
+            "title": "Backup de Templates e arquivos do site",
+            "instruction": "Baixe os arquivos do seu site, incluindo todos os templates e arquivos estáticos que estão online. Você poderá utilizar estes arquivos para recriar seu site localmente se necessário.",
+            "action": "Baixar arquivos do site"
+          }
+        },
+        "wordpress": {
+          "title": "Importar um Blog Wordpress (Beta)",
+          "instruction": "Wordpress permite você <a href='http://codex.wordpress.org/Tools_Export_Screen' target='_blank'>exportar as informações do seu blog em um documento XML</a>. Baixe o arquivo e use o botñao abaixo para importar informações dentro do seu Webhook. Nós iremos fazer o nosso melhor para importar imagens dentro dos artigos e o tamanho correto delas.",
+          "action": "Selecione o arquivo XML do Wordpress"
+        },
+        "api": {
+          "title": "API Key",
+          "instruction": "Webhook permite você executar requisições externas, tais como, criar, alterar, inserir e apagar através de uma API.",
+          "docs": "A documentação da API está aqui.",
+          "resetting": "Resetando",
+          "reset": "Resetar API key",
+          "warning": "Você tem certeza que deseja resetar sua API Key?"
+        },
+        "search": {
+          "title": "Recriar índice de busca",
+          "instruction": "Se você está tendo problemas com a busca do CMS, recriar o índice pode ajudar.",
+          "action": "Recriar índice da busca",
+          "indexing": "Indexando informações"
+        },
+        "reset": {
+          "title": "Resete Seu Site",
+          "warning": "Você pode resetar o site somente quando ele está rodando localmente.",
+          "instruction": "Irá permitir resetar seu site para que possa começar novamente. Lembre-se de fazer um backup antes.",
+          "options": {
+            "data": "<strong>Apagar minhas informações.</strong> (Serão apagados seus formulários, mas seus templates irão permanecer.)",
+            "all": "<strong>Apagar meus templates e minhas informações.</strong> (O site ficará assim como você o instalou.)"
+          },
+          "action": {
+            "deleteData": "Apagar informações",
+            "deleteEverything": "Apagar tudo"
+          },
+          "deleting": "Apagando"
+        }
+      }
+    },
+    "content": {
+      "addNewItem": "Adicionar novo {{name}}",
+      "display": "Exibir",
+      "limited": "Para uma melhor performance, limitamos o número de registros exibidos nesta página para os últimos {{recordLimit}} criados.",
+      "noRecords": "Você ainda não adicionou nenhum {{name}}.",
+      "moreRecords": "Carregar Mais Registros",
+      "allTypes": {
+        "title": "Seus tipos de conteúdos existentes",
+        "addType": "Adicionar novo tipo de conteúdo",
+        "contentType": "Tipo de Conteúdo",
+        "id": "ID",
+        "formStyle": "Tipo do Formulário",
+        "single": "Item único",
+        "multiple": "Múltiplos itens",
+        "rebuild": "Recriar templates",
+        "rebuildTip": "Isto recriará os templates padrões para este tipo de conteúdo. Ele irá sobrescrever os arquivos que você pode ter editado nesta pasta.",
+        "deleteTip": "Isto apagará o tipo de conteúdo completamente, incluindo qualquer informação anexada.",
+        "actions": "Ações"
+      },
+      "start": {
+        "title": "OK, vamos adicionar um novo formulário ao CMS",
+        "nameLabel": "Nome do novo item",
+        "namePlaceholder": "ex: artigos, sobre, homepage, cidades, materiais",
+        "duplicate": "Já existe um tipo de conteúdo com este nome",
+        "long": "O ID do tipo de conteúdo pode ter 250 caracteres ou menos. O ID criado tem {{length}} caracteres.",
+        "instruction": "Este será o nome do menu no CMS e também definirá o padrão da URL para o usuário.",
+        "multiple": {
+          "title": "Quantos {{newTypeName}} tem aqui?",
+          "instruction": "Por exemplo, homepage é somente uma entrada de dados, já um blog tem várias entradas.",
+          "one": "Somente <strong>um</strong>: {{newTypeName}}.",
+          "many": "Existem <strong>vários</strong>: {{newTypeName}}."
+        },
+        "action": "Criar um formulário de {{newTypeName}}!",
+        "cancel": "Cancelar"
+      }
+    }
+  },
+  "form": {
+    "add": "Adicionar Campo",
+    "edit": "Alterar Campo",
+    "isNewWarning": "<strong>Aviso</strong> Mudanças nestes detalhes, pode precisar de mudanças nos seus templates.",
+    "typeName": "Nome do Tipo de conteúdo",
+    "typeNameInvalid": "O nome digitado é inválido.",
+    "slugInstruction": "<strong>Controle do nome da URL</strong> Você pode alterar o localização das URLs. Por padrão a página de lista ficará assim: <code>site.com/{{name}}/</code> e as páginas de detalhe ficarão assim: <code>site.com/{{name}}/nome-do-item/</code>. Estes campos permitem algumas variáveis, incluindo datas. Veja a <a href='http://www.webhook.com/docs/pages-and-templates/' target='_blank'>documentação completa</a>.",
+    "slugLabel": "Como as URLs são criadas",
+    "listUrlLabel": "Slug da pasta",
+    "individualUrlLabel": "Slug do item",
+    "emptyTitle": "Comece arrastando alguns elementos de formulário.",
+    "emptyTip": "Dica: Use o widget de relacionamento para linkar dois formulários. (ex: Artigos com Autor)",
+    "group": {
+      "text": "Texto",
+      "basics": "Básico",
+      "files": "Arquivos",
+      "specifics": "Específicos",
+      "advanced": "Avançados"
+    },
+    "widget": {
+      "textfield": "Texto de uma linha",
+      "textarea": "Texto em Parágrafo",
+      "wysiwyg": "Texto em WYSIWYG",
+      "markdown": "Texto em Markdown",
+      "number": "Números",
+      "checkbox": "Checkbox",
+      "radio": "Múltipla escolha",
+      "select": "Dropdown",
+      "image": "Imagem",
+      "gallery": "Galeria",
+      "audio": "Arquivo de áudio",
+      "file": "Outro arquivo",
+      "name": "Pessoa",
+      "address": "Endereço",
+      "phone": "Número de Telefone",
+      "email": "Email",
+      "datetime": "Data e hora",
+      "url": "Website",
+      "rating": "Classificação",
+      "tabular": "Informações em tabela",
+      "embedly": "Embed.ly",
+      "color": "Cor",
+      "instruction": "Instruções",
+      "relation": "Relacionamento",
+      "layout": "Layout da página",
+      "geolocation": "Coordenadas de mapa",
+      "grid": "Formulário de repetição",
+      "boolean": "Switch"
+    },
+    "info": {
+      "label": "Nome do campo",
+      "labelTitle": "Pequena descrição do conteúdo deste campo.",
+      "placeholder": "Placeholder",
+      "placeholderTitle": "Conteúdo que será exibido até que o usuário preencha o campo. O conteúdo não será salvo por padrão.",
+      "instruction": "Instruções para o usuário",
+      "instructionMessage": "Este campo permite <a href='https://help.github.com/articles/github-flavored-markdown/' target='_blank'>markdown syntax</a>.",
+      "instructionTitle": "Instruções para o usuário com o que ele deve preenchar dentro do campo.",
+      "required": "Obrigatório",
+      "requiredTitle": "O formulário não pode ser salvo até que este campo seja preenchido.",
+      "requiredCheckbox": "Tornar este campo obrigatório.",
+      "delete": "Apagar este campo",
+      "text": {
+        "min": "Mínimo de caracteres",
+        "max": "Máximo de caracteres"
+      },
+      "wysiwyg": {
+        "label": "O que os usuários podem adicionar dentro do WYSIWYG?",
+        "table": "Tabelas",
+        "video": "Vídeos",
+        "image": "Imagens",
+        "quote": "Comentários",
+        "link": "Links"
+      },
+      "number": {
+        "min": "Número mínimo",
+        "max": "Número máximo"
+      },
+      "checkbox": {
+        "label": "Opções do checkbox",
+        "help": "Use o sinal de mais e menos para adicionar novas opções. Clique no checkbox para escolher o valor padrão."
+      },
+      "radio": {
+        "label": "Opções de múltipla escolha",
+        "help": "Use o sinal de mais e menos para adicionar novas opções. Clique no radio para escolher o valor padrão."
+      },
+      "select": {
+        "label": "Opções de Dropdown",
+        "help": "Use o sinal de mais e menos para adicionar novas opções. Clique no radio para escolher o valor padrão."
+      },
+      "rating": {
+        "min": "Valor mínimo",
+        "minHelp": "Este é o valor mínimo que pode ser inserido. Preencha .5 se desejar metade de uma estrela.",
+        "max": "Valor máximo",
+        "maxHelp": "Este é o valor mínimo que pode ser inserido. Preencha 10 se deseja ter 10 estrelas.",
+        "step": "Incremento",
+        "stepHelp": "Qual incremento mínimo e máximo para avaliação? Preencha .5 se desejar avaliar com uma metade de uma estrela."
+      },
+      "tabular": {
+        "label": "Colunas"
+      },
+      "relationship": {
+        "label": "Relacionamentos",
+        "help": "Somente este tipo de conteúdo pode ser encontrado neste widget.",
+        "single": "Permitido somente um item e nada mais.",
+        "hidden": "Esconder este widget durante e entrada de dados."
+      }
+    },
+    "control": {
+      "markdown": {
+        "syntax": "Este campo permite <a href='http://guides.github.com/overviews/mastering-markdown/' target='_blank'>Markdown syntax</a>."
+      },
+      "image": {
+        "action": "Arraste ou selecine uma imagem",
+        "replace": "Trocar imagem"
+      },
+      "gallery": {
+        "action": "Arraste ou selecione algumas imagens",
+        "instruction": "Clique para alterar a legenda de uma imagem. Arraste para ordenar.",
+        "delete": "Apagar",
+        "close": "Salvar / Fechar"
+      },
+      "audio": {
+        "action": "Arraste ou selecione um arquivo de áudio"
+      },
+      "file": {
+        "action": "Arraste ou selecione um arquivo",
+        "url": "ou use uma URL?",
+        "select": "Selecione do desktop",
+        "remove": "Apagar",
+        "cancel": "Cancelar",
+        "upload": "Upload",
+        "paste": "Colar URL"
+      },
+      "tabular": {
+        "add": "Adicionar Linha"
+      },
+      "embedly": {
+        "action": "Buscar",
+        "preview": "Visualizar",
+        "clear": "Limpar"
+      },
+      "grid": {
+        "action": "Concluído / fechar",
+        "delete": "apagar",
+        "tooltipRow": "Clique para alterar ou fechar, arraste para ordenar.",
+        "tooltipAdd": "Adicione uma nova linha abaixo.",
+        "tooltipDelete": "Apagar esta linha.",
+        "valueName": "Itens repetidores (Editores podem preencher este formulários várias vezes.)",
+        "emptyTitle": "Arraste os elementos para dentro dos formulários repetidores",
+        "emptyDesc": "Fazer um formulário repetidor pode ter infinitos itens.",
+        "newRow": "Clique para adicionar uma nova linha."
+      }
+    },
+    "nameTooltip": "Clique para alterar o nome e a estrutura da URL para este tipo de conteúdo.",
+    "help": "Ajuda",
+    "helpTooltip": "Veja um tutorial sobre o construtor de formulários.",
+    "goBack": "Cancelar / Retornar ao CMS",
+    "action": "Salvar formulário"
+  },
+  "start": {
+    "title": "Como devemos configurar um site?",
+    "theme": {
+      "instruction": "<p>Escolha um dos nosso templates e customize depois..</p><p>Exemplo: Um blog, um portfolio.</p>",
+      "action": "Começar com um tema"
+    },
+    "empty": {
+      "instruction": "<p>Utilize o construtor de formulários para construir um CMS customizado.</p><p> Você precisará programar seu design em HTML / CSS.</p>",
+      "action": "Criar do início"
+    },
+    "wordpress": {
+      "instruction": "<p>Iremos importar seu site e converter seus posts, autores, tags e imagens.</p><p>Criaremos também uma estrutura básica para você construir a partir dela.</p>",
+      "action": "Importar um arquivo XML do WordPress"
+    }
+  },
+  "theme": {
+    "localWarning": "Você só pode escolher um tema trabalhando localmente (no seu computador). Faça suas mudanças aqui e depois lembre de subir o site. Para mais ajuda, na escolha ou na configuração de um tema, veja a <a href='http://www.webhook.com/docs/'>documentação aqui</a>",
+    "title": "Começar com um tema",
+    "instruction": "Templates instalam formulários, arquivos estáticos e templates automaticamente. Insteressado em fazer seu próprio tema? <a href='http://www.webhook.com/docs/creating-a-theme/'>Leia a documentação</a>.",
+    "scratch": "Criar do início.",
+    "error": "Whoops",
+    "upload": {
+      "title": "Carregar tema local",
+      "label": "Selecione um arquivo .zip do seu computador",
+      "action": "Selecione um aquivo .zip local"
+    },
+    "url": {
+      "title": "Carregar tema remoto",
+      "label": "Endereço http:// de um arquivo .zip.",
+      "action": "Carregar arquivo .zip remoto"
+    },
+    "demo": "Demonstração",
+    "install": "Instalar"
+  }
+}
